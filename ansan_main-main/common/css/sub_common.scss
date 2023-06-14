@@ -1,0 +1,22 @@
+@charset "UTF-8";
+@import 'reset'; // 1. 리셋 & scss변수
+@import 'class'; // 6. 클래스 정의(animation포함)
+@import 'common'; // 헤더 푸터 공통
+/*모듈 css*/
+// @import 'gnb'; // gnb
+// @import 'slide'; //슬라이드
+// @import 'acodian'; //리스트
+// @import 'tab'; //탭
+
+
+.footer{padding: 0 100px 60px;
+    @include maxWidth(1400px){
+        padding: 0 50px 60px;
+    }
+    @include maxWidth(1085px){
+        padding: 0 30px 40px;
+    }
+    @include maxWidth(720px){
+        padding: 0 15px 30px;
+    }
+}

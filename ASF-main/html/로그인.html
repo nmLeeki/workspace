@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASF 관리시스템</title>
+  <link rel="stylesheet" href="../common/css/default.css">
+</head>
+
+<body>
+  <div class="wrapper main">
+    <div class="info_wrap">
+      <div>
+        <span>ASF 관리시스템</span>
+        <div>
+          <h2 class="onpc">LOGIN</h2>
+          <h2 class="onmob">로그인</h2>
+          <p><span class="onpc">우측화면</span><span class="onmob">하단 입력란</span>에 아이디와 비밀번호를 입력하세요.</p>
+        </div>
+        <h1><img src="../common/images/logo.png" alt="로고"></h1>
+      </div>
+        <!-- 0220 copyright 문구 수정/ div 밖으로 위치 수정 -->
+        <p class="cp onpc">Copyright © Environmental Preservation Association All rights reserved.</p>
+    </div>
+    <div class="input_wrap">
+      <div class="login">
+        <p class="login_tit onpc">로그인하세요.</p>
+        <div class="loginform_wrap">
+          <form>
+            <label for="loginid" class="hide">id</label>
+            <!-- 0310 input 수정  autocomplete-->
+            <input type="text" name="id" required class="email_box" id="loginid" placeholder="E-MAIL" autocomplete="off">
+            <button class="close-icon" type="reset"></button>
+
+          </form>
+          <form>
+            <label for="pwd" class="hide">pwd</label>
+            <input type="password" id="pwd" name="pwd" required class="pw_box" placeholder="PASSWORD">
+            <button class="close-icon" type="reset"></button>
+          </form>
+
+          <!-- 0216 otp 발급 버튼 삭제, 만료시간 삭제 -->
+          <!-- 0220 otp input placeholder 수정 -->
+         <!--  <form>
+            <label for="otp" class="hide">pwd</label>
+            <input type="text" id="otp" name="otp" required class="pw_box" placeholder="OTP 정보">
+            <button class="close-icon" type="reset"></button>
+          </form> -->
+
+          <form>
+            <input type="button" id="login_btn" value="로그인">
+          </form>
+          <div class="main_footer">
+            <h3 class="tit onpc">한국환경보전협회</h3>
+            <!-- 0220 copyright 문구 수정/ div 밖으로 위치 수정 -->
+            <p class="cp onmob">Copyright © Environmental Preservation Association All rights reserved.</p>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <script src="../common/js/jquery-3.6.2.min.js"></script>
+  <script src="../common/js/publish.js"></script>
+</body>
+
+</html>

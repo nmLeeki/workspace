@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASF 관리시스템</title>
+  <link rel="stylesheet" href="../common/css/default.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="container">
+        <a href="#">
+          <h1 class="hd_logo"><img src="../common/images/hd_logo.png" alt="헤더 로고"> <span> 환경보전협회</span></h1>
+        </a>
+        <div class="nav_wrap">
+          <nav>
+            <ul class="gnb">
+              <li><a href="#" class="active">운영 관리</a></li>
+              <li><a href="#">ASF 관리</a></li>
+            </ul>
+          </nav>
+
+          <div class="util">
+            <a href="#">반갑습니다. 김길동님!
+              <button>
+                <span class="hide">메뉴보기</span></button>
+            </a>
+            <ul class="my_info">
+              <li><a href="#">PROFILE</a></li>
+              <li><a href="#">LOGOUT</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="lnb_wrap">
+      <div class="container">
+        <ul class="lnb">
+          <li>
+            <a href="./시설물정보_목록.html">
+              <div>
+                <img src="../common/images/fclt_ico.png" alt="시설물 정보 아이콘">
+              </div>
+              시설물 정보
+            </a>
+          </li>
+          <li>
+            <a href="./순찰계획관리_목록.html">
+              <div>
+                <img src="../common/images/ptr_ico.png" alt="순찰 계획 관리 아이콘">
+              </div>
+              순찰 계획 관리
+            </a>
+          </li>
+          <li>
+            <a href="./순찰일지관리_목록.html">
+              <div>
+                <img src="../common/images/ptr_log_ico.png" alt="순찰 일지 관리 아이콘">
+              </div>
+              순찰 일지 관리
+            </a>
+          </li>
+          <li class="on">
+            <a href="./유지보수작업관리_목록.html">
+              <div>
+                <img src="../common/images/mt_ico.png" alt="유지보수 작업 관리 아이콘">
+              </div>
+              유지보수 작업 관리
+            </a>
+          </li>
+          <li>
+            <a href="./민원일지관리_목록.html">
+              <div>
+                <img src="../common/images/cp_log_ico.png" alt="민원 일지 관리 아이콘">
+              </div>
+              민원 일지 관리
+            </a>
+          </li>
+          <li>
+            <a href="./순찰일지통계.html">
+              <div>
+                <img src="../common/images/stat.png" alt="순찰 일지 통계 아이콘">
+              </div>
+              순찰 일지 통계
+            </a>
+          </li>
+          <!-- <li>
+            <a href="./유지보수작업통계.html">
+              <div>
+                <img src="../common/images/mt_st_ico.png" alt="유지보수 작업 통계 아이콘">
+              </div>
+              유지보수 작업 통계
+            </a>
+          </li>
+          <li>
+            <a href="./민원일지통계.html">
+              <div>
+                <img src="../common/images/cp_st_ico.png" alt="민원 일지 통계 아이콘">
+              </div>
+              민원 일지 통계
+            </a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+    <div class="contents">
+      <div class="container">
+        <h2>유지보수 작업 카드</h2>
+        
+      </div>
+      <div class="tab_con_wrap">
+
+        <div class="cp_mt">
+          <div class="container">
+            <div class="form_wrap com_wrap ptr_pl_regi cp_mt_regi">
+
+
+              <table class="tb_summary">
+                 <colgroup>
+                  <col width="11.5%">
+                  <col width="21.5%">
+                  <col width="9%">
+                  <col width="21%">
+                  <col width="13%">
+                  <col width="22%">
+                 
+                </colgroup> 
+                <thead>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th><label for="mt_number">유지보수 번호 <span>*</span></label></th>
+                    <td ><input type="text" name="mt_number" id="mt_number" placeholder="">
+                    </td>
+                    <th ><label for="fence_num">관리 번호 <span>*</span></label></th>
+                    <td >
+                      <div class="search_bar">
+                        <input type="text" name="fence_num" id="fence_num" placeholder="검색어를 입력하세요.
+                        ">
+                        <button class="search_btn fcnum_sch_btn"></button>
+                      </div>
+                    </td>
+                    <th></th>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <th>
+                      <label for="mt_type">유지보수 유형 <span>*</span></label>
+                    </th>
+                    <td >
+                      <div class="tb_input_wrap">
+                        <select name="mt_type" id="mt_type">
+                          <option value="" disabled selected>선택</option>
+                          <option value="">해체</option>
+                          <option value="">이설</option>
+                          <option value="">출입문</option>
+                          <option value="">보수</option>
+                          <option value="">기타</option>
+                        </select>
+                      </div>
+                    </td>
+                    <th>
+                      <label for="date01">점검일 <span>*</span></label>
+                    </th>
+                    <td>
+                      <input type="date" name="date01" id="date01" placeholder=""  value="2023-02-02">
+                    </td>
+                    <th>
+                      <label for="date02">처리일 <span>*</span></label>
+                    </th>
+                    <td>
+                      <input type="date" name="date02" id="date02" value="2023-02-02">
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+
+            <div class="form_wrap com_wrap ptr_pl_regi cp_mt_regi">
+              <h3>작업 개요</h3>
+              <table class="tb_summary">
+                <colgroup>
+                  <col width="12%">
+                  <col width="9%">
+                  <col width="13%">
+                  <col width="9%">
+                  <col width="13%">
+                  <col width="9%">
+                  <col width="13%">
+                  <col width="9%">
+                  <col width="13%">
+                </colgroup>
+                <thead>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th rowspan="2">대상지현황 <span>*</span>
+                    </th>
+                    <td colspan="8"><label for="address" class="hide">주소 </label>
+                      <div class="search_bar">
+                        <input type="text" name="address" id="address" placeholder="검색어를 입력하세요.">
+                        <button class="search_btn"></button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <th><label for="area">권역</label></th>
+                    <td colspan="2">
+                      <div class="tb_input_wrap">
+                        <select name="area" id="area">
+                          <option value="" disabled selected>선택</option>
+                          <option value="">1</option>
+                          <option value=""></option>
+                          <option value=""></option>
+                        </select>
+                      </div>
+                    </td>
+                    <th><label for="install">설치단계</label></th>
+                    <td colspan="2">
+                      <div class="tb_input_wrap">
+                        <select name="install" id="install">
+                          <option value="" disabled selected>선택</option>
+                          <option value="">1단계</option>
+                          <option value="">2단계</option>
+                          <option value="">3단계</option>
+                          <option value="">4단계</option>
+                          <option value="">5단계</option>
+                        </select>
+                      </div>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <th>
+                      <label for="cont01">내용</label>
+                    </th>
+                    <td colspan="8">
+                      <div class="tb_input_wrap"><textarea id="cont01" name="cont01" placeholder=""></textarea></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th rowspan="2"><label for="result">조치결과 <span>*</span></label></th>
+                    <td colspan="8">
+                      <input type="text" name="result" id="result" placeholder="" value="">
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><label for="cost">공사비용</label></th>
+                    <td>
+                      <input type="text" name="cost" id="cost" placeholder="" value="">
+                    </td>
+                    <th><label for="unit">단위</label></th>
+                    <td>
+                      <input type="text" name="unit" id="unit" placeholder="" value="">
+                    </td>
+                    <th><label for="amount">수량</label></th>
+                    <td>
+                      <input type="text" name="amount" id="amount" placeholder="" value="">
+                    </td>
+                    <th><label for="period">처리기간</label></th>
+                    <td><input type="text" name="period" id="period" placeholder="" value=""></td>
+                  </tr>
+                  
+                  <tr>
+                    <th><label for="note">비고</label></th>
+                    <td colspan="8"><input type="text" name="note" id="note" placeholder="" value=""></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="cp_phm">
+                <caption>
+                  현장 사진
+                </caption>
+                <thead></thead>
+                <tbody>
+
+                  <tr>
+                    <th class="tit txt_al_left">
+                      <b>현장 사진</b>
+                      
+                    </th>
+                    <th class="txt_al_right vtc_m">
+                      <button class="add_row_btn"><span>행 추가</span></button>
+                    </th>
+
+
+                  </tr>
+                  <tr class="tb_tit">
+                    <td class="bd_r">조치 전</td>
+                    <td>조치 후</td>
+                  </tr>
+                 
+                 
+                  <tr>
+
+                    <td class="bd_r">
+                      <div class="img_wrap">
+                        <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+
+                      </div>
+                    </td>
+                    <td>
+                      <div class="img_wrap">
+                        <figure><img src="../common/images/no_image.png" alt="이미지 없음"></figure>
+
+                      </div>
+                    </td>
+
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+
+          </div>
+          <div class="regi_map">
+            <div class="container">
+              <div class="map">
+                <b>map</b>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab_con_btn">
+            <div class="container">
+              <div class="btn_wrap btn_right">
+                <button class="cancel_btn" onclick="location.href='유지보수작업관리_목록.html'"><span>취소</span></button>
+                <button class="register_btn" onclick="location.href='유지보수작업관리_목록.html'"><span>글 등록</span></button>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <footer>
+      <div class="container">
+        <h1><a href="#"><img src="../common/images/footer_logo.png" alt="푸터 로고"></a> </h1>
+        <p>Copyright © Environmental Preservation Association All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- 모달박스 -->
+
+    <!-- 관리번호 검색 -->
+    <div class="modal_box fcnum_modal_box" >
+      <div class="modal_contents">
+        <div class="modal_top">
+          <h3>울타리 검색</h3><button class="close"><img src="../common/images/md_close_btn.png" alt="팝업 끄기 버튼"></button>
+        </div>
+        
+        <div class="form_wrap">
+          <form action="" class="search_form">
+            <ul>
+              <li>
+                <!-- 0223 label class 수정 -->
+                <label for="fc_select02" class="hide">울타리선택</label>
+                <select name="fc_select02" id="fc_select02">
+                  <option value="" disabled selected>전체</option>
+                  <option value="">관리번호</option>
+                  <option value="">권역</option>
+                  <option value="">타입</option>
+                  <option value="">시설물 그룹 명</option>
+                </select>
+              </li>
+
+              <li>
+                <div class="search_bar">
+                  <label for="ptr_search02" class="hide">담당자 검색</label>
+                  <input type="text" name="search" id="ptr_search02" placeholder="검색어를 입력하세요.">
+                  <button class="search_btn"></button>
+                </div>
+              </li>
+
+            </ul>
+          </form>
+        </div>
+          <div class="modal_tb">
+            <p>※ 울타리를 선택 하실 수 있습니다.</p>
+
+            <ul class="fence_list">
+              <li>
+                <ul class="tb_hd">
+                  <li>관리 번호</li>
+                  <li>권역</li>
+                  <li>타입</li>
+                  <li>시설물 그룹 명</li>
+                  <li>등록일</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>서울-09-78</li>
+                  <li>ABC권역</li>
+                  <li>ASF울타리</li>
+                  <li>**ASF 울타리</li>
+                  <li>2022. 08. 01</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>서울-09-78</li>
+                  <li>ABC권역</li>
+                  <li>ASF울타리</li>
+                  <li>**ASF 울타리</li>
+                  <li>2022. 08. 01</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>서울-09-78</li>
+                  <li>ABC권역</li>
+                  <li>ASF울타리</li>
+                  <li>**ASF 울타리</li>
+                  <li>2022. 08. 01</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>서울-09-78</li>
+                  <li>ABC권역</li>
+                  <li>ASF울타리</li>
+                  <li>**ASF 울타리</li>
+                  <li>2022. 08. 01</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>서울-09-78</li>
+                  <li>ABC권역</li>
+                  <li>ASF울타리</li>
+                  <li>**ASF 울타리</li>
+                  <li>2022. 08. 01</li>
+                </ul>
+              </li>
+             
+            </ul>
+            <div class="pagination_wrap">
+              <div class="pagination">
+                <a href="#" class="first_page"><span class="hide">처음 페이지로 이동</span></a>
+                <a href="#" class="prev_page"><span class="hide">이전 페이지로 이동</span></a>
+                <ul>
+                  <li><a href="#" class="active">1<span class="hide">현재 페이지</span></a></li>
+                  <li><a href="#">2<span class="hide">페이지 이동</span></a></li>
+                  <li><a href="#">3<span class="hide">페이지 이동</span></a></li>
+                  <li><a href="#">4<span class="hide">페이지 이동</span></a></li>
+                  <li><a href="#">5<span class="hide">페이지 이동</span></a></li>
+                </ul>
+                <a href="#" class="next_page on"><span class="hide">다음 페이지로 이동</span></a>
+                <a href="#" class="last_page"><span class="hide">마지막 페이지로 이동</span></a>
+    
+              </div>
+             
+            </div>
+            <div class="btn_wrap"><button class="cancel_btn md_cancel_btn"><span>닫기</span></button></div>
+          </div>
+
+        
+      </div>
+    </div>
+    <div class="dim"></div>
+
+  </div>
+
+
+
+  <script src="../common/js/jquery-3.6.2.min.js"></script>
+  <script src="../common/js/publish.js"></script>
+</body>
+
+</html>
