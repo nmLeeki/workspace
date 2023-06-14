@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자율주행자동자 사고조사위원회 홈페이지에 오신것을 환영합니다.</title>
+  <link rel="stylesheet" href="../common/css/default.css" />
+  <link rel="stylesheet" href="../common/css/dev.css" />
+  <link rel="stylesheet" href="../common/lib/slickslider/slick.css">
+  <link rel="stylesheet" href="../common/lib/datepicker/datepicker.css">
+  <link rel="stylesheet" href="../common/lib/timepicker/timepicker.css">
+  <script src="../common/js/jquery-3.6.0.min.js"></script>
+  <script src="../common/js/prefixfree.min.js"></script>
+  <script src="../common/js/common.js"></script>
+  <script src="../common/lib/datepicker/datepicker.js"></script>
+  <script src="../common/lib/slickslider/slick.js"></script>
+  <script src="../common/lib/timepicker/timepicker.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="header">
+      <div class="util">
+        <div class="container">
+          <h1 class="logo"><a href="#"><span class="hide">로고 이미지</span></a></h1>
+          <div>
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+          </div>
+        </div>
+      </div>
+      <div class="hd_menu">
+        <div class=" container">
+          <div id="gnb">
+            <div class="gnb_hd">
+              <img src="../common/images/logo.png" alt="자율주행자동차 사고조사위원회">
+              <button type="button" class="close_gnb"><span class="hide">닫기</span></button>
+            </div>
+            <ul class="m_util">
+              <li><a href="#"><img src="../common/images/login_btn.png" alt="로그인버튼"><span>로그인</span></a></li>
+              <li><a href="#"><img src="../common/images/join_btn.png" alt="회원가입버튼"><span>회원가입</span></a></li>
+            </ul>
+            <ul class="dep1">
+              <li><a href="#"><span>신고마당</span></a>
+                <ul class="dep2">
+                  <li> <!-- <h2>신고마당</h2> -->
+                    <a href="#">사고조사 접수안내</a>
+                    <ul class="dep3">
+                      <li><a href="#">사고조사 제도</a></li>
+                      <li><a href="#">사고조사 신고</a></li>
+                      <li><a href="#">사고조사 조회</a></li>
+                      <li><a href="#">사고조사 통보</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">재심의 접수</a>
+                    <ul class="dep3">
+                      <li><a href="#">재심의 제도</a></li>
+                      <li><a href="#">재심의 신청</a></li>
+                      <li><a href="#">재심의 조회</a></li>
+                      <li><a href="#">재심의 결과확인</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">사고조사 진행 중인 사건</a></li>
+                  <li><a href="#">자율차사고 안전정보</a></li>               
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>조사마당</span></a>
+                <ul class="dep2">
+                  <li>
+                    <!-- <h2>조사마당</h2> -->
+                    <a href="#">자율차 사고조사란?</a>
+                    <ul class="dep3">
+                      <li><a href="#">사고조사 대상</a></li>
+                      <li><a href="#">사고조사 절차</a></li>
+                      <li><a href="#">자율주행기록장치</a></li>
+                      <li><a href="#">사고조사 장비&#183;시설</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">자율차사고 대처요령</a></li>
+                  <li><a href="#">자율주행차 사고현황</a>
+                    <ul class="dep3">
+                      <li><a href="#">국내 사고현황</a></li>
+                      <li><a href="#">국외 사고현황</a></li>
+                    </ul>
+                  </li>           
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>정보마당</span></a>
+                <ul class="dep2">
+                  <li>
+                   <!--  <h2>정보마당</h2> -->
+                    <a href="#">정보제공제도</a>
+                    <ul class="dep3">
+                      <li><a href="#">정보제공 절차</a></li>
+                      <li><a href="#">정보공개 청구</a></li>
+                      <li><a href="#">정보목록</a></li>
+                      <li><a href="#">자료정보 열람</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">공공데이터 개방</a></li>
+                  <li><a href="#">관련법령</a></li>    
+                  <li><a href="#">용어사전</a></li>    
+                  <li><a href="#">개인정보 바로알기</a>
+                    <ul class="dep3">
+                      <li><a href="#">개인정보처리지침</a></li>
+                    </ul>
+                  </li>  
+                  <li><a href="#">통계자료</a></li>    
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>참여마당</span></a>
+                <ul class="dep2">
+                  <li> <!-- <h2>참여마당</h2> -->
+                    <a href="#">자유게시판</a></li>
+                  <li><a href="#">자주하는 질문(FAQ)</a></li>    
+                  <li><a href="#">Q&A</a></li>    
+                  <li><a href="#">시스템 개선제안</a></li>   
+                  <li><a href="#">국민의 소리</a>
+                    <ul class="dep3">
+                      <li><a href="#">전자신청</a></li>
+                      <li><a href="#">서면신청</a></li>
+                      <li><a href="#">방문상담</a></li>
+                      <li><a href="#">전화상담</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>알림마당</span></a>
+                <ul class="dep2">
+                  <li> <!-- <h2>알림마당</h2> -->
+                    <a href="#">공지사항</a></li>
+                  <li><a href="#">이용약관</a></li>    
+                  <li><a href="#">보도자료</a></li>    
+                  <li><a href="#">공개자료실</a></li>   
+                  <li><a href="#">관련사이트</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>소개마당</span></a>
+                <ul class="dep2">
+                  <li> <!-- <h2>소개마당</h2> -->
+                    <a href="#">위원장 소개</a>
+                    <ul class="dep3">
+                      <li><a href="#">위원장 인사말</a></li>
+                      <li><a href="#">프로필</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">사고조사위원회 소개</a>
+                    <ul class="dep3">
+                      <li><a href="#">설립목적</a></li>
+                      <li><a href="#">심의위원</a></li>
+                      <li><a href="#">위원회 임무 및 비전</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">조직안내</a>
+                    <ul class="dep3">
+                      <li><a href="#">조직도</a></li>
+                      <li><a href="#">사무국 연락처</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">찾아오시는 길</a></li>
+                  <li><a href="#">사이트맵</a></li>                         
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="m_btn">
+            <button type="button" class="open_gnb"><span class="hide">메뉴</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page_spot bg4">
+      <!-- bg1  -->
+      <!-- bg2 -->
+      <!-- bg3 정보마당 -->
+      <!-- bg4 참여마당-->
+      <!-- bg5  -->
+      <!-- bg6 소개마당-->
+    <!-- 추가 -->
+      <div class="tit_bg" id="div_lnb_bg">
+        <img src="../common/images/bg_visual4.png" alt="참여마당">
+       <!--  
+        <img src="../common/images/bg_visual1.jpg" alt="신고마당">
+        <img src="../common/images/bg_visual2.jpg" alt="조사마당">
+        <img src="../common/images/bg_visual3.jpg" alt="정보마당">
+        <img src="../common/images/bg_visual4.png" alt="참여마당">
+        <img src="../common/images/bg_visual5.png" alt="알림마당">
+        <img src="../common/images/bg_visual6.png" alt="소개마당"> -->
+      </div>
+    <!-- // 추가 -->
+      <div class="page_title">
+        <img src="../common/images/bg_visual4_tit.png" alt="자율주행차사고조사위원회는 항상당신곁에 있겠습니다.">
+       <!--  
+        <img src="../common/images/bg_visual1_tit.png" alt="자율주행자동차 사고조사는 무사고로 가는 지름길 입니다.">
+        <img src="../common/images/bg_visual2_tit.png" alt="">
+        <img src="../common/images/bg_visual3_tit.png" alt="자율주행자동차사고의 발생원인을 과학적사고조사로 밝혀드리겠습니다.">
+        <img src="../common/images/bg_visual4_tit.png" alt="자율주행차사고조사위원회는 항상당신곁에 있겠습니다.">
+        <img src="../common/images/bg_visual5_tit.png" alt="정보공유를통해 국민과 더 가까이에서 소통하겠습니다.">
+        <img src="../common/images/bg_visual6_tit.png" alt="사람이 안전한 자율주행자동차 시대를 만들어 가겠습니다."> -->
+      </div>
+       <!-- lnb -->
+       <div class="lnb"> 
+        <div class="container">
+          <a href="/" class="home"><span class="hide">HOME</span></a>
+            <div class="menu dropdown">
+                <button type="button" class="btn" title="열기">참여마당</button>
+                <ul>
+                <li><a href="#">신고마당</a></li>
+                <li><a href="#">조사마당</a></li>
+                <li><a href="#">정보마당</a></li>
+                <li><a href="#">알림마당</a></li>
+                <li><a href="#">소개마당</a></li>
+                </ul>
+            </div>
+            <div class="menu dropdown">
+                <button type="button" class="btn" title="열기">국민의 소리</button>
+                <ul>
+                    <li><a href="#">자유게시판</a></li>
+                    <li><a href="#">자주하는질문(FAQ)</a></li>
+                    <li><a href="#">Q&A</a></li>
+                    <li><a href="#">시스템개선제안</a></li>
+                </ul>
+            </div>
+            <div class="menu dropdown">
+                <button type="button" class="btn" title="열기">서면신청</button>
+                <ul>
+                    <li><a href="#">전자신청</a></li>
+                    <li><a href="#">방문상담</a></li>
+                    <li><a href="#">전화상담</a></li>
+                </ul>
+            </div>
+        </div>
+      </div> 
+      <!-- //lnb -->
+    </div>
+    <div id="contents">
+      <div class="container">
+        <h3 class="tit_lg">국민의 소리</h3>
+        <!-- 컨텐츠 구분 -->
+        <div class="con">
+            <h3 class="tit_md">서면 신청</h3>
+            <ul class="box_list">
+                <li>
+                    <img src="../common/images/icon_post.png" alt="우편접수">
+                    <h4>우편 접수</h4>
+                    <strong>보내실 곳: (우)18247 경기도 화성시 송산면 삼존로 200 자동차안전연구원, 자율주행자동차 사고조사위원회 사무국</strong>으로 접수하실 수 있습니다.
+                </li>
+                <li>
+                    <img src="../common/images/icon_fax.png" alt="팩스접수">
+                    <h4>팩스 접수</h4>
+                    민원신청서 작성 후 <strong>팩스(031-630-5828)</strong>로 접수하실 수 있습니다.
+                </li>
+            </ul>
+        </div>
+        <!-- //컨텐츠 구분 -->
+      </div>
+    </div>
+    <ul class="quick_menu">
+        <li>
+          <a href="#">
+            <span>
+              <img src="../common/images/icon_quick_1.png" alt="">
+              공지사항
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <img src="../common/images/icon_quick_2.png" alt="">
+              자주하는질문<br>(FAQ)
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <img src="../common/images/icon_quick_3.png" alt="">
+              위원회 소개
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <img src="../common/images/icon_quick_4.png" alt="">
+              조직안내
+            </span>
+          </a>
+        </li>
+      </ul>
+    <div class="footer">
+      <div class="ft_nav">
+        <div class="container">
+          <ul class="ft_menu">
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">찾아오시는 길</a></li>
+            <li><a href="#">시스템 개선제안</a></li>
+          </ul>
+          <ul class="partner">
+            <li><a href="#"><img src="../common/images/logo_partner_3.png" alt=""></a></li>
+            <li><a href="#"><img src="../common/images/logo_partner_2.png" alt=""></a></li>
+            <li><a href="#"><img src="../common/images/logo_partner_1.png" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ft_info">
+        <div class="container">
+          <div class="address">
+            <p>본 페이지에 게시된 이메일 주소가 자동 수집되는 것을 거부하며, 이를 위반시 정보통신법에 의해 처벌됨을 유념하시기 바랍니다.</p>
+            <ul>
+              <li class="br">18247 경기도 화성시 송산면 삼존로 200</li>
+              <li>대표번호 : 080-357-2500</li>
+              <li>팩스 : 031-369-0399 / 0502-384-5498</li>
+            </ul>
+          </div>
+          <div class="website dropdown">
+            <button type="button" class="btn" title="열기">관련사이트</button>
+            <ul>
+              <li><a href="#">국토교통부</a></li>
+              <li><a href="#">한국교통안전공단</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

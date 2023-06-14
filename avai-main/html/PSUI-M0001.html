@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자율주행자동자 사고조사위원회 홈페이지에 오신것을 환영합니다.</title>
+  <link rel="stylesheet" href="../common/css/default.css" />
+  <link rel="stylesheet" href="../common/css/dev.css" />
+  <link rel="stylesheet" href="../common/lib/slickslider/slick.css">
+  <link rel="stylesheet" href="../common/lib/datepicker/datepicker.css">
+  <link rel="stylesheet" href="../common/lib/timepicker/timepicker.css">
+  <script src="../common/js/jquery-3.6.0.min.js"></script>
+  <script src="../common/js/prefixfree.min.js"></script>
+  <script src="../common/js/common.js"></script>
+  <script src="../common/lib/datepicker/datepicker.js"></script>
+  <script src="../common/lib/slickslider/slick.js"></script>
+  <script src="../common/lib/timepicker/timepicker.js"></script>
+</head>
+<body>
+  <div id="wrap"> 
+    <div id="header">
+      <div class="util ">
+        <div class="container">
+          <h1 class="logo"><a href="#"><span class="hide">로고 이미지</span></a></h1>
+          <div>
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+            <a href="#">사이트맵</a>
+          </div>
+        </div>
+      </div>
+      <div class="hd_menu">
+        <div class=" container">
+          <div id="gnb">
+            <div class="gnb_hd">
+              <img src="../common/images/logo.png" alt="국토교통부 자율주행자동차 사고조사위원회">
+              <button type="button" class="close_gnb"><span class="hide">닫기</span></button>
+            </div>
+            <ul class="m_util">
+              <li><a href="#"><img src="../common/images/login_btn.png" alt="로그인버튼"><span>로그인</span></a></li>
+              <li><a href="#"><img src="../common/images/join_btn.png" alt="회원가입버튼"><span>회원가입</span></a></li>
+            </ul>
+            <ul class="dep1">
+              <li><a href="#"><span>신고마당</span></a>
+                <ul class="dep2">
+                  <li> <!-- <h2>신고마당</h2> -->
+                    <a href="#">사고조사 접수안내</a>
+                    <ul class="dep3">
+                      <li><a href="#">사고조사 제도</a></li>
+                      <li><a href="#">사고조사 신고</a></li>
+                      <li><a href="#">사고조사 조회</a></li>
+                      <li><a href="#">사고조사 통보</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">재심의 접수안내</a>
+                    <ul class="dep3">
+                      <li><a href="#">재심의 제도</a></li>
+                      <li><a href="#">재심의 신청</a></li>
+                      <li><a href="#">재심의 조회</a></li>
+                      <li><a href="#">재심의 결과확인</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">사고조사 진행 중인 사건</a></li>
+                  <li><a href="#">자율차사고 안전정보</a></li>               
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>조사마당</span></a>
+                <ul class="dep2">
+                  <li>
+                    <!-- <h2>조사마당</h2> -->
+                    <a href="#">자율차 사고조사란?</a>
+                    <ul class="dep3">
+                      <li><a href="#">사고조사 대상</a></li>
+                      <li><a href="#">사고조사 절차</a></li>
+                      <li><a href="#">자율주행기록장치</a></li>
+                      <li><a href="#">사고조사 장비&#183;시설</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">자율차사고 대처요령</a></li>
+                  <li><a href="#">자율주행차 사고현황</a>
+                    <ul class="dep3">
+                      <li><a href="#">국내 사고현황</a></li>
+                      <li><a href="#">국외 사고현황</a></li>
+                    </ul>
+                  </li>           
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>정보마당</span></a>
+                <ul class="dep2">
+                  <li>
+                   <!--  <h2>정보마당</h2> -->
+                    <a href="#">정보제공제도</a>
+                    <ul class="dep3">
+                      <li><a href="#">정보제공 절차</a></li>
+                      <li><a href="#">정보공개 청구</a></li>
+                      <li><a href="#">정보목록</a></li>
+                      <li><a href="#">자료정보 열람</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">공공데이터 개방</a></li>
+                  <li><a href="#">관련법령</a></li>    
+                  <li><a href="#">용어사전</a></li>    
+                  <li><a href="#">개인정보 바로알기</a>
+                    <ul class="dep3">
+                      <li><a href="#">개인정보처리지침</a></li>
+                    </ul>
+                  </li>  
+                  <li><a href="#">통계자료</a></li>    
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>참여마당</span></a>
+                <ul class="dep2">
+                  <li> <!-- <h2>참여마당</h2> -->
+                    <a href="#">자유게시판</a></li>
+                  <li><a href="#">자주하는 질문(FAQ)</a></li>    
+                  <li><a href="#">Q&A</a></li>    
+                  <li><a href="#">시스템 개선제안</a></li>   
+                  <li><a href="#">국민의 소리</a>
+                    <ul class="dep3">
+                      <li><a href="#">전자신청</a></li>
+                      <li><a href="#">서면신청</a></li>
+                      <li><a href="#">방문상담</a></li>
+                      <li><a href="#">전화상담</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>알림마당</span></a>
+                <ul class="dep2">
+                  <li> <!-- <h2>알림마당</h2> -->
+                    <a href="#">공지사항</a></li>
+                  <li><a href="#">이용약관</a></li>    
+                  <li><a href="#">보도자료</a></li>    
+                  <li><a href="#">공개자료실</a></li>   
+                  <li><a href="#">관련사이트</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>소개마당</span></a>
+                <ul class="dep2">
+                  <li> <!-- <h2>소개마당</h2> -->
+                    <a href="#">위원장 소개</a>
+                    <ul class="dep3">
+                      <li><a href="#">위원장 인사말</a></li>
+                      <li><a href="#">프로필</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">사고조사위원회 소개</a>
+                    <ul class="dep3">
+                      <li><a href="#">설립목적</a></li>
+                      <li><a href="#">심의위원</a></li>
+                      <li><a href="#">위원회 임무 및 비전</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">조직안내</a>
+                    <ul class="dep3">
+                      <li><a href="#">조직도</a></li>
+                      <li><a href="#">사무국 연락처</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">찾아오시는 길</a></li>
+                  <li><a href="#">사이트맵</a></li>                         
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="m_btn">
+            <button type="button" class="open_gnb"><span class="hide">메뉴</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contents" class="main">
+      <div class="banner">
+        <div class="slide_box">
+          <!-- <div class="slide">
+            <a href="#" class="item type1" >
+              <h2 class="container">
+                조사결과 <b>제공</b><span>사고조사결과 정보제공 신청을 통해 
+                  <em class="block">조사결과를 열람하실수 있습니다.</em></span> 
+              </h2> 
+              <b class="container">01</b>
+            </a>
+            <a href="#" class="item type2" >
+              <h2 class="container">자율주행자동차 <b>사고조사위원회</b>
+                <span>자율주행으로 발생한 교통사고의
+                  <em class="block">조사 및 분석을 통해 사고원일을 규명합니다.</em></span></h2>
+                  <b class="container">02</b>
+            </a>
+            <a href="#" class="item type3">
+              <h2 class="container">사고조사<b>처리절차</b></h2>
+              <b class="container">03</b>
+            </a>
+          </div> -->
+          <div class="slide">
+            <a href="#" class="item type1" >
+              <img src="../common/images/slide_04.png" alt="" class="pc">
+              <img src="../common/images/m_slide_04.png" alt="" class="mobile">
+             <!--  <h2 class="container">
+                <img src="../common/images/slide_04_tit.png" alt="국민이 안전한 자율주행차 세상을 만들어갑니다.">
+                 조사결과 <b>제공</b><span>사고조사결과 정보제공 신청을 통해 
+                    <em class="block">조사결과를 열람하실수 있습니다.</em></span>  
+              </h2>  -->
+              <b class="container">01</b>
+            </a>
+            <a href="#" class="item type2" >
+              <img src="../common/images/slide_05.png" alt="" class="pc">
+              <img src="../common/images/m_slide_05.png" alt="" class="mobile">
+             <!--  <h2 class="container">
+                <img src="../common/images/slide_05_tit.png" alt="과학적 사고조사를 통해 국민이 행복한 세상을 열어갑니다.">
+                자율주행자동차 <b>사고조사위원회</b>
+                <span>자율주행으로 발생한 교통사고의
+                  <em class="block">조사 및 분석을 통해 사고원일을 규명합니다.</em></span> 
+              </h2> -->
+              <b class="container">02</b>
+            </a>
+            <a href="#" class="item type3">
+              <img src="../common/images/slide_06.png" alt="" class="pc">
+              <img src="../common/images/m_slide_06.png" alt="" class="mobile">
+             <!--  <h2 class="container">
+                사고조사<b>처리절차</b>
+                <img src="../common/images/slide_06_tit.png" alt="사고데이터 정보제공으로 사망자 제로에 기여하겠습니다.">
+              </h2> -->
+              <b class="container">03</b>
+            </a>
+          </div>
+          <div class="slide_btn">
+            <div class="container">
+                <!-- <div class="pagination_dot"></div> -->
+                <!-- <div class="search_box">
+                  <h2>사고조사접수 <span>현황 조회</span></h2>
+                    <div class="inp">
+                      <input type="text" name="search_01" title="내용 입력" placeholder="위원회 사고접수번호 입력">
+                    </div>
+                    <a href="#" class="btn">조회</a>
+                </div> -->
+                <div class="control">
+                  <button class="btn prev"><span class="hide">이전</span></button>
+                  <button class="btn pause"><span class="hide">자동재생 정지</span></button>
+                  <button class="btn next"><span class="hide">다음</span></button>
+                </div>
+                <div class="progress_bar">
+                  <div class="progress"></div>
+                </div>
+            </div>
+          </div>
+          <!-- https://codepen.io/fjacobi/pen/mVJpma -->
+        </div>
+      </div>
+      <div>
+        <div class="ava">
+          <h2>
+            <em> 자율주행자동차 사고조사위원회</em>
+            <!-- 221108 수정 -->
+            Autonomous Vehicle Accident Investigation Commission
+             <!-- // 221109 수정 -->
+          </h2>
+            <ul>
+              <li><a href="#"><img src="../common/images/process_icon01.png" alt=""><span>사고발생 신고</span></a></li>
+              <li><a href="#"><img src="../common/images/process_icon02.png" alt=""><span>사고접수 조회</span></a></li>
+              <li><a href="#"><img src="../common/images/process_icon03.png" alt=""><span>재심의 신청</span></a></li> 
+              <li><a href="#"><img src="../common/images/process_icon04.png" alt=""><span>정보제공 신청</span></a></li>
+              <li><a href="#"><img src="../common/images/process_icon05.png" alt=""><span>자료정보 열람</span></a></li>
+            </ul>
+        </div>
+          <div class="process_bg">            
+            <div class="process container">
+              <div class="car">
+                <img src="../common/images/car_sliver.png" class="car1" alt="">
+                <img src="../common/images/car_red.png"  class="car2" alt="">
+                <img src="../common/images/car_yellow.png"  class="car3" alt="">
+              </div>
+              <div>
+                <h2>자율주행자동차 사고조사위원회 <b><strong>궁금</strong>하세요?</b></h2>     
+                <ul>
+                  <li class="txt1"><span><strong>Level3</strong>조건부 <b>자율 주행</b> <em>특정조건에서 자율주향 <span class="block">위험시 운전자 개입</span></em></span></li>
+                  <li class="txt2"><span><strong>Level4</strong>고등 <b>자율 주행</b> <em>운전자불필요<span class="block">(운전석에 운전자 탑승)</span></em></span></li>
+                  <li class="txt3"><span><strong>Level5</strong>완전 <b>자율 주행</b> <em>운전자불필요</em></span></li>
+                </ul>          
+                <ol>
+                  <li><a href="#"><span class="img"><img src="../common/images/process_icon06.png" alt=""></span><em>"제도 및 법령"이 궁금하세요?</em></a></li>
+                  <li><a href="#"><span class="img"><img src="../common/images/process_icon07.png" alt=""></span><em>"사고조사 처리절차"가 궁금하세요?</em></a></li>
+                  <li><a href="#"><span class="img"><img src="../common/images/process_icon08.png" alt=""></span><em>자율주행자동차 관련 <span>"전문용어"가 궁금하세요?</span></em></a></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="faq">
+              <ul class="container">
+                <li><a href="#"><span class="img"><img src="../common/images/icon_01.png" alt=""></span>사고조사 결과 <em>정보제공 신청</em></a>
+                </li>
+                <li>
+                  <a href="#"><span class="img"><img src="../common/images/icon_02.png" alt=""></span>사고조사 결과 <em>재심의 신청</em></a>
+                </li>
+                <li><a href="#"><span class="img"><img src="../common/images/icon_03.png" alt=""></span>공개자료실</a></li>
+                <li><a href="#"><span class="img"><img src="../common/images/icon_04.png" alt=""></span>자주하는 질문</a></li>
+                <li><a href="#"><span class="img"><img src="../common/images/icon_05.png" alt=""></span>비공개 민원상담</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="board container">
+        <div class="news">
+          <h2>보도<span>자료</span></h2>
+          <a href="#">더보기</a>
+          <ol>
+            <li>
+              <a href="#">
+                <em>2022-09-02</em>
+                <b>관련기사 - </b>
+                <h3>10월 8일 '자율주행자동차 사고 조사위원회'출범</h3>
+                <span>
+                  올해 4월 개정된 ‘자동차손해배상 보장법’ 개정안에는 자율주행자동차 사고 시 신속한 피해회복을 위해 기존의 운행자책임을 유지하되, 자동차 결함 시 제작사에 구상할 수 있도록 하고 이를 지원하기 위해 자율차에 부착된 자율주행정보 기록장치 조사 올해 4월 개정된 ‘자동차손해배상 보장법’개정안에는 자율주행자동차 사고 시 신속한 피해회복을 위해 기존의 운행자책임을 유지하되, 자동차 결함 시 제작사에 구상할 수 있도록 하고 이를 지원하기 위해 자율차에 부착된 자율주행정보 기록장치 조사 
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <em>2022-09-02</em>
+                <b>관련기사 - </b>
+                <h3>자율주행사 시대 '성큼'...운행기록장치 의무화 사고위 신설</h3>
+                <span class="img">
+                  <img src="../common/images/m_car_img.png" alt="">
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <em>2022-09-02</em>
+                <b>관련기사 - </b>
+                <h3>미국서 테슬라 자율주행 사망사고...우리나라에선 누구 책임?</h3>
+                <span class="img">
+                  <img src="../common/images/car_img2.png" alt="">
+                </span>
+              </a>
+            </li>
+          </ol>
+        </div>
+        <div>
+          <h2>공지<span>사항</span></h2>
+          <a href="#">더보기</a>
+          <ul>
+            <li><a href="#"> <em><strong>17</strong> 2022.02</em>
+              <h3>자율주행자동차 사고조사위원회 제정안 입법예고 안내</h3><p>자율주행자동차 및 자율주행자동차의 사고 관련 규정이 반영된 개정 '자동차손해배상보장법'이 2020. 10. 8.부터 시행되며, 본 법령에 따라 자율주행자동차의 사고조사를 담당하는 자율주행자동차 사고조사위원회(이하"사고조사위원회")의자율주행자동차 및 자율주행자동차의 사고 관련 규정이 반영된 개정 '자동차손해배상보장법'이 2020. 10. 8.부터 시행되며, 본 법령에 따라 자율주행자동차의 사고조사를 담당하는 자율주행자동차 사고조사위원회(이하"사고조사위원회")의</p></a>
+            </li>
+            <li>
+              <a href="#">
+                <span>자율주행자동차 및 자율주행자동차의 사고 관련 규정이 반영된 개정 '자동차손해배상보장법'이 2020. 10. 8.부터 시행되며, 본 법령에 따라 자율주행자동차의 사고조사를 담당하는 자율주행자동차 사고조사위원회(이하"사고조사위원회")의</span> <em>2022.03.02</em>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>자율주행자동차 및 자율주행자동차의 사고 관련 규정이 반영된 개정 '자동차손해배상보장법'이 2020. 10. 8.부터 시행되며, 본 법령에 따라 자율주행자동차의 사고조사를 담당하는 자율주행자동차 사고조사위원회(이하"사고조사위원회")의</span> <em>2022.03.02</em>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <ul class="quick_menu">
+        <li>
+          <a href="#">
+            <span>
+              <img src="../common/images/icon_quick_1.png" alt="">
+              공지사항
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <img src="../common/images/icon_quick_2.png" alt="">
+              자주하는질문<br>(FAQ)
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <img src="../common/images/icon_quick_3.png" alt="">
+              위원회 소개
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <img src="../common/images/icon_quick_4.png" alt="">
+              조직안내
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer">
+      <div class="f_banner">
+        <div class="container">
+          <div class="slide">
+            <a href="#" target="_blank" title="새창" class="item"><img src="../common/images/partner_01.png"
+                alt="자동차리콜센터"></a>
+            <a href="#" target="_blank" title="새창" class="item"><img src="../common//images/partner_02.png"
+                alt="kncap"></a>
+            <a href="#" target="_blank" title="새창" class="item"><img src="../common/images/partner_03.png"
+                alt="자동차부품자기인증시스템"></a>
+            <a href="#" target="_blank" title="새창" class="item"><img src="../common/images/partner_04.png"
+                alt="자동차튜닝부품인증센터"></a>
+            <a href="#" target="_blank" title="새창" class="item"><img src="../common/images/partner_05.png"
+                alt="자동차민원 제작자포털"></a>
+          </div>
+          <div class="control">
+            <button type="button" class="next">다음</button>
+            <button type="button" class="prev">이전</button>
+            <button type="button" class="pause">자동재생정지</button>
+          </div>
+        </div>
+      </div>
+      <div class="ft_nav">
+        <div class="container">
+          <ul class="ft_menu">
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">찾아오시는 길</a></li>
+            <li><a href="#">시스템 개선제안</a></li>
+          </ul>
+          <ul class="partner">
+            <li><a href="#"><img src="../common/images/logo_partner_3.png" alt=""></a></li>
+          <!-- 221108 주석처리  
+            <li><a href="#"><img src="../common/images/logo_partner_2.png" alt=""></a></li> -->
+            <li><a href="#"><img src="../common/images/logo_partner_1.png" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ft_info">
+        <div class="container">
+          <div class="address">
+            <p>본 페이지에 게시된 이메일 주소가 자동 수집되는 것을 거부하며, 이를 위반시 정보통신법에 의해 처벌됨을 유념하시기 바랍니다.</p>            
+            <ul>
+              <li class="br">18247 경기도 화성시 송산면 삼존로 200</li>
+              <li>대표번호 : 080-357-2500</li>
+              <li>팩스 : 031-369-0399 / 0502-384-5498</li>
+            </ul>
+          </div>
+          <div class="website dropdown">
+            <button type="button" class="btn" title="열기">관련사이트</button>
+            <ul style="display: none;">
+              <li><a href="#">국토교통부</a></li>
+              <li><a href="#">한국교통안전공단</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

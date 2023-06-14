@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자율주행자동자 사고조사위원회 홈페이지에 오신것을 환영합니다.</title>
+  <link rel="stylesheet" href="../common/css/default.css" />
+  <link rel="stylesheet" href="../common/css/dev.css" />
+  <link rel="stylesheet" href="../common/lib/slickslider/slick.css">
+  <link rel="stylesheet" href="../common/lib/datepicker/datepicker.css">
+  <link rel="stylesheet" href="../common/lib/timepicker/timepicker.css">
+  <script src="../common/js/jquery-3.6.0.min.js"></script>
+  <script src="../common/js/prefixfree.min.js"></script>
+  <script src="../common/js/common.js"></script>
+  <script src="../common/lib/datepicker/datepicker.js"></script>
+  <script src="../common/lib/slickslider/slick.js"></script>
+  <script src="../common/lib/timepicker/timepicker.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="header">
+      <div class="util">
+        <div class="container">
+          <h1 class="logo"><a href="#"><span class="hide">로고 이미지</span></a></h1>
+          <div>
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+          </div>
+        </div>
+      </div>
+      <div class="hd_menu">
+        <div class=" container">
+          <div id="gnb">
+            <div class="gnb_hd">
+              <img src="../common/images/logo.png" alt="자율주행자동차 사고조사위원회">
+              <button type="button" class="close_gnb"><span class="hide">닫기</span></button>
+            </div>
+            <ul class="m_util">
+              <li><a href="#"><img src="../common/images/login_btn.png" alt="로그인버튼"><span>로그인</span></a></li>
+              <li><a href="#"><img src="../common/images/join_btn.png" alt="회원가입버튼"><span>회원가입</span></a></li>
+            </ul>
+            <ul class="dep1">
+              <li><a href="#"><span>신고마당</span></a>
+                <ul class="dep2">
+                  <li> <!-- <h2>신고마당</h2> -->
+                    <a href="#">사고조사 접수안내</a>
+                    <ul class="dep3">
+                      <li><a href="#">사고조사 제도</a></li>
+                      <li><a href="#">사고조사 신고</a></li>
+                      <li><a href="#">사고조사 조회</a></li>
+                      <li><a href="#">사고조사 통보</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">재심의 접수</a>
+                    <ul class="dep3">
+                      <li><a href="#">재심의 제도</a></li>
+                      <li><a href="#">재심의 신청</a></li>
+                      <li><a href="#">재심의 조회</a></li>
+                      <li><a href="#">재심의 결과확인</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">사고조사 진행 중인 사건</a></li>
+                  <li><a href="#">자율차사고 안전정보</a></li>               
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>조사마당</span></a>
+                <ul class="dep2">
+                  <li>
+                    <!-- <h2>조사마당</h2> -->
+                    <a href="#">자율차 사고조사란?</a>
+                    <ul class="dep3">
+                      <li><a href="#">사고조사 대상</a></li>
+                      <li><a href="#">사고조사 절차</a></li>
+                      <li><a href="#">자율주행기록장치</a></li>
+                      <li><a href="#">사고조사 장비&#183;시설</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">자율차사고 대처요령</a></li>
+                  <li><a href="#">자율주행차 사고현황</a>
+                    <ul class="dep3">
+                      <li><a href="#">국내 사고현황</a></li>
+                      <li><a href="#">국외 사고현황</a></li>
+                    </ul>
+                  </li>           
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>정보마당</span></a>
+                <ul class="dep2">
+                  <li>
+                   <!--  <h2>정보마당</h2> -->
+                    <a href="#">정보제공제도</a>
+                    <ul class="dep3">
+                      <li><a href="#">정보제공 절차</a></li>
+                      <li><a href="#">정보공개 청구</a></li>
+                      <li><a href="#">정보목록</a></li>
+                      <li><a href="#">자료정보 열람</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">공공데이터 개방</a></li>
+                  <li><a href="#">관련법령</a></li>    
+                  <li><a href="#">용어사전</a></li>    
+                  <li><a href="#">개인정보 바로알기</a>
+                    <ul class="dep3">
+                      <li><a href="#">개인정보처리지침</a></li>
+                    </ul>
+                  </li>  
+                  <li><a href="#">통계자료</a></li>    
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>참여마당</span></a>
+                <ul class="dep2">
+                  <li> <!-- <h2>참여마당</h2> -->
+                    <a href="#">자유게시판</a></li>
+                  <li><a href="#">자주하는 질문(FAQ)</a></li>    
+                  <li><a href="#">Q&A</a></li>    
+                  <li><a href="#">시스템 개선제안</a></li>   
+                  <li><a href="#">국민의 소리</a>
+                    <ul class="dep3">
+                      <li><a href="#">전자신청</a></li>
+                      <li><a href="#">서면신청</a></li>
+                      <li><a href="#">방문상담</a></li>
+                      <li><a href="#">전화상담</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>알림마당</span></a>
+                <ul class="dep2">
+                  <li> <!-- <h2>알림마당</h2> -->
+                    <a href="#">공지사항</a></li>
+                  <li><a href="#">이용약관</a></li>    
+                  <li><a href="#">보도자료</a></li>    
+                  <li><a href="#">공개자료실</a></li>   
+                  <li><a href="#">관련사이트</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>소개마당</span></a>
+                <ul class="dep2">
+                  <li> <!-- <h2>소개마당</h2> -->
+                    <a href="#">위원장 소개</a>
+                    <ul class="dep3">
+                      <li><a href="#">위원장 인사말</a></li>
+                      <li><a href="#">프로필</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">사고조사위원회 소개</a>
+                    <ul class="dep3">
+                      <li><a href="#">설립목적</a></li>
+                      <li><a href="#">심의위원</a></li>
+                      <li><a href="#">위원회 임무 및 비전</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">조직안내</a>
+                    <ul class="dep3">
+                      <li><a href="#">조직도</a></li>
+                      <li><a href="#">사무국 연락처</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">찾아오시는 길</a></li>
+                  <li><a href="#">사이트맵</a></li>                         
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="m_btn">
+            <button type="button" class="open_gnb"><span class="hide">메뉴</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page_spot bg4">
+      <!-- bg1  -->
+      <!-- bg2 -->
+      <!-- bg3 정보마당 -->
+      <!-- bg4 참여마당-->
+      <!-- bg5  -->
+      <!-- bg6 소개마당-->
+    <!-- 추가 -->
+      <div class="tit_bg" id="div_lnb_bg">
+        <img src="../common/images/bg_visual4.png" alt="참여마당">
+       <!--  
+        <img src="../common/images/bg_visual1.jpg" alt="신고마당">
+        <img src="../common/images/bg_visual2.jpg" alt="조사마당">
+        <img src="../common/images/bg_visual3.jpg" alt="정보마당">
+        <img src="../common/images/bg_visual4.png" alt="참여마당">
+        <img src="../common/images/bg_visual5.png" alt="알림마당">
+        <img src="../common/images/bg_visual6.png" alt="소개마당"> -->
+      </div>
+    <!-- // 추가 -->
+      <div class="page_title">
+        <img src="../common/images/bg_visual4_tit.png" alt="자율주행차사고조사위원회는 항상당신곁에 있겠습니다.">
+       <!--  
+        <img src="../common/images/bg_visual1_tit.png" alt="자율주행자동차 사고조사는 무사고로 가는 지름길 입니다.">
+        <img src="../common/images/bg_visual2_tit.png" alt="">
+        <img src="../common/images/bg_visual3_tit.png" alt="자율주행자동차사고의 발생원인을 과학적사고조사로 밝혀드리겠습니다.">
+        <img src="../common/images/bg_visual4_tit.png" alt="자율주행차사고조사위원회는 항상당신곁에 있겠습니다.">
+        <img src="../common/images/bg_visual5_tit.png" alt="정보공유를통해 국민과 더 가까이에서 소통하겠습니다.">
+        <img src="../common/images/bg_visual6_tit.png" alt="사람이 안전한 자율주행자동차 시대를 만들어 가겠습니다."> -->
+      </div>
+       <!-- lnb -->
+       <div class="lnb"> 
+        <div class="container">
+          <a href="/" class="home"><span class="hide">HOME</span></a>
+            <div class="menu dropdown">
+                <button type="button" class="btn" title="열기">참여마당</button>
+                <ul>
+                <li><a href="#">신고마당</a></li>
+                <li><a href="#">조사마당</a></li>
+                <li><a href="#">정보마당</a></li>
+                <li><a href="#">알림마당</a></li>
+                <li><a href="#">소개마당</a></li>
+                </ul>
+            </div>
+            <div class="menu dropdown">
+                <button type="button" class="btn" title="열기">국민의 소리</button>
+                <ul>
+                    <li><a href="#">자유게시판</a></li>
+                    <li><a href="#">자주하는질문(FAQ)</a></li>
+                    <li><a href="#">Q&A</a></li>
+                    <li><a href="#">시스템개선제안</a></li>
+                </ul>
+            </div>
+            <div class="menu dropdown">
+                <button type="button" class="btn" title="열기">방문상담</button>
+                <ul>
+                    <li><a href="#">전자신청</a></li>
+                    <li><a href="#">서면신청</a></li>
+                    <li><a href="#">전화상담</a></li>
+                </ul>
+            </div>
+        </div>
+      </div> 
+      <!-- //lnb -->
+    </div>
+    <div id="contents">
+      <div class="container">
+        <h3 class="tit_lg">국민의 소리</h3>
+        <!-- 컨텐츠 구분 -->
+        <div class="con">
+            <h3 class="tit_md">방문상담 예약신청</h3>
+            <div class="yeyak">
+                <h4>예약신청시 유의사항</h4>
+                <ul>
+                    <li>이동전화를 입력하면 진행상태를 SNS문자로 알림</li>
+                    <li>예약취소는 방문 1일 전까지 가능</li>
+                    <li>방문희말일은 1일 후부터 한달까지 가능</li>
+                    <li>평일(토요일, 일요일, 공휴일 제외) 예약가능</li>
+                </ul>
+            </div>
+        </div>
+        <div class="con">
+            <span class="rqd fc_orange">는 필수입력(선택)사항입니다.</span>
+            <div class="table scr">
+                <table>
+                    <colgroup>
+                        <col style="width: 150px;">
+                        <col style="width: auto;">
+                        <col style="width: 150px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th class="rqd">성명</th>
+                            <td colspan="3">
+                                <div class="inp w150">
+                                    <input type="text" name="#" title="성명">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="rqd">주소</th>
+                            <td colspan="3">
+                                <div class="inp_set">
+                                  
+                                      <div class="inp w160">
+                                        <input type="text" name="#" title="우편번호">
+                                      </div>
+                                      <button type="button" class="btn5 ml10">우편번호찾기</button>
+                                    
+                                    <div class="inp w300 ml20">
+                                      <input type="text" name="#" title="주소" placeholder="주소">
+                                    </div>
+                                    <div class="inp w300 ml10">
+                                      <input type="text" name="#" title="상세주소">
+                                    </div>
+                                  </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>유선전화</th>
+                            <td> 
+                                <div class="inp_set w315">
+                                <div class="inp">
+                                <input type="text" name="#" title="연락처 첫자리">
+                                </div>
+                                <span class="behind">－</span>
+                                <div class="inp">
+                                <input type="text" name="#" title="연락처 중간자리">
+                                </div>
+                                <span class="behind">－</span>
+                                <div class="inp">
+                                <input type="text" name="#" title="연락처 끝자리">
+                                </div>
+                            </div></td>
+                            <th>휴대전화</th>
+                            <td>
+                                <div class="inp_set w315">
+                                    <div class="inp">
+                                    <input type="text" name="#" title="연락처 첫자리">
+                                    </div>
+                                    <span class="behind">－</span>
+                                    <div class="inp">
+                                    <input type="text" name="#" title="연락처 중간자리">
+                                    </div>
+                                    <span class="behind">－</span>
+                                    <div class="inp">
+                                    <input type="text" name="#" title="연락처 끝자리">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="rqd">방문희망기관</th>
+                            <td  colspan="3">
+                                <div class="select w315">
+                                    <select name="#" title="방문기관">
+                                        <option value="선택">선택</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="rqd">방문희망일</th>
+                            <td>
+                                <div class="inp w315 date">
+                                    <input type="text" name="#" title="생년월일" placeholder="연도-월-일">
+                                </div>
+                            </td>
+                            <th class="rqd">방문희망시간</th>
+                            <td>
+                                <div class="inp w315 time">
+                                    <input type="text" name="acdnt_time" title="시:분" placeholder="시:분" autocomplete="off" class="nj-timepick-input">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="rqd">방문목적 <span class="fc_grey block">상담내역을 구체적으로 자세히 기입해 주십시요(500자)</span></th>
+                            <td  colspan="3">
+                                <div class="textarea mt10 h350">
+                                    <textarea name="/" title="방문목적 입력"></textarea>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="rqd">개인정보 <span class="block">수집동의(필수)</span>
+                                <div class="block mt50">
+                                    <input type="checkbox" name="#" id="chk_01" title="/">
+                                    <label for="chk_01">동의</label>
+                                </div>
+                            </th>
+                            <td  colspan="3">
+                                <ul class="num_list">
+                                    <li>개인정보의 수집 및 이용 목적(개인정보보호법 제15조) <br>
+                                        국토교통부 민원마당은 관계법령등에 서 정하는 소관 업무의 수행을 위하여 다음과 같이 개인정보를 수집 및 이용합니다. 수집된 개인정보는 정해진 목적 이외의 용도로는 이용되지 않으며 수집 목적이 변경될 경우사전에 알리고 동의를 받을 예정입니다.관계법령 등 : 민원 처리에 관한 법률 및 동법 시행령,전자정부법 및 동법 시행령
+                                        <ul>
+                                            <li class="mt30">가. 민원 접수·처리·사후관리 서비스 제공 민원신청서에 포함된 개인정보는 민원의 접수·처리 등 소관 업무 수행을 위해 행정기관에서 이용합니다. 행정기관에는 법령에 따라 행정권한이 있거나 행정권한을 위임 또는 위탁받은 법인·단체 또는 그 기관이나 개인이 포함됩니다.
+                                            </li>
+                                            <li class="mt30">나. 국토교통부 정책지원
+                                                접수된 민원은 민원마당 서비스 향상 및 정책평가를 위하여 관계 법령에 따라 분석·평가 및 처리결과의 사후관리를 시행합니다.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="mt30">수집하는 개인정보의 항목(개인정보보호법 제15조, 제16조)
+                                        <span class="block">필수항목: 이름, 주소</span>
+                                    </li>
+                                    <li class="mt30">동의를 거부할 권리가 있다는 사실 및 동의 거부에 따른 불이익 내용(개인정보보호법 제16조)
+                                        민원신청 시 수집하는 필요한 최소한의 정보 외의 개인정보 수집에 동의를 거부할 권리가 있으나 최소한의 개인정보 수집동의 거부 시에는 민원 신청 서비스가 제한됩니다.
+                                    </li>
+                                    <li  class="mt30">
+                                        개인정보의 보유 및 이용기간(공공기록물 관리에 관한 법률 시행령 제26조) 국토교통부 민원마당은 원칙적으로 개인정보 보존기간이 경과하거나, 처리목적이 달성된 경우에는 지체 없이 개인정보를 파기합니다. 다만,다른 법령에 따라 보존하여야 하는 경우에는 그러하지 않을 수 있습니다.
+                                        <ul>
+                                            <li  class="mt30">가. 민원, 국민행복제안, 예산낭비신고, 공익신고 등 : 10년)</li>
+                                        </ul>
+                                    </li>
+                                  </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="rqd">개인정보 <span class="block">수집동의(선택)</span>
+                                <div class="block mt50">
+                                    <input type="checkbox" name="#" id="chk_02" title="/">
+                                    <label for="chk_02">동의</label>
+                                </div>
+                            </th>
+                            <td  colspan="3">
+                                <ul class="num_list">
+                                    <li>개인정보의 수집 및 이용 목적(개인정보보호법 제15조) <br>
+                                        국토교통부 민원마당은 관계법령등에 서 정하는 소관 업무의 수행을 위하여 다음과 같이 개인정보를 수집 및 이용합니다. 수집된 개인정보는 정해진 목적 이외의 용도로는 이용되지 않으며 수집 목적이 변경될 경우사전에 알리고 동의를 받을 예정입니다.관계법령 등 : 민원 처리에 관한 법률 및 동법 시행령,전자정부법 및 동법 시행령
+                                        <ul>
+                                            <li class="mt30">가. 민원 접수·처리·사후관리 서비스 제공 민원신청서에 포함된 개인정보는 민원의 접수·처리 등 소관 업무 수행을 위해 행정기관에서 이용합니다. 행정기관에는 법령에 따라 행정권한이 있거나 행정권한을 위임 또는 위탁받은 법인·단체 또는 그 기관이나 개인이 포함됩니다.
+                                            </li>
+                                            <li class="mt30">나. 국토교통부 정책지원
+                                                접수된 민원은 민원마당 서비스 향상 및 정책평가를 위하여 관계 법령에 따라 분석·평가 및 처리결과의 사후관리를 시행합니다.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="mt30">수집하는 개인정보의 항목(개인정보보호법 제15조, 제16조)
+                                        <span class="block">선택항목: 유선전화번호, 무선전화번호</span>
+                                    </li>
+                                    <li class="mt30">동의를 거부할 권리가 있다는 사실 및 동의 거부에 따른 불이익 내용(개인정보보호법 제16조)
+                                        민원신청 시 수집하는 필요한 최소한의 정보 외의 개인정보 수집에 동의를 거부할 권리가 있으나 최소한의 개인정보 수집동의 거부 시에는 민원 신청 서비스가 제한됩니다.
+                                    </li>
+                                    <li  class="mt30">
+                                        개인정보의 보유 및 이용기간(공공기록물 관리에 관한 법률 시행령 제26조) 국토교통부 민원마당은 원칙적으로 개인정보 보존기간이 경과하거나, 처리목적이 달성된 경우에는 지체 없이 개인정보를 파기합니다. 다만,다른 법령에 따라 보존하여야 하는 경우에는 그러하지 않을 수 있습니다.
+                                        <ul>
+                                            <li  class="mt30">가. 민원, 국민행복제안, 예산낭비신고, 공익신고 등 : 10년)</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <span class="ref fc_red">신청하신 방문예약일시가 확정된 후 방문을 하셔야 상담이 가능합니다.</span>
+        </div>
+        <div class="btn_box">
+            <a href="#" class="btn7 grey">다시작성</a>
+          <a href="#" class="btn7 ml20">신청</a>
+        </div>
+        <!-- //컨텐츠 구분 -->
+      </div>
+    </div>
+    <ul class="quick_menu">
+        <li>
+          <a href="#">
+            <span>
+              <img src="../common/images/icon_quick_1.png" alt="">
+              공지사항
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <img src="../common/images/icon_quick_2.png" alt="">
+              자주하는질문<br>(FAQ)
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <img src="../common/images/icon_quick_3.png" alt="">
+              위원회 소개
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <img src="../common/images/icon_quick_4.png" alt="">
+              조직안내
+            </span>
+          </a>
+        </li>
+      </ul>
+    <div class="footer">
+      <div class="ft_nav">
+        <div class="container">
+          <ul class="ft_menu">
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">찾아오시는 길</a></li>
+            <li><a href="#">시스템 개선제안</a></li>
+          </ul>
+          <ul class="partner">
+            <li><a href="#"><img src="../common/images/logo_partner_3.png" alt=""></a></li>
+            <li><a href="#"><img src="../common/images/logo_partner_2.png" alt=""></a></li>
+            <li><a href="#"><img src="../common/images/logo_partner_1.png" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ft_info">
+        <div class="container">
+          <div class="address">
+            <p>본 페이지에 게시된 이메일 주소가 자동 수집되는 것을 거부하며, 이를 위반시 정보통신법에 의해 처벌됨을 유념하시기 바랍니다.</p>
+            <ul>
+              <li class="br">18247 경기도 화성시 송산면 삼존로 200</li>
+              <li>대표번호 : 080-357-2500</li>
+              <li>팩스 : 031-369-0399 / 0502-384-5498</li>
+            </ul>
+          </div>
+          <div class="website dropdown">
+            <button type="button" class="btn" title="열기">관련사이트</button>
+            <ul>
+              <li><a href="#">국토교통부</a></li>
+              <li><a href="#">한국교통안전공단</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

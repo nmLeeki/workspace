@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자율주행자동자 사고조사위원회 홈페이지에 오신것을 환영합니다.</title>
+  <link rel="stylesheet" href="../common/css/default.css" />
+  <link rel="stylesheet" href="../common/css/dev.css" />
+  <link rel="stylesheet" href="../common/lib/slickslider/slick.css">
+  <link rel="stylesheet" href="../common/lib/datepicker/datepicker.css">
+  <link rel="stylesheet" href="../common/lib/timepicker/timepicker.css">
+  <script src="../common/js/jquery-3.6.0.min.js"></script>
+  <script src="../common/js/prefixfree.min.js"></script>
+  <script src="../common/js/common.js"></script>
+  <script src="../common/lib/datepicker/datepicker.js"></script>
+  <script src="../common/lib/slickslider/slick.js"></script>
+  <script src="../common/lib/timepicker/timepicker.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="header">
+      <div class="util ">
+        <div class="container">
+          <h1 class="logo"><a href="#"><span class="hide">로고 이미지</span></a></h1>
+          <div>
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+          </div>
+        </div>
+      </div>
+      <div class="hd_menu">
+        <div class=" container">
+          <div id="gnb">
+            <div class="gnb_hd">
+              <img src="../common/images/logo.png" alt="자율주행자동차 사고조사위원회">
+              <button type="button" class="close_gnb"><span class="hide">닫기</span></button>
+            </div>
+            <ul class="m_util">
+              <li><a href="#"><img src="../common/images/login_btn.png" alt="로그인버튼"><span>로그인</span></a></li>
+              <li><a href="#"><img src="../common/images/join_btn.png" alt="회원가입버튼"><span>회원가입</span></a></li>
+            </ul>
+            <ul class="dep1">
+              <li><a href="#"><span>신고마당</span></a>
+                <ul class="dep2">
+                  <li> <!-- <h2>신고마당</h2> -->
+                    <a href="#">사고조사 접수안내</a>
+                    <ul class="dep3">
+                      <li><a href="#">사고조사 제도</a></li>
+                      <li><a href="#">사고조사 신고</a></li>
+                      <li><a href="#">사고조사 조회</a></li>
+                      <li><a href="#">사고조사 통보</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">재심의 접수</a>
+                    <ul class="dep3">
+                      <li><a href="#">재심의 제도</a></li>
+                      <li><a href="#">재심의 신청</a></li>
+                      <li><a href="#">재심의 조회</a></li>
+                      <li><a href="#">재심의 결과확인</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">사고조사 진행 중인 사건</a></li>
+                  <li><a href="#">자율차사고 안전정보</a></li>               
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>조사마당</span></a>
+                <ul class="dep2">
+                  <li>
+                    <!-- <h2>조사마당</h2> -->
+                    <a href="#">자율차 사고조사란?</a>
+                    <ul class="dep3">
+                      <li><a href="#">사고조사 대상</a></li>
+                      <li><a href="#">사고조사 절차</a></li>
+                      <li><a href="#">자율주행기록장치</a></li>
+                      <li><a href="#">사고조사 장비&#183;시설</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">자율차사고 대처요령</a></li>
+                  <li><a href="#">자율주행차 사고현황</a>
+                    <ul class="dep3">
+                      <li><a href="#">국내 사고현황</a></li>
+                      <li><a href="#">국외 사고현황</a></li>
+                    </ul>
+                  </li>           
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>정보마당</span></a>
+                <ul class="dep2">
+                  <li>
+                   <!--  <h2>정보마당</h2> -->
+                    <a href="#">정보제공제도</a>
+                    <ul class="dep3">
+                      <li><a href="#">정보제공 절차</a></li>
+                      <li><a href="#">정보공개 청구</a></li>
+                      <li><a href="#">정보목록</a></li>
+                      <li><a href="#">자료정보 열람</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">공공데이터 개방</a></li>
+                  <li><a href="#">관련법령</a></li>    
+                  <li><a href="#">용어사전</a></li>    
+                  <li><a href="#">개인정보 바로알기</a>
+                    <ul class="dep3">
+                      <li><a href="#">개인정보처리지침</a></li>
+                    </ul>
+                  </li>  
+                  <li><a href="#">통계자료</a></li>    
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>참여마당</span></a>
+                <ul class="dep2">
+                  <li> <!-- <h2>참여마당</h2> -->
+                    <a href="#">자유게시판</a></li>
+                  <li><a href="#">자주하는 질문(FAQ)</a></li>    
+                  <li><a href="#">Q&A</a></li>    
+                  <li><a href="#">시스템 개선제안</a></li>   
+                  <li><a href="#">국민의 소리</a>
+                    <ul class="dep3">
+                      <li><a href="#">전자신청</a></li>
+                      <li><a href="#">서면신청</a></li>
+                      <li><a href="#">방문상담</a></li>
+                      <li><a href="#">전화상담</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>알림마당</span></a>
+                <ul class="dep2">
+                  <li> <!-- <h2>알림마당</h2> -->
+                    <a href="#">공지사항</a></li>
+                  <li><a href="#">이용약관</a></li>    
+                  <li><a href="#">보도자료</a></li>    
+                  <li><a href="#">공개자료실</a></li>   
+                  <li><a href="#">관련사이트</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>소개마당</span></a>
+                <ul class="dep2">
+                  <li> <!-- <h2>소개마당</h2> -->
+                    <a href="#">위원장 소개</a>
+                    <ul class="dep3">
+                      <li><a href="#">위원장 인사말</a></li>
+                      <li><a href="#">프로필</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">사고조사위원회 소개</a>
+                    <ul class="dep3">
+                      <li><a href="#">설립목적</a></li>
+                      <li><a href="#">심의위원</a></li>
+                      <li><a href="#">위원회 임무 및 비전</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">조직안내</a>
+                    <ul class="dep3">
+                      <li><a href="#">조직도</a></li>
+                      <li><a href="#">사무국 연락처</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">찾아오시는 길</a></li>
+                  <li><a href="#">사이트맵</a></li>                         
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="m_btn">
+            <button type="button" class="open_gnb"><span class="hide">메뉴</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page_spot bg3">
+      <!-- bg1  -->
+      <!-- bg2 -->
+      <!-- bg3 정보마당 -->
+      <!-- bg4 참여마당-->
+      <!-- bg5  -->
+      <!-- bg6 소개마당-->
+    <!-- 추가 -->
+      <div class="tit_bg" id="div_lnb_bg">
+        <img src="../common/images/bg_visual3.png" alt="정보마당">
+       <!--  
+        <img src="../common/images/bg_visual1.jpg" alt="신고마당">
+        <img src="../common/images/bg_visual2.jpg" alt="조사마당">
+        <img src="../common/images/bg_visual3.jpg" alt="정보마당">
+        <img src="../common/images/bg_visual4.png" alt="참여마당">
+        <img src="../common/images/bg_visual5.png" alt="알림마당">
+        <img src="../common/images/bg_visual6.png" alt="소개마당"> -->
+      </div>
+    <!-- // 추가 -->
+      <div class="page_title">
+        <img src="../common/images/bg_visual3_tit.png" alt="자율주행자동차사고의 발생원인을 과학적사고조사로 밝혀드리겠습니다.">
+       <!--  
+        <img src="../common/images/bg_visual1_tit.png" alt="자율주행자동차 사고조사는 무사고로 가는 지름길 입니다.">
+        <img src="../common/images/bg_visual2_tit.png" alt="">
+        <img src="../common/images/bg_visual3_tit.png" alt="자율주행자동차사고의 발생원인을 과학적사고조사로 밝혀드리겠습니다.">
+        <img src="../common/images/bg_visual4_tit.png" alt="자율주행차사고조사위원회는 항상당신곁에 있겠습니다.">
+        <img src="../common/images/bg_visual5_tit.png" alt="정보공유를통해 국민과 더 가까이에서 소통하겠습니다.">
+        <img src="../common/images/bg_visual6_tit.png" alt="사람이 안전한 자율주행자동차 시대를 만들어 가겠습니다."> -->
+      </div>
+       <!-- lnb -->
+       <div class="lnb"> 
+        
+        <div class="container">
+          <a href="/" class="home"><span class="hide">HOME</span></a>
+          <div class="menu dropdown">
+            <button type="button" class="btn" title="열기">정보마당</button>
+            <ul>
+              <li><a href="#">신고마당</a></li>
+              <li><a href="#">조사마당</a></li>
+              <li><a href="#">참여마당</a></li>
+              <li><a href="#">알림마당</a></li>
+              <li><a href="#">소개마당</a></li>
+            </ul>
+          </div>
+          <div class="menu dropdown">
+            <button type="button" class="btn" title="열기">개인정보 바로알기</button>
+            <ul>
+              <li><a href="#">depth-2</a></li>
+              <li><a href="#">depth-2</a></li>
+              <li><a href="#">depth-2</a></li>
+              <li><a href="#">depth-2</a></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+      <!-- //lnb -->
+     
+    </div>
+    <div id="contents">
+      <div class="container">
+          <h3 class="tit_lg">정보공개</h3>
+        <div class="con">
+          <h3 class="tit_md mb10">정보공개제도란</h3>
+          <ul class="bar_list">
+            <li>국가기관·지방자치단체 등 공공기관이 업무 수행 중 생산·접수하여 보유·관리하는 정보를 국민에게 공개함으로써, 국민의 알권리를 보장하고 더 많은 정보를 바탕으로 국정운영에 대한 참여를 유도하기 위한 제도입니다.
+            <span class="tit_2 mb15">이 제도는 지난 ‘96년 &lt; 공공기관의 정보공개에 관한 법률 &gt;을 제정·공포하고, ’98년 1월 1일부터 시행하였습니다.</span>
+            </li>
+            <li>주요내용은 크게 청구인, 청구가능정보로 나뉘어집니다.
+            <span class="tit_2 mb15">청구인은 국민, 법인·단체, 외국인으로 분류되며 조건에 해당한다면 정보공개를 청구할 수 있습니다. </span>
+            </li>
+          </ul>
+          <em class="m_scroll_txt">표 부분을 좌우로 밀어 자세한 정보를 확인하세요.</em>
+          <div class="table scr table_info mt20">
+            <table>
+              <colgroup>
+                <col style="width:30%;">
+                <col style="width:70%;">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>분류</th>
+                  <th>조건</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="ta_c">국민</td>
+                  <td>
+                    <ul class="num_list">
+                      <li>청구인 본인</li>
+                      <li>대리인</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td  class="ta_c">법인·단체</td>
+                  <td>
+                    <ul class="num_list">
+                      <li>대표자 명의</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="ta_c">외국인</td>
+                  <td >
+                    <ul class="num_list">
+                      <li>일정 주소를 두고 거주하는 자</li>
+                      <li>학술·연구를 위하여 일시적으로 체류하는 자</li>
+                      <li>국내에 사무소를 두고 있는 법인·단체</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <span class="tit_2 mt20">청구가능정보는 공공기관이 직무상 작성 또는 취득하여 관리하고 있는 문서(전자문서 포함·도면·사진·필름·테이프·슬라이드 및 기타 이에 준하는 매체 등에 기록된 사항에 대해 공개청구를 하실 수 있습니다.</span>
+        </div>
+        <div class="con">
+          <h3 class="tit_md">업무처리절차</h3>
+          <ul class="num_list mt30">
+            <li>청구인은 원하는 정보가 있다면 정보공개시스템(www.open.go.kr)에서 원문을 조회하거나 해당 정보를 보유 및 관리하는 공공기관에 정보공개 청구서를 기재하여 제출합니다.</li>
+            <li>공공기관은 정보공개청구를 받은 날부터 “10일” 이내에 공개여부를 결정해야하며, 부득이한 경우 10일의 범위내에서 연장할 수 있습니다.
+              <p class="rqd2">청구정보가 제3자와 관련이 있다면 제3자에게 통보하고 필요할 시 그 의견을 청취하여 결정합니다.</p>
+            </li>
+            <li>공공기관이 정보의 공개를 결정한 때에는 공개일시·공개장소 등을 명시하여 청구인에게 통지하고 공개를 결정한 날로부터 “10일” 이내에 공개합니다.
+              <p class="rqd2">만일 공공기관이 정보를 비공개로 결정한 때에는 비공개사유·불복방법을 명시하여 청구인에게 지체없이 문서로 통지합니다</p>
+            </li>
+          </ul>
+          <h3 class="tit_sm">불복구제절차</h3>
+          <ul class="one_list mt20">
+            <li>
+              ① 이의신청
+              <ul class="bar">
+                <li>청구인이 공공기관의 비공개, 부분공개결정에 대하여 불복이 있을 때에는 공개여부의 결정통지를 받은 날 또는 비공개의 결정이 있는 것으로 보는 날부터 “30일” 이내에 공공기관에 이의 신청을 할 수 있습니다.</li>
+                <li>이의신청서를 작성하여 제출하시면 이의신청이 완료됩니다.</li>
+                <li>제3자로부터 비공개요청을 받은 공공기관이 공개결정을 하는 경우 제3자는 공개통지를 받은 날로부터 “7일” 이내에 이의신청을 할 수 있습니다.</li>
+              </ul>
+            </li>
+            <li>② 행정심판
+              <ul class="bar">
+                <li>청구인은 이의신청절차를 거치지 않고 청구할 수 있으며 심판청구서를 피청구인인 행정청 또는 위원회에 제출해야 합니다.
+                  <p class="rqd2">국가기관이나 지방자치단체 외 공공기관의 결정에 대한 감독행정기관은 관계 중앙행정기관의 장이나 지방자치단체의 장으로 하게 됩니다.</p>
+                </li>
+                <li>정보공개와 관련한 공공기관의 결정이 있음을 안 날로부터 “90일” 이내에 제기해야하며 공공기관의 결정이 있는 날부터 “180일”을 넘겨서는 안됩니다.</li>
+              </ul>
+            </li>
+            <li>③ 행정소송
+              <ul class="bar">
+                <li>청구인이 이의신청절차·행정심판절차를 거치지 않고 행정소송법이 정하는 바에 따라 행정소송을 제기할 수 있습니다.</li>
+                <li>공공기관의 결정이 있는 날 또는 행정심판을 거친 경우 재결서 정본의 송달을 받은 날로부터 90일 이내에 제기하여야 합니다.
+                  <p class="rqd2">해당 날짜로부터 1년이 지나면 제기할 수 없습니다.</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- 컨텐츠 구분 -->
+        <div class="con">
+          <h3 class="tit_md">사전정보공개</h3>
+          <!-- 탭메뉴 a클릭 페이지 이동-->
+          <ul class="tab_menu">
+            <li class="active"><a href="#"><span>전체</span></a></li>
+            <li><a href="#"><span>사전공개정보</span></a></li>
+            <li><a href="#"><span>업무추진비</span></a></li>
+            <li><a href="#"><span>수의계약</span></a></li>
+            <li><a href="#"><span>예산현황</span></a></li>
+          </ul>
+          <!-- 모바일 select -->
+          <!-- <select name="" id="" class="faq_select">
+            <option value="">전체</option>
+            <option value="">일반</option>
+            <option value="">사고신고자</option>
+            <option value="">위원회</option>
+          </select> -->
+        </div>
+        <div class="con">
+            <div class="table">
+                <table>
+                    <colgroup>
+                        <col style="width: 120px;">
+                        <col style="width: auto;">
+                        <col style="width: 120px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                   <tbody>
+                    <tr>
+                        <th>등록일자</th>
+                        <td>
+                            <div class="inp_set">
+                                <div class="inp date">
+                                <input type="text" name="#" title="연도-월-일" placeholder="연도-월-일" autocomplete="off">
+                                </div>
+                                <span class="behind">~</span>
+                                <div class="inp date">
+                                <input type="text" name="#" title="연도-월-일" placeholder="연도-월-일" autocomplete="off">
+                                </div>
+                            </div>
+                        </td>
+                        <th>검색조건</th>
+                        <td>
+                            <div class="inp_set">
+                                <div class="select">
+                                  <select name="#" title="검색조건">
+                                    <option value="전체">전체</option>
+                                    <option value="제목">제목</option>
+                                  </select>
+                                </div>
+                                <div class="inp">
+                                  <input type="text" value="" name="#" title="검색어">
+                                </div>
+                                <button type="button" class="btn6 ml10">조회</button>
+                              </div>
+                        </td>
+                    </tr>
+                   </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="con">
+          <!-- 좌우 끝으로 ui가 나뉘는 경우  -->
+          <div class="head">
+            <div class="bo_info">
+             전체 총 <span>000</span>개의 내용이 등록되어있습니다.
+            </div>
+          </div>
+          <!-- //좌우 끝으로 ui가 나뉘는 경우  -->
+          <em class="m_scroll_txt">표 부분을 좌우로 밀어 자세한 정보를 확인하세요.</em>
+          <div class="table scr">
+            <table>
+              <colgroup>
+                <col style="width:10%;">
+                <col style="width:11%;">
+                <col style="width:auto;">
+                <col style="width:9%;">
+                <col style="width:12%;">
+                <col style="width:9%;">
+                <col style="width:9%;">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>NO</th>
+                  <th>정보분야</th>
+                  <th>제목</th>
+                  <th>담당부서</th>
+                  <th>등록일</th>
+                  <th>조회수</th>
+                  <th>파일</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="ta_c"><span class="impor">중요</span></td>
+                  <td  class="ta_c">사전공개정보</td>
+                  <td><a href="#">행정규칙/자율주행자동차사고조사위원회구성·운영등에관한규정 (2021-927,20210628) </a></td>
+                  <td  class="ta_c">관리자</td>
+                  <td  class="ta_c">2022-03-09</td>
+                  <td  class="ta_c">9,999</td>
+                  <td  class="ta_c"><img src="../common/images/icon_file_doc.png" alt="doc파일"></td>
+                </tr>
+                <tr>
+                  <td  class="ta_c"><span class="impor">중요</span></td>
+                  <td  class="ta_c">업무추진비</td>
+                  <td><a href="#">행정규칙/자율주행자동차사고조사위원회구성·운영등에관한규정 (2021-927,20210628) </a></td>
+                  <td  class="ta_c">관리자</td>
+                  <td  class="ta_c">2022-03-09</td>
+                  <td  class="ta_c">9,999</td>
+                  <td  class="ta_c"><img src="../common/images/icon_file_pdf.png" alt="pdf파일"></td>
+                </tr>
+                <tr>
+                  <td  class="ta_c">8</td>
+                  <td  class="ta_c">수의계약</td>
+                  <td><a href="#">행정규칙/자율주행자동차사고조사위원회구성·운영등에관한규정 (2021-927,20210628) </a></td>
+                  <td  class="ta_c">관리자</td>
+                  <td  class="ta_c">2022-03-09</td>
+                  <td  class="ta_c">9,999</td>
+                  <td  class="ta_c"> <img src="../common/images/icon_file_xls.png" alt="xls파일"></td>
+                </tr>
+                <tr>
+                  <td  class="ta_c">7</td>
+                  <td  class="ta_c">예산현황</td>
+                  <td><a href="#">행정규칙/자율주행자동차사고조사위원회구성·운영등에관한규정 (2021-927,20210628) </a></td>
+                  <td  class="ta_c">관리자</td>
+                  <td  class="ta_c">2022-03-09</td>
+                  <td  class="ta_c">9,999</td>
+                  <td  class="ta_c"><img src="../common/images/icon_file_txt.png" alt="txt파일"></td>
+                </tr>
+                <tr>
+                  <td  class="ta_c">6</td>
+                  <td  class="ta_c">기타</td>
+                  <td><a href="#">행정규칙/자율주행자동차사고조사위원회구성·운영등에관한규정 (2021-927,20210628) </a></td>
+                  <td  class="ta_c">관리자</td>
+                  <td  class="ta_c">2022-03-09</td>
+                  <td  class="ta_c">9,999</td>
+                  <td  class="ta_c"><img src="../common/images/icon_file_img.png" alt="img파일"></td>
+                </tr>
+                <tr>
+                  <td  class="ta_c">5</td>
+                  <td  class="ta_c">사전공개정보</td>
+                  <td><a href="#">행정규칙/자율주행자동차사고조사위원회구성·운영등에관한규정 (2021-927,20210628) </a></td>
+                  <td  class="ta_c">관리자</td>
+                  <td  class="ta_c">2022-03-09</td>
+                  <td  class="ta_c">9,999</td>
+                  <td  class="ta_c"><img src="../common/images/icon_file_zip.png" alt="zip파일"></td>
+                </tr>
+                <tr>
+                  <td  class="ta_c">4</td>
+                  <td  class="ta_c">업무추진비</td>
+                  <td><a href="#">행정규칙/자율주행자동차사고조사위원회구성·운영등에관한규정 (2021-927,20210628) </a></td>
+                  <td  class="ta_c">관리자</td>
+                  <td  class="ta_c">2022-03-09</td>
+                  <td  class="ta_c">9,999</td>
+                  <td  class="ta_c"><img src="../common/images/icon_file_doc.png" alt="doc파일"></td>
+                </tr>
+                <tr>
+                  <td  class="ta_c">3</td>
+                  <td  class="ta_c">수의계약</td>
+                  <td><a href="#">행정규칙/자율주행자동차사고조사위원회구성·운영등에관한규정 (2021-927,20210628) </a></td>
+                  <td  class="ta_c">관리자</td>
+                  <td  class="ta_c">2022-03-09</td>
+                  <td  class="ta_c">9,999</td>
+                  <td  class="ta_c"><img src="../common/images/icon_file_doc.png" alt="doc파일"></td>
+                </tr>
+                <tr>
+                  <td  class="ta_c">2</td>
+                  <td  class="ta_c">예산현황</td>
+                  <td><a href="#">행정규칙/자율주행자동차사고조사위원회구성·운영등에관한규정 (2021-927,20210628) </a></td>
+                  <td  class="ta_c">관리자</td>
+                  <td  class="ta_c">2022-03-09</td>
+                  <td  class="ta_c">9,999</td>
+                  <td  class="ta_c"><img src="../common/images/icon_file_doc.png" alt="doc파일"></td>
+                </tr>
+                <tr>
+                  <td  class="ta_c">1</td>
+                  <td  class="ta_c">기타</td>
+                  <td><a href="#">행정규칙/자율주행자동차사고조사위원회구성·운영등에관한규정 (2021-927,20210628) </a></td>
+                  <td  class="ta_c">관리자</td>
+                  <td  class="ta_c">2022-03-09</td>
+                  <td  class="ta_c">9,999</td>
+                  <td  class="ta_c"><img src="../common/images/icon_file_doc.png" alt="doc파일"></td>
+                </tr>
+                <tr class="null">
+                  <td colspan="6">조회된 게시글이 없습니다.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="pagination">
+            <a href="#" class="first_page"><span class="hide">첫 페이지</span></a>
+            <a href="#" class="prev_page"><span class="hide">이전 페이지</span></a>
+            <ul>
+              <li><a href="#" class="active">1<span class="hide">현재 페이지</span></a></li>
+              <li><a href="#">2<span class="hide">페이지 이동</span></a></li>
+              <li><a href="#">3<span class="hide">페이지 이동</span></a></li>
+              <li><a href="#">4<span class="hide">페이지 이동</span></a></li>
+              <li><a href="#">5<span class="hide">페이지 이동</span></a></li>
+            </ul>
+            <a href="#" class="next_page"><span class="hide">다음 페이지</span></a>
+            <a href="#" class="last_page"><span class="hide">끝 페이지</span></a>
+          </div>
+        </div>
+        <!-- //탭메뉴 a클릭 페이지 이동-->
+        <!-- //컨텐츠 구분 -->
+
+      </div>
+    </div>
+    <ul class="quick_menu">
+        <li>
+          <a href="#">
+            <span>
+              <img src="../common/images/icon_quick_1.png" alt="">
+              공지사항
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <img src="../common/images/icon_quick_2.png" alt="">
+              자주하는질문<br>(FAQ)
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <img src="../common/images/icon_quick_3.png" alt="">
+              위원회 소개
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <img src="../common/images/icon_quick_4.png" alt="">
+              조직안내
+            </span>
+          </a>
+        </li>
+      </ul>
+    <div class="footer">
+      <div class="ft_nav">
+        <div class="container">
+          <ul class="ft_menu">
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">찾아오시는 길</a></li>
+            <li><a href="#">시스템 개선제안</a></li>
+          </ul>
+          <ul class="partner">
+            <li><a href="#"><img src="../common/images/logo_partner_3.png" alt=""></a></li>
+            <li><a href="#"><img src="../common/images/logo_partner_2.png" alt=""></a></li>
+            <li><a href="#"><img src="../common/images/logo_partner_1.png" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ft_info">
+        <div class="container">
+          <div class="address">
+            <p>본 페이지에 게시된 이메일 주소가 자동 수집되는 것을 거부하며, 이를 위반시 정보통신법에 의해 처벌됨을 유념하시기 바랍니다.</p>
+            <ul>
+              <li class="br">18247 경기도 화성시 송산면 삼존로 200</li>
+              <li>대표번호 : 080-357-2500</li>
+              <li>팩스 : 031-369-0399 / 0502-384-5498</li>
+            </ul>
+          </div>
+          <div class="website dropdown">
+            <button type="button" class="btn" title="열기">관련사이트</button>
+            <ul>
+              <li><a href="#">국토교통부</a></li>
+              <li><a href="#">한국교통안전공단</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

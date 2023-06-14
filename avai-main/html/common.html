@@ -1,0 +1,1585 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자율주행자동자 사고조사위원회 홈페이지에 오신것을 환영합니다.</title>
+  <link rel="stylesheet" href="../common/css/default.css" />
+  <link rel="stylesheet" href="../common/css/dev.css" />
+  <link rel="stylesheet" href="../common/lib/slickslider/slick.css">
+  <link rel="stylesheet" href="../common/lib/datepicker/datepicker.css">
+  <link rel="stylesheet" href="../common/lib/timepicker/timepicker.css">
+  <script src="../common/js/jquery-3.6.0.min.js"></script>
+  <script src="../common/js/prefixfree.min.js"></script>
+  <script src="../common/js/common.js"></script>
+  <script src="../common/lib/datepicker/datepicker.js"></script>
+  <script src="../common/lib/slickslider/slick.js"></script>
+  <script src="../common/lib/timepicker/timepicker.js"></script>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	30e13151863892fd715bafdaf82d5d02"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- 로딩중 -->
+    <div class="loading">
+      <div>
+        <img src="../common/images/loading.gif" alt="">
+        <strong>화면이 로딩중입니다.</strong>
+        잠시만 기다려주시기 바랍니다.
+      </div>
+    </div>
+    <!-- 로딩중 -->
+    <div id="header">
+      <div class="util">
+        <div class="container">
+          <h1 class="logo"><a href="#"><span class="hide">로고 이미지</span></a></h1>
+          <div>
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+          </div>
+        </div>
+      </div>
+      <div class="hd_menu">
+        <div class=" container">
+          <div id="gnb">
+            <div class="gnb_hd">
+              <img src="../common/images/logo.png" alt="자율주행자동차 사고조사위원회">
+              <button type="button" class="close_gnb"><span class="hide">닫기</span></button>
+            </div>
+            <ul class="m_util">
+              <li class="loginname"><p>박보통 (2022-09-28 15:44:39)</p></li>
+              <li><a href="#"><img src="../common/images/login_btn.png" alt="로그인버튼"><span>로그인</span></a></li>
+              <li><a href="#"><img src="../common/images/join_btn.png" alt="회원가입버튼"><span>회원가입</span></a></li>
+            </ul>
+            <ul class="dep1">
+              <li><a href="#"><span>신고마당</span></a>
+                <ul class="dep2">
+                  <li> <h2>신고마당</h2>
+                    <a href="#">사고조사 접수안내</a>
+                    <ul class="dep3">
+                      <li><a href="#">사고조사 제도</a></li>
+                      <li><a href="#">사고조사 신고</a></li>
+                      <li><a href="#">사고조사 조회</a></li>
+                      <li><a href="#">사고조사 통보</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">재심의 접수</a>
+                    <ul class="dep3">
+                      <li><a href="#">재심의 제도</a></li>
+                      <li><a href="#">재심의 신청</a></li>
+                      <li><a href="#">재심의 조회</a></li>
+                      <li><a href="#">재심의 결과확인</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">사고조사 진행 중인 사건</a></li>
+                  <li><a href="#">자율차사고 안전정보</a></li>               
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>조사마당</span></a>
+                <ul class="dep2">
+                  <li>
+                    <h2>조사마당</h2>
+                    <a href="#">자율차 사고조사란?</a>
+                    <ul class="dep3">
+                      <li><a href="#">사고조사 대상</a></li>
+                      <li><a href="#">사고조사 절차</a></li>
+                      <li><a href="#">자율주행기록장치</a></li>
+                      <li><a href="#">사고조사 장비&#183;시설</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">자율차사고 대처요령</a></li>
+                  <li><a href="#">자율주행차 사고현황</a>
+                    <ul class="dep3">
+                      <li><a href="#">국내 사고현황</a></li>
+                      <li><a href="#">국외 사고현황</a></li>
+                    </ul>
+                  </li>           
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>정보마당</span></a>
+                <ul class="dep2">
+                  <li>
+                    <h2>정보마당</h2>
+                    <a href="#">정보제공제도</a>
+                    <ul class="dep3">
+                      <li><a href="#">정보제공 절차</a></li>
+                      <li><a href="#">정보공개 청구</a></li>
+                      <li><a href="#">정보목록</a></li>
+                      <li><a href="#">자료정보 열람</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">공공데이터 개방</a></li>
+                  <li><a href="#">관련법령</a></li>    
+                  <li><a href="#">용어사전</a></li>    
+                  <li><a href="#">개인정보 바로알기</a>
+                    <ul class="dep3">
+                      <li><a href="#">개인정보처리지침</a></li>
+                    </ul>
+                  </li>  
+                  <li><a href="#">통계자료</a></li>    
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>참여마당</span></a>
+                <ul class="dep2">
+                  <li> <h2>참여마당</h2>
+                    <a href="#">자유게시판</a></li>
+                  <li><a href="#">자주하는 질문(FAQ)</a></li>    
+                  <li><a href="#">Q&A</a></li>    
+                  <li><a href="#">시스템 개선제안</a></li>   
+                  <li><a href="#">국민의 소리</a>
+                    <ul class="dep3">
+                      <li><a href="#">전자신청</a></li>
+                      <li><a href="#">서면신청</a></li>
+                      <li><a href="#">방문상담</a></li>
+                      <li><a href="#">전화상담</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>알림마당</span></a>
+                <ul class="dep2">
+                  <li> <h2>알림마당</h2>
+                    <a href="#">공지사항</a></li>
+                  <li><a href="#">이용약관</a></li>    
+                  <li><a href="#">보도자료</a></li>    
+                  <li><a href="#">공개자료실</a></li>   
+                  <li><a href="#">관련사이트</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>소개마당</span></a>
+                <ul class="dep2">
+                  <li> <h2>소개마당</h2>
+                    <a href="#">위원장 소개</a>
+                    <ul class="dep3">
+                      <li><a href="#">위원장 인사말</a></li>
+                      <li><a href="#">프로필</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">사고조사위원회 소개</a>
+                    <ul class="dep3">
+                      <li><a href="#">설립목적</a></li>
+                      <li><a href="#">심의위원</a></li>
+                      <li><a href="#">위원회 임무 및 비전</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">조직안내</a>
+                    <ul class="dep3">
+                      <li><a href="#">조직도</a></li>
+                      <li><a href="#">사무국 연락처</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">찾아오시는 길</a></li>
+                  <li><a href="#">사이트맵</a></li>                         
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="m_btn">
+            <button type="button" class="open_gnb"><span class="hide">메뉴</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page_spot bg3">
+      <!-- bg1  신고마당-->
+      <!-- bg2 조사마당-->
+      <!-- bg3 정보마당 -->
+      <!-- bg4 참여마당-->
+      <!-- bg5  알림마당-->
+      <!-- bg6 소개마당-->
+    <!-- 추가 -->
+      <div class="tit_bg" id="div_lnb_bg">
+        <img src="../common/images/bg_visual3.png" alt="소개마당">
+       <!--  
+        <img src="../common/images/bg_visual1.jpg" alt="신고마당">
+        <img src="../common/images/bg_visual2.jpg" alt="조사마당">
+        <img src="../common/images/bg_visual3.jpg" alt="정보마당">
+        <img src="../common/images/bg_visual4.png" alt="참여마당">
+        <img src="../common/images/bg_visual5.png" alt="알림마당">
+        <img src="../common/images/bg_visual6.png" alt="소개마당"> -->
+      </div>
+    <!-- // 추가 -->
+      <div class="page_title">
+        <img src="../common/images/bg_visual3_tit.png" alt="자율주행자동차 사고조사는 무사고로 가는 지름길 입니다.">
+       <!--  
+        <img src="../common/images/bg_visual1_tit.png" alt="자율주행자동차 사고조사는 무사고로 가는 지름길 입니다.">
+        <img src="../common/images/bg_visual2_tit.png" alt="언제어디서나 사용할 수 있는 창구가 되겠습니다.">
+        <img src="../common/images/bg_visual3_tit.png" alt="자율주행자동차사고의 발생원인을 과학적사고조사로 밝혀드리겠습니다.">
+        <img src="../common/images/bg_visual4_tit.png" alt="자율주행차사고조사위원회는 항상당신곁에 있겠습니다.">
+        <img src="../common/images/bg_visual5_tit.png" alt="정보공유를통해 국민과 더 가까이에서 소통하겠습니다.">
+        <img src="../common/images/bg_visual6_tit.png" alt="사람이 안전한 자율주행자동차 시대를 만들어 가겠습니다."> -->
+      </div>
+       <!-- lnb -->
+       <div class="lnb"> 
+        
+        <div class="container">
+          <a href="/" class="home"><span class="hide">HOME</span></a>
+          <div class="menu dropdown">
+            <button type="button" class="btn" title="열기">로그인</button>
+            <ul>
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">아이디찾기</a></li>
+              <li><a href="#">비밀번호찾기</a></li>
+              <li><a href="#">회원가입</a></li>
+            </ul>
+          </div>
+          <div class="menu dropdown">
+            <button type="button" class="btn" title="열기">현재페이지</button>
+            <ul>
+              <li><a href="#">depth-2</a></li>
+              <li><a href="#">depth-2</a></li>
+              <li><a href="#">depth-2</a></li>
+              <li><a href="#">depth-2</a></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+      <!-- //lnb -->
+     
+    </div>
+    <div id="contents">
+      <div class="container">
+        <!-- 좌우 끝으로 ui가 나뉘는 경우  -->
+        <div class="head">
+          <h3 class="tit_lg">tit_lg</h3>
+          <h3 class="tit_md">tit_md</h3>
+          <h3 class="tit_sm">tit_sm</h3>
+          <h3 class="tit_xs">tit_xs</h3>
+          <button type="button" class="btn1 grey"><img src="../common/images/icon_btn_print.png" alt=""> 접수증
+            출력</button>
+        </div>
+        <!-- //좌우 끝으로 ui가 나뉘는 경우  -->
+        <!-- 컨텐츠 구분 -->
+        <div class="con">
+          <h3 class="tit_md">개인정보</h3>
+          <ul class="bar_list">
+            <li>개인정보란?
+              <span class="tit_2 mb15">살아있는 개인에 관한 정보로</span>
+              <ul class="num_list">
+                <li>성면, 주민등록번호 및 영상 들을 통해 개인을 식별할수 있는 정보</li>
+                <li>성면, 주민등록번호 및 영상 들을 통해 개인을 식별할수 있는 정보</li>
+                <li>성면, 주민등록번호 및 영상 들을 통해 개인을 식별할수 있는 정보</li>
+              </ul>
+              <p class="rqd2"> 개인정보의 주체는 자연인(自然人)이며, 법인(法人)이나 단체의 정보는 해당하지 않습니다.</p>
+              <p class="rqd2"> 법인의 상호, 소재지, 임원 정보, 실적 등의 정보는 [개인정보보호법]에서 보호하는 개인정보에 해당하지 않습니다.</p>
+            </li>
+            <li>개인정보란?</li>
+          </ul>
+          <div class="Abox mt50">
+            <a href="#">개인정보보호법 바로가기</a>
+            <a href="#">개인정보호위원회 바로가기</a>
+          </div>
+          <!-- 탭메뉴 a클릭 페이지 이동-->
+           tab_menu(모바일에서 슬릭)
+          <ul class="tab_menu">
+            <li><a href="#"><span>01.사고접수 기본정보<br>(필수 입력사항)</span></a></li>
+            <li class="active"><a href="#"><span>02.사고 현장 촬영사진<br>(필수 입력사항)</span></a></li>
+            <li><a href="#"><span>03.블랙박스 영상<br>(선택 입력사항)</span></a></li>
+          </ul>
+          tab_menu2(모바일에서 동일한 비율로 줄어듬)
+          <ul class="tab_menu2">
+            <li><a href="../html/PSUI-07002.html"><span>아이디 찾기</span></a></li>
+            <li class="active"><a href="../html/PSUI-07003.html"><span>비밀번호 찾기</span></a></li>
+          </ul>
+          <ul class="tab_menu2">
+            <li><a href="#"><span>01.사고접수 기본정보<br>(필수 입력사항)</span></a></li>
+            <li class="active"><a href="#"><span>02.사고 현장 촬영사진<br>(필수 입력사항)</span></a></li>
+            <li><a href="#"><span>03.블랙박스 영상<br>(선택 입력사항)</span></a></li>
+          </ul>
+          <!-- //탭메뉴 a클릭 페이지 이동-->
+          <!-- borderBox -->
+          <div class="bd_box">
+            <!-- 아이콘 있으면 왼쪽 간격 발생 -->
+            <img src="../common/images/icon_bdbox_1.png" alt="">
+            <!-- <img src="../common/images/icon_bdbox_2.png" alt=""> -->
+            <!-- <img src="../common/images/icon_bdbox_3.png" alt=""> -->
+            <!-- <img src="../common/images/icon_bdbox_4.png" alt=""> -->
+            <div>
+              가입 당시 진행하셨던 인증방법을 선택하여 아이디 찾기를 진행하여 주시기 바랍니다.
+              <ul class="bar br">
+                <li>자율주행자동차 교통사고는 <span class="fc_orange">발생시점 24시간 이내 사고접수</span>가 되어야 합니다.</li>
+                <li>자율주행자동차사고조사위원회 구성·운영 등에 관한 규정 [별지 제5호서식] 입니다.</li>
+                <li>보험계약정보는 보험사 사고접수 후 입력하셔도 됩니다.</li>
+                <li class="br">온라인 접수가 어려운 경우 [공개 자료실] &lt;사고발생 신고서&gt;를 다운받아 작성하신 후 전자우편(이메일) 또는 팩스 접수하여 주시기 바랍니다.
+                </li>
+              </ul>
+            </div>
+            <ol class="information_step">
+              <li class="active">
+                <div>
+                  정보제공
+                  <em>신청서제출</em>
+                </div>
+              </li>
+              <li>
+                <div>
+                  정보제공
+                  <em>신청서접수</em>
+                </div>
+              </li>
+              <li>
+                <div>
+                  정보제공
+                  <em>승인</em>
+                </div>
+              </li>
+              <li>
+                <div>
+                  정보제공
+                </div>
+              </li>
+            </ol>
+          </div>
+          <!-- //borderBox -->
+          <!-- borderBox -->
+          <div class="bd_box mt10">
+            <div class="head mb0">
+                <ul class="type_list">
+                    <li>
+                      <input type="checkbox" name="#" id="chk_01">
+                      <label for="chk_01">법령</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="#" id="chk_02">
+                      <label for="chk_02">시행령</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="#" id="chk_03">
+                      <label for="chk_03">시행규칙</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="#" id="chk_03">
+                        <label for="chk_03">행정규칙</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="#" id="chk_03">
+                        <label for="chk_03">자치법규</label>
+                      </li>
+                     
+                  </ul>
+                   <button type="button" class="btn6">조회</button>
+            </div>
+          </div>
+          <!-- //borderBox -->
+        </div>
+        <div class="con">
+          <div class="re_num mt40">
+            사고 접수번호 : ICH2207-120541R
+            <em>보완요청내용</em>
+            사고 진술 내용 및 사고 추정원인 내용을 좀 더 명확하게 작성해 주세요.
+            <div class="">
+              <span>2022-08-22</span>
+              <button type="button">확인</button>
+            </div>
+          </div>
+        </div>
+        <div class="con">
+          <!-- 약관동의 -->
+          <div class="head type1">
+            <h3 class="tit_md">개인정보처리방침<span class="fc_orange">(필수)</span></h3>
+            <button type="button" class="btn6">전문보기</button>
+          </div>
+          <div class="agree_box">
+            <div class="scroll_box" tabindex="0">
+              <ol>
+                <li>제 1장 총칙
+                  <ol class="br">
+                    <li>제 1 조 (목적)
+                      <p>이 약관은 한국교통안전공단(이하 "공단"라 합니다)이 제공하는 모든 서비스를 이용자가 이용함에 있어 공단과 이용자의 권리, 의무 및 책임사항을 정함을 목적으로 합니다.
+                      </p>
+                    </li>
+                    <li class="br">제 2 조 약관의 명시와 개정
+                      <ol>
+                        <li>① 공단은 이 약관의 내용과 상호, 영업소 소재지, 대표자의 성명, 고객만족센터 등을 이용자가 알 수 있도록 게시합니다.</li>
+                        <li>② 공단은 약관의 규제 등에 관한 법률, 전자거래기본법, 전자서명법, 정보통신망이용촉진 등에 관한 법률, 방문판매 등에 관한 법률, 소비자보호법 등 관련법을
+                          위배하지
+                          않는
+                          범위에서 이 약관을 개정할 수 있습니다.</li>
+                      </ol>
+                    </li>
+                  </ol>
+                </li>
+                <li class="br">제 2장 총칙
+                  <ol class="br">
+                    <li>제 1 조 (목적)
+                      <p>이 약관은 한국교통안전공단(이하 "공단"라 합니다)이 제공하는 모든 서비스를 이용자가 이용함에 있어 공단과 이용자의 권리, 의무 및 책임사항을 정함을 목적으로 합니다.
+                      </p>
+                    </li>
+                    <li class="br">제 2 조 약관의 명시와 개정
+                      <ol>
+                        <li>① 공단은 이 약관의 내용과 상호, 영업소 소재지, 대표자의 성명, 고객만족센터 등을 이용자가 알 수 있도록 게시합니다.</li>
+                        <li>② 공단은 약관의 규제 등에 관한 법률, 전자거래기본법, 전자서명법, 정보통신망이용촉진 등에 관한 법률, 방문판매 등에 관한 법률, 소비자보호법 등 관련법을
+                          위배하지
+                          않는
+                          범위에서 이 약관을 개정할 수 있습니다.</li>
+                      </ol>
+                    </li>
+                  </ol>
+                </li>
+              </ol>
+            </div>
+            <div class="chk_box">
+              <input type="checkbox" name="#" id="agree">
+              <label for="agree">약관에 동의합니다.</label>
+            </div>
+          </div>
+          <!-- //약관동의 -->
+        </div>
+        <div class="con">
+          <!-- 좌우 끝으로 ui가 나뉘는 경우  -->
+           <div class="head">
+            <div class="bo_info">
+              전체 <span>3건</span> / 조회 <span>0건</span>
+            </div>
+            <div class="bo_sch type2">
+              <button type="button" class="btn6">개선 제안하기</button>
+              <div class="select ml5">
+                <select name="#" title="검색조건">
+                  <option value="전체">카테고리 분류</option>
+                  <option value="제목">제목</option>
+                </select>
+              </div>
+              <div class="select ml5">
+                <select name="#" title="검색조건">
+                  <option value="전체">전체</option>
+                  <option value="제목">제목</option>
+                </select>
+              </div>
+              <div class="inp">
+                <input type="text" value="" name="#" title="검색어">
+              </div>
+              <button type="button" class="btn6">조회</button>
+            </div>
+          </div>
+          <!-- 적용시 class mt150 지워주세요 -->
+          <div class="head mt150">
+            <div class="bo_info">
+              전체 <span>3건</span> / 조회 <span>0건</span>
+            </div>
+            <div class="bo_sch type2">
+              <div class="select">
+                <select name="#" title="검색조건">
+                  <option value="전체">카테고리 분류</option>
+                  <option value="제목">제목</option>
+                </select>
+              </div>
+              <div class="select ml10">
+                <select name="#" title="검색조건">
+                  <option value="전체">전체</option>
+                  <option value="제목">제목</option>
+                </select>
+              </div>
+              <div class="inp">
+                <input type="text" value="" name="#" title="검색어">
+              </div>
+              <button type="button" class="btn6">조회</button>
+            </div>
+          </div>
+          <!-- 적용시 class mt150 지워주세요 -->
+          <div class="head mt150">
+            <div class="bo_info">
+              전체 <span>3건</span> / 조회 <span>0건</span>
+            </div>
+            <div class="bo_sch type2">
+              <button type="button" class="btn6">개선 제안하기</button>
+              <div class="select ml10">
+                <select name="#" title="검색조건">
+                  <option value="전체">전체</option>
+                  <option value="제목">제목</option>
+                </select>
+              </div>
+              <div class="inp">
+                <input type="text" value="" name="#" title="검색어">
+              </div>
+              <button type="button" class="btn6">조회</button>
+            </div>
+          </div>
+          <!-- 적용시 class mt150 지워주세요 -->
+          <div class="head mt150">
+            <div class="bo_info">
+              전체 <span>3건</span> / 조회 <span>0건</span>
+            </div>
+            <div class="bo_sch">
+              <div class="select">
+                <select name="#" title="검색조건">
+                  <option value="전체">카테고리 분류</option>
+                  <option value="제목">제목</option>
+                </select>
+              </div>
+              <div class="inp">
+                <input type="text" value="" name="#" title="검색어">
+              </div>
+              <button type="button" class="btn6">조회</button>
+            </div>
+          </div>
+          <!-- //좌우 끝으로 ui가 나뉘는 경우  -->
+          <em class="m_scroll_txt">표 부분을 좌우로 밀어 자세한 정보를 확인하세요.</em>
+          <div class="table scr">
+            <table>
+              <colgroup>
+                <col style="width:30%;">
+                <col style="width:auto;">
+                <col style="width:30%;">
+                <col style="width:auto;">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>UI</th>
+                  <th>비고</th>
+                  <th>UI</th>
+                  <th>비고</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="rqd"><span class="hide">필수</span>이름</td>
+                  <td class="grey2">필수입력 rqd 클래스</td>
+                  <td>
+                    <p class="fc_orange">해당차량의 인명피해</p>
+                    <p class="fc_red">해당차량의 인명피해</p>
+                    <p class="fc_grey">해당차량의 인명피해</p>
+                    <p class="fc_grey2">해당차량의 인명피해</p>
+                    <p class="fc_blue">해당차량의 인명피해</p>
+                    <p class="fc_blue2">해당차량의 인명피해</p>
+                    <p class="fc_blue3">해당차량의 인명피해</p>
+                  </td>
+                  <td class="grey2">
+                    <p>붉은색 텍스트 fc_orange 클래스</p>
+                    <p>붉은색 텍스트 fc_red 클래스</p>
+                    <p>회색 텍스트 fc_grey 클래스</p>
+                    <p>옅은 회색 텍스트 fc_grey2 클래스</p>
+                    <p>파란색 텍스트 fc_blue 클래스</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="rqd2">중요</span></td>
+                  <td class="grey2">rqd2 클래스</td>
+                  <td></td>
+                  <td class="grey2"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <ul class="bar">
+                      <li>bar 리스트</li>
+                      <li>bar 리스트</li>
+                      <li>bar 리스트</li>
+                    </ul>
+                  </td>
+                  <td class="grey2">
+                    bar 클래스
+                  </td>
+                  <td>
+                    <p class="ref">당구장 특수문자</p><br>
+                    <ul>
+                      <li class="ref">당구장 특수문자</li>
+                      <li class="ref">당구장 특수문자</li>
+                    </ul>
+                  </td>
+                  <td  class="grey2">
+                    ref 클래스
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <ul class="dot2">
+                      <li>dot2 리스트</li>
+                      <li>dot2 리스트</li>
+                      <li>dot2 리스트</li>
+                    </ul>
+                  </td>
+                  <td class="grey2">
+                    dot2 클래스
+                  </td>
+                  <td>
+                    <ul class="dot3">
+                      <li class="dot3">dot3</li>
+                      <li class="dot3">dot3</li>
+                    </ul>
+                  </td>
+                  <td class="grey2">
+                    dot3 클래스
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <ul class="bar2">
+                      <li class="bar2">bar2
+                      </li>
+                      <li class="bar2">bar2</li>
+                    </ul>
+                  </td>
+                  <td class="grey2">bar2 클래스</td>
+                  <td>
+                    <h3 class="dot4">dot4 클래스
+                    </h3>
+                  </td>
+                  <td  class="grey2">dot4 클래스</td>
+                </tr>
+                <tr>
+                  <td>
+                    <h4 class="bar3">bar3</h4>
+                    <ul class="bar_list">
+                      <li>bar_list</li>
+                      <li>bar_list</li>
+                    </ul>
+                  </td>
+                  <td class="grey2">
+                    bar3 클래스 (단독 사용시) <br>
+                    bar_list 클래스 (리스트일때)</td>
+                  <td>
+                    <ul class="dot5">
+                      <li>dot5 </li>
+                      <li>dot5</li>
+                      <li>dot5</li>
+                    </ul>
+                  </td>
+                  <td class="grey2">dot5 클래스</td>
+                </tr>
+                <tr>
+                  <td>
+                    <ul class="num_list">
+                      <li>num_list </li>
+                      <li>num_list</li>
+                      <li>num_list</li>
+                    </ul>
+                  </td>
+                  <td class="grey2">num_list 클래스</td>
+                  <td><span class="btn_zoom">확대하기</span></td>
+                  <td  class="grey2">확대하기 버튼 (모바일에서만 나타남)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="tit_lg">사고접수 상세</div>
+                  </td>
+                  <td class="grey2">페이지 제목</td>
+                  <td>
+                    <div class="tit_md">상대차량 정보 <span class="fc_orange rqd">는 필수입력(선택)사항입니다.</span></div>
+                  </td>
+                  <td class="grey2">소제목</td>
+                </tr>
+                <tr>
+                  <td>
+                    <button type="button" data-pop-open="pop1" class="btn1 grey">취소</button>
+                    <button type="button" data-pop-open="pop2" class="btn1">수정</button>
+                  </td>
+                  <td  class="grey2">
+                    1. 페이지 하단 (등록,취소,수정...)
+                    <br>
+                    2. 팝업띄우기 [data-pop-open="팝업이름"]
+                    <br>
+                    3. 팝업유형 2가지 (클릭하여 확인)
+                  </td>
+                  <td>
+                    <button type="button" class="btn2 grey">취소</button>
+                    <button type="button" class="btn2">확인</button>
+                  </td>
+                  <td class="grey2">
+                    팝업 내 버튼
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="btn3 grey">버튼 스타일1</a>
+                    <a href="#" class="btn3">버튼 스타일1</a>
+                  </td>
+                  <td class="grey2">
+                    버튼스타일1
+                  </td>
+                  <td>
+                    <a href="#" class="btn4 grey">버튼 스타일2</a>
+                    <a href="#" class="btn4">버튼 스타일2</a>
+                  </td>
+                  <td class="grey2">
+                    버튼스타일2
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="btn6 grey">선택삭제</a>
+                    <a href="#" class="btn6">사진추가</a>
+                  </td>
+                  <td class="grey2">버튼스타일3</td>
+                  <td>        
+                    <div class=" txtr">
+                      <a href="#" class="btn1" data-pop-open="pop6">사고자료 추가</a>
+                      <a href="#" class="btn1 grey">보완요청 내역보기</a>
+                    </div>
+                  </td>
+                  <td class="grey2">버튼 오른쪽 정렬</td>
+                </tr>
+                <tr>
+                  <td> 
+                    <a href="#" class="btn7 ">다운로드</a>
+                    <a href="#" class="btn7 grey">프린트 하기</a>
+                  </td>
+                  <td class="grey2">btn7</td>
+                  <td> <a href="#" class="page_view_btn">프린트 하기</a></td>
+                  <td class="grey2">page_view_btn</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="../common/images/icon_file_doc.png" alt="doc파일">
+                    <img src="../common/images/icon_file_pdf.png" alt="pdf파일">
+                    <img src="../common/images/icon_file_xls.png" alt="xls파일">
+                    <img src="../common/images/icon_file_txt.png" alt="txt파일">
+                    <img src="../common/images/icon_file_img.png" alt="img파일">
+                    <img src="../common/images/icon_file_zip.png" alt="zip파일">
+                  </td>
+                  <td class="grey2">
+                    첨부파일 아이콘
+                  </td>
+                  <td>
+                    <div class="select">
+                      <select name="#" title="검색조건">
+                        <option value="00">검색조건</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td class="grey2">선택상자</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="inp_set">
+                      <div class="inp date">
+                        <input type="text" name="#" title="연도-월-일" placeholder="연도-월-일" autocomplete="off">
+                      </div>
+                      <span class="behind">~</span>
+                      <div class="inp date">
+                        <input type="text" name="#" title="연도-월-일" placeholder="연도-월-일" autocomplete="off">
+                      </div>
+                    </div>
+                  </td>
+                  <td class="grey2">날짜선택 기간</td>
+                  <td>
+                    <div class="inp date">
+                      <input type="text" name="#" title="연도-월-일" placeholder="연도-월-일" autocomplete="off">
+                    </div>
+                  </td>
+                  <td class="grey2">날짜선택</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="inp">
+                      <input type="text" name="#" title="입력창" placeholder="입력하세요." />
+                    </div>
+                  </td>
+                  <td class="grey2">입력창</td>
+                  <td>
+                    <div class="inp_set">
+                      <div class="inp">
+                        <input type="text" name="#" title="입력창" placeholder="입력하세요." />
+                      </div>
+                      <div class="inp">
+                        <input type="text" name="#" title="입력창" placeholder="입력하세요." />
+                      </div>
+                    </div>
+                  </td>
+                  <td class="grey2">입력창 2개</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="inp_set">
+                      <div class="select">
+                        <select name="#" title="검색조건">
+                          <option value="00">검색조건</option>
+                        </select>
+                      </div>
+                      <div class="inp">
+                        <input type="text" name="#" title="입력창" placeholder="입력하세요." />
+                      </div>
+                      <div class="inp">
+                        <input type="text" name="#" title="입력창" placeholder="입력하세요." />
+                      </div>
+                    </div>
+                  </td>
+                  <td class="grey2">입력창 3개</td>
+                  <td>
+                    <div class="inp_set phone_num">
+                      <div class="inp">
+                        <input type="text" name="#" title="입력창" placeholder="입력하세요." />
+                      </div>
+                      <span class="behind">-</span>
+                      <div class="inp">
+                        <input type="text" name="#" title="입력창" placeholder="입력하세요." />
+                      </div>
+                      <span class="behind">-</span>
+                      <div class="inp">
+                        <input type="text" name="#" title="입력창" placeholder="입력하세요." />
+                      </div>
+                    </div>
+                  </td>
+                  <td class="grey2">전화번호</td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" name="#" id="chk_00" title="/" />
+                  </td>
+                  <td class="grey2">
+                    체크박스
+                  </td>
+                  <td>
+                    <ul class="type_list">
+                      <li>
+                        <input type="checkbox" name="#" id="chk_01" />
+                        <label for="chk_01">체크1</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="#" id="chk_02" />
+                        <label for="chk_02">체크2</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="#" id="chk_03" />
+                        <label for="chk_03">체크3</label>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="grey2">
+                    다중 체크박스
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <ul class="type_list">
+                      <li>
+                        <input type="radio" name="radio_01" id="radio_01" />
+                        <label for="radio_01">radio1</label>
+                      </li>
+                      <li>
+                        <input type="radio" name="radio_01" id="radio_02" />
+                        <label for="radio_02">radio2</label>
+                      </li>
+                      <li>
+                        <input type="radio" name="radio_01" id="radio_03" />
+                        <label for="radio_03">radio3</label>
+                      </li>
+                      <li  data-before="기타">
+                        <input type="radio" name="radio_01" id="radio_04">
+                        <label for="radio_04"  >기타</label>
+                        <div class="inp ml10 w200">
+                          <!-- input width 변경가능 -->
+                            <input type="text" name="#" title="기타" >
+                        </div>
+                      </li>
+                    </ul>
+                  <!--   <script>
+                      $('#radio_04').on('click', function () {
+                        if ($('#radio_04').is(':checked')) {
+                          $('.inp input').attr('disabled', false);
+                        } else {
+                          $('.inp input').attr('disabled', true);
+                        }
+                      });
+                    </script> -->
+                  </td>
+                  <td class="grey2">
+                    다중 radio
+                  </td>
+                  <td>
+                    <button type="button" class="btn5" data-pop-open="pop5">지도 선택</button>
+                    <button type="button" class="btn5">우편번호찾기</button>
+                  </td>
+                  <td class="grey2">
+                    form 버튼
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="file">
+                      <button type="button" class="btn8">파일선택</button>
+                      <span class="inp">
+                        <em></em>
+                      </span>
+                      <input type="file" name="file" title="첨부파일" onchange="changeValue(this);"
+                        class="hide" />
+                    </div>
+                    <div class="file">
+                      <button type="button" class="btn5">파일선택</button>
+                      <span class="inp">
+                        <em></em>
+                      </span>
+                      <input type="file" name="file" title="첨부파일" onchange="changeValue(this);"
+                        class="hide" />
+                    </div>
+                  </td>
+                  <td class="grey2">파일 선택</td>
+                  <td class="ta_l">
+                    서명 또는 직인을 배경투명 PNG 파일로 등록 바랍니다.
+                    <ul class="file_list">
+                      <li><a href="#">명함.png (2022-08-07 13:22:30)</a><button type="button"><img src="../common/images/btn_file_del.png" alt="삭제"></button></li>
+                    </ul>
+                    <div class="file">
+                      <button type="button" class="btn5">파일선택</button>
+                      <span class="inp">
+                        <em></em>
+                      </span>
+                      <input type="file" name="file" title="첨부파일" onchange="changeValue(this);" class="hide">
+                    </div>
+                  </td>
+                  <td class="grey2">파일 선택(파일제거)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="textarea"><textarea name="#" title="/"
+                        placeholder="(예시) 사상자 운송 병원명 등 조치 사항을 상세하게 작성하여 주세요."></textarea></div>
+                  </td>
+                  <td class="grey2">textarea</td>
+                  <td>
+                    <div class="inp_set">
+                      <label for="inp_set1">사망</label>
+                      <div class="inp w50 ta_c">
+                        <input type="text" id="inp_set1" title="/">
+                      </div>
+                      <span>명,</span>                   
+                      <label for="inp_set2">중상</label>
+                      <div class="inp w90">
+                        <input type="text" id="inp_set2"  title="/">
+                      </div>
+                      <span>명</span>
+                    </div>
+                  </td>
+                  <td class="grey2">
+                    label + input <br>
+                    w10 ~ w100 클래스로 너비조정(px)
+                  </td>
+                </tr>
+                <tr>
+                  <td class="grey2"> bg 색상 #f9f9f9 </td>
+                  <td class="grey2">class="grey2"</td>
+                  <td>
+                    <a href="#" class="btn6 grey" data-pop-open="pop1">textarea 팝업</a>
+                    <a href="#" class="btn6" data-pop-open="pop4">영상추가 팝업</a>
+                  </td>
+                  <td class="grey2">사유입력하는 팝업</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="grey2"></td>
+                  <td></td>
+                  <td class="grey2"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table">
+            <table>
+              <colgroup>
+                <col style="width: 15%;">
+                <col style="width: 15%;">
+                <col style="width: 15%;">
+                <col style="width: 15%;">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>사고조사 종결일시</th>
+                  <td class="txtc">2022-09-13</td>
+                  <th>사고조사 처리자</th>
+                  <td colspan="2" class="txtc">총무공이순신</td>
+                </tr>
+                <tr>
+                  <th>조사 책임자</th>
+                  <td class="txtc">김혜리</td>
+                  <th>조사자</th>
+                  <td class="txtc">김혜진</td>
+                  <td class="ta_r txtc">
+                      <a href="#" class="btn6 grey">사고조사 결과보기</a>
+                      <a href="#" class="btn6">조사 재심의 신청하기</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table photo">
+            <table>
+                <colgroup>
+                    <col style="width: 5%;">
+                    <col style="width: 15%;">
+                    <col style="width: auto;">
+                    <col style="width: 13%;">
+                    <col style="width: 15%;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" name="#" id="chk_04" title="/"></th>
+                        <th>사진</th>
+                        <th class="m_view">등록자/등록일시</th>
+                        <th class="m_none">설명</th>
+                        <th class="m_none">등록자</th>
+                        <th class="m_none">등록일시</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                      <td><input type="checkbox" name="#" id="chk_05" title="/">
+                      </td>
+                      <td>
+                          <a href="#" class="img_thumb" data-pop-open="pop3">
+                              <img src="../common/images/zoom_img_1.png" alt="">
+                          </a>
+                      </td>
+                      <td class="ta_c m_view">[보험자] 이순신 <span class="block ">2022-08-03 15:35:43</span></td>
+                      <td><div class="textarea h90"><textarea name="#" title="충돌사진" placeholder="(예시) 충돌사진"></textarea></div>
+                      </td>
+                      <td class="m_none">[보험사] 이순신</td>
+                      <td class="m_none">2022-08-03 15:35:43</td>
+                  </tr>
+                  <tr>
+                      <td><input type="checkbox" name="#" id="chk_06" title="/"></td>
+                      <td><a href="#" class="img_thumb" data-pop-open="pop3">
+                          <img src="../common/images/zoom_img_2.png" alt="">
+                      </a>
+                    </td>
+                    <td class="ta_c  m_view">[보험자] 이순신 <span class="block ">2022-08-03 15:35:43</span></td>
+                      <td><div class="textarea h90"><textarea name="#" title="충돌사진" placeholder="(예시) 충돌사진"></textarea></div></td>
+                      <td class="m_none">[보험사] 이순신</td>
+                      <td class="m_none">2022-08-03 15:35:43</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="#" id="chk_07" title="/"></td>
+                    <td><a href="#" class="img_thumb video" data-pop-open="pop3">
+                        <img src="../common/images/zoom_img_3.png" alt="">
+                    </a>
+                    </td>
+                    <td class="ta_c  m_view">[보험자] 이순신 <span class="block ">2022-08-03 15:35:43</span></td>
+                    <td><div class="textarea h90"><textarea name="#" title="충돌사진" placeholder="(예시) 충돌사진"></textarea></div></td>
+                    <td class="m_none">[보험사] 이순신</td>
+                    <td class="m_none">2022-08-03 15:35:43</td>
+                  </tr>
+                  <!-- table 조회결과없을때 -->
+                  <tr class="null" >
+                    <td colspan="5" >등록된 사진이 없습니다.</td>
+                  </tr>
+                  <!-- // table 조회결과없을때 -->
+                </tbody>
+            </table>
+        </div>
+         tbale 모바일 가로 스크롤
+        <em class="m_scroll_txt">표 부분을 좌우로 밀어 자세한 정보를 확인하세요.</em>
+        <div class="table scr ta_c">
+          <table>
+						<colgroup>
+							<col style="width:3%;">
+							<col style="width:5%;">
+							<col style="width:15%;">
+							<col style="width:8%;">
+							<col style="width:7%;">
+							<col style="width:4%;">
+							<col style="width:4%;">
+							<col style="width:4%;">
+							<col style="width:4%;">
+							<col style="width:11%;">
+							<col style="width:8%;">
+							<col style="width:8%;">
+							<col style="width:10%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th rowspan="2">NO</th>
+								<th rowspan="2">사고지역</th>
+								<th rowspan="2">보험접수번호</th>
+								<th rowspan="2">제작자</th>
+								<th rowspan="2">차종</th>
+								<th colspan="4">인명피해 사망</th>
+								<th rowspan="2">접수자</th>
+								<th rowspan="2">사고일시</th>
+								<th rowspan="2">접수일시</th>
+<!-- 								<th rowspan="2">종결일시</th> -->
+								<th rowspan="2">상태</th>
+							</tr>
+							<tr>
+								<th>사망</th>
+								<th>중상</th>
+								<th>경상</th>
+								<th>부상</th>
+							</tr>
+						</thead>
+						<tbody>
+              <tr>
+								<td class="ta_c">3</td>
+								<td class="ta_c">서울 금천구</td>
+								<td class="ta_c">P2207000004</td>
+								<td class="ta_c">현대자동차</td>
+								<td class="ta_c">아이오닉5</td>
+								<td class="ta_c">0</td>
+								<td class="ta_c">0</td>
+								<td class="ta_c">0</td>
+								<td class="ta_c">0</td>
+								<td class="ta_c">박보통
+(ordinaryU99)</td>
+								<td class="ta_c">2022-07-18</td>
+								<td class="ta_c">2022-07-18</td>
+
+								<td class="ta_c">신고접수</td>
+							</tr><tr>
+								<td class="ta_c">2</td>
+								<td class="ta_c">경기 김포시</td>
+								<td class="ta_c">P2207000003</td>
+								<td class="ta_c">현대자동차</td>
+								<td class="ta_c">아이오닉5</td>
+								<td class="ta_c">0</td>
+								<td class="ta_c">0</td>
+								<td class="ta_c">0</td>
+								<td class="ta_c">0</td>
+								<td class="ta_c">박보통
+(ordinaryU99)</td>
+								<td class="ta_c">2022-07-07</td>
+								<td class="ta_c">2022-07-07</td>
+
+								<td class="ta_c">보완요청중</td>
+							</tr><tr>
+								<td class="ta_c">1</td>
+								<td class="ta_c">부산 연제구</td>
+								<td class="ta_c">P2207000002
+(TESTP2207000002)</td>
+								<td class="ta_c">현대자동차</td>
+								<td class="ta_c">Model  S</td>
+								<td class="ta_c">0</td>
+								<td class="ta_c">0</td>
+								<td class="ta_c">0</td>
+								<td class="ta_c">1</td>
+								<td class="ta_c">박보통
+(ordinaryU99)</td>
+								<td class="ta_c">2022-07-04</td>
+								<td class="ta_c">2022-07-06</td>
+
+								<td class="ta_c">조사중</td>
+							</tr></tbody>
+					</table>
+            <!-- <table>
+              <colgroup>
+                  <col style="width:4%;">
+                  <col style="width:9%;">
+                  <col style="width: auto;">
+                  <col style="width:9%;">
+                  <col style="width:9%;">
+                  <col style="width:8%;">
+                  <col style="width:8%;">
+                  <col style="width:8%;">
+                  <col style="width:7%;">
+                  <col style="width:9%;">
+                  <col style="width:9%;">
+                  <col style="width:8%;">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>NO</th>
+                  <th>사고지역</th>
+                  <th>보험접수번호</th>
+                  <th>제작자</th>
+                  <th>차종</th>
+                  <th>인명피해 사망</th>
+                  <th>인명피해 중상</th>
+                  <th>인명피해 경상</th>
+                  <th>접수자</th>
+                  <th>사고일시</th>
+                  <th>접수일시</th>
+                  <th>상태</th>
+                </tr>                
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>9</td>
+                      <td>경기 성남시</td>
+                      <td class="ta_l"><a>123-456-78910</a></td>
+                      <td>현대자동차</td>
+                      <td>아이오닉5</td>
+                      <td>0</td>
+                      <td>1</td>
+                      <td>4</td>
+                      <td>홍길동</td>
+                      <td>2022-08-03 13:22</td>
+                      <td>2022-08-03 13:22</td>
+                      <td>접수완료</td>
+                  </tr>
+                  <tr>
+                      <td>8</td>
+                      <td>경기 성남시</td>
+                      <td class="ta_l"><a>123-456-78910</a></td>
+                      <td>현대자동차</td>
+                      <td>아이오닉5</td>
+                      <td>0</td>
+                      <td>1</td>
+                      <td>4</td>
+                      <td>홍길동</td>
+                      <td>2022-08-03 13:22</td>
+                      <td>2022-08-03 13:22</td>
+                      <td>조사중<span class="block">(재심의)</span></td>
+                  </tr>
+                  <tr>
+                      <td>7</td>
+                      <td>경기 성남시</td>
+                      <td class="ta_l"><a>123-456-78910</a></td>
+                      <td>현대자동차</td>
+                      <td>아이오닉5</td>
+                      <td>0</td>
+                      <td>1</td>
+                      <td>4</td>
+                      <td>홍길동</td>
+                      <td>2022-08-03 13:22</td>
+                      <td>2022-08-03 13:22</td>
+                      <td>종결<span class="block">(재심의)</span></td>
+                  </tr>
+                  <tr>
+                      <td>6</td>
+                      <td>경기 성남시</td>
+                      <td class="ta_l"><a>123-456-78910</a></td>
+                      <td>현대자동차</td>
+                      <td>아이오닉5</td>
+                      <td>0</td>
+                      <td>1</td>
+                      <td>4</td>
+                      <td>홍길동</td>
+                      <td>2022-08-03 13:22</td>
+                      <td>2022-08-03 13:22</td>
+                      <td>종결<span class="block">(재심의)</span></td>
+                  </tr>
+                  <tr>
+                      <td>5</td>
+                      <td>경기 성남시</td>
+                      <td class="ta_l"><a>123-456-78910</a></td>
+                      <td>현대자동차</td>
+                      <td>아이오닉5</td>
+                      <td>0</td>
+                      <td>1</td>
+                      <td>4</td>
+                      <td>홍길동</td>
+                      <td>2022-08-03 13:22</td>
+                      <td>2022-08-03 13:22</td>
+                      <td>접수완료</td>
+                  </tr>
+                  <tr>
+                      <td>4</td>
+                      <td>경기 성남시</td>
+                      <td class="ta_l"><a>123-456-78910</a></td>
+                      <td>현대자동차</td>
+                      <td>아이오닉5</td>
+                      <td>0</td>
+                      <td>1</td>
+                      <td>4</td>
+                      <td>홍길동</td>
+                      <td>2022-08-03 13:22</td>
+                      <td>2022-08-03 13:22</td>
+                      <td>접수완료</td>
+                  </tr>
+                  <tr>
+                      <td>3</td>
+                      <td>경기 성남시</td>
+                      <td class="ta_l"><a>123-456-78910</a></td>
+                      <td>현대자동차</td>
+                      <td>아이오닉5</td>
+                      <td>0</td>
+                      <td>1</td>
+                      <td>4</td>
+                      <td>홍길동</td>
+                      <td>2022-08-03 13:22</td>
+                      <td>2022-08-03 13:22</td>
+                      <td>접수완료</td>
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>경기 성남시</td>
+                      <td class="ta_l"><a>123-456-78910</a></td>
+                      <td>현대자동차</td>
+                      <td>아이오닉5</td>
+                      <td>0</td>
+                      <td>1</td>
+                      <td>4</td>
+                      <td>홍길동</td>
+                      <td>2022-08-03 13:22</td>
+                      <td>2022-08-03 13:22</td>
+                      <td>접수완료</td>
+                  </tr>
+                  <tr>
+                      <td>1</td>
+                      <td>경기 성남시</td>
+                      <td class="ta_l"><a>123-456-78910</a></td>
+                      <td>현대자동차</td>
+                      <td>아이오닉5</td>
+                      <td>0</td>
+                      <td>1</td>
+                      <td>4</td>
+                      <td>홍길동</td>
+                      <td>2022-08-03 13:22</td>
+                      <td>2022-08-03 13:22</td>
+                      <td>접수완료</td>
+                  </tr>
+                  <tr class="null" >
+                    <td colspan="12" >등록된 사진이 없습니다.</td>
+                  </tr>
+              </tbody>
+            </table> -->
+        </div>
+          <div class="pagination">
+            <a href="#" class="first_page"><span class="hide">첫 페이지</span></a>
+            <a href="#" class="prev_page"><span class="hide">이전 페이지</span></a>
+            <ul>
+              <li><a href="#" class="active">1<span class="hide">현재 페이지</span></a></li>
+              <li><a href="#">2<span class="hide">페이지 이동</span></a></li>
+              <li><a href="#">3<span class="hide">페이지 이동</span></a></li>
+              <li><a href="#">4<span class="hide">페이지 이동</span></a></li>
+              <li><a href="#">5<span class="hide">페이지 이동</span></a></li>
+            </ul>
+            <a href="#" class="next_page"><span class="hide">다음 페이지</span></a>
+            <a href="#" class="last_page"><span class="hide">끝 페이지</span></a>
+          </div>
+        </div>
+        <div class="btn_box">
+          <a href="#" class="btn1 grey">취소</a>
+          <a href="#" class="btn1">수정</a>
+        </div>
+        <!-- //컨텐츠 구분 -->
+      </div>
+    </div>
+    <ul class="quick_menu">
+        <li>
+          <a href="#">
+            <span>
+              <img src="../common/images/icon_quick_1.png" alt="">
+              공지사항
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <img src="../common/images/icon_quick_2.png" alt="">
+              자주하는질문<br>(FAQ)
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <img src="../common/images/icon_quick_3.png" alt="">
+              위원회 소개
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <img src="../common/images/icon_quick_4.png" alt="">
+              조직안내
+            </span>
+          </a>
+        </li>
+      </ul>
+    <div class="footer">
+      <div class="ft_nav">
+        <div class="container">
+          <ul class="ft_menu">
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">찾아오시는 길</a></li>
+            <li><a href="#">시스템 개선제안</a></li>
+          </ul>
+          <ul class="partner">
+            <li><a href="#"><img src="../common/images/logo_partner_3.png" alt=""></a></li>
+            <li><a href="#"><img src="../common/images/logo_partner_2.png" alt=""></a></li>
+            <li><a href="#"><img src="../common/images/logo_partner_1.png" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ft_info">
+        <div class="container">
+          <div class="address">
+            <p>본 페이지에 게시된 이메일 주소가 자동 수집되는 것을 거부하며, 이를 위반시 정보통신법에 의해 처벌됨을 유념하시기 바랍니다.</p>
+            <ul>
+              <li class="br">18247 경기도 화성시 송산면 삼존로 200</li>
+              <li>대표번호 : 080-357-2500</li>
+              <li>팩스 : 031-369-0399 / 0502-384-5498</li>
+            </ul>
+          </div>
+          <div class="website dropdown">
+            <button type="button" class="btn" title="열기">관련사이트</button>
+            <ul>
+              <li><a href="#">국토교통부</a></li>
+              <li><a href="#">한국교통안전공단</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pop_wrap">
+    <div class="popup form" tabindex="0" data-pop="pop1">
+      <form action="#" method="post" name="#">
+        <div class="pop_tit">사고접수 취하</div>
+        <div>
+          <div class="textarea"><textarea name="#" title="사고접수 취히" placeholder="사고접수 취하 사유를 명확하게 작성하여 주시기 바랍니다."></textarea>
+          </div>
+        </div>
+        <div class="btn_box">
+          <a href="#" class="close_pop btn2 grey">취소</a>
+          <a href="#" class="close_pop btn2">확인</a>
+        </div>
+        <button type="button" class="close_pop loop"><span class="hide">닫기</span></button>
+      </form>
+    </div>
+    <div class="popup form" tabindex="0" data-pop="pop2">
+      <form action="#" method="post" name="#">
+        <div class="pop_tit">수정사유 입력</div>
+        <div>
+          <div class="textarea"><textarea name="#" title="수정사유" placeholder="수정 사유를 간략하게 입력하여 주세요"></textarea></div>
+        </div>
+        <div class="btn_box">
+          <a href="#" class="close_pop btn2 grey">취소</a>
+          <a href="#" class="close_pop btn2">확인</a>
+        </div>
+        <button type="button" class="close_pop loop"><span class="hide">닫기</span></button>
+      </form>
+    </div>
+    <div class="popup zoom" tabindex="0" data-pop="pop3">
+      <form action="#" method="post" name="#">
+        <div>
+          <div class="img_slide">
+            <div class="item">
+              <div class="img"><img src="../common/images/zoom_img_2_1.png" alt=""></div>
+              <div class="txt">
+                <div>
+                  <span>[보험사] 이순신<b>2020-08-03 15:35:43</b>
+                  피해차량</span>
+                </div>
+                <a href="#" class="down">Download</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="img"><img src="../common/images/zoom_img_2_1.png" alt=""></div>
+              <div class="txt">
+                <div>
+                  <span><b>[보험사] 이순신</b> 2020-08-03 15:35:43</span>
+                  피해차량
+                </div>
+                <a href="#" class="down">Download</a>
+              </div>
+            </div>            
+          </div>
+        </div>      
+        <button type="button" class="close_pop loop"><span class="hide">닫기</span></button>
+      </form>
+    </div>
+    <div class="popup blackbox" tabindex="0" data-pop="pop4">
+      <form action="#" method="post" name="#">
+        <div class="pop_tit">영상추가</div>
+        <div>
+          <img src="../common/images/black_box.png" alt="">
+          <span>영상추가</span>
+        </div>
+        <div class="btn_box">
+          <a href="#" class="close_pop btn2 grey">취소</a>
+          <a href="#" class="close_pop btn2">저장</a>
+        </div>
+        <button type="button" class="close_pop loop"><span class="hide">닫기</span></button>
+      </form>
+    </div>
+     <!-- 지도 선택 팝업 -->
+     <div class="popup form map" tabindex="0" data-pop="pop5">
+      <form action="#" method="post" name="#">
+        <div class="pop_tit">지도 검색</div>
+        <div class="map_bottom">
+          <a href="#" class="close_pop">확인</a>
+        </div>
+        <div class="map_msg">
+          ※ 사고장소에 등록된 주소정보의 지도를 불러 옵니다.
+          <p>- 마우스 스크롤 확대 또는 축소<br>- 마우스 클릭 드래그 지도 이동<br>- 사고장소 지점 마우스 클릭 지점 마커</p>
+        </div>
+     
+        <div id="gpsMap" style="position: relative; overflow: hidden; background: url(&quot;http://t1.daumcdn.net/mapjsapi/images/bg_tile.png&quot;);">
+        </div>
+        <div id="clickLatlng"></div>
+        <script>
+          var mapContainer = document.getElementById('gpsMap'), // 지도를 표시할 div 
+              mapOption = { 
+                  center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+                  level: 3 // 지도의 확대 레벨
+              };
+          
+          var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+          
+          // 지도를 클릭한 위치에 표출할 마커입니다
+          var marker = new kakao.maps.Marker({ 
+              // 지도 중심좌표에 마커를 생성합니다 
+              position: map.getCenter() 
+          }); 
+          // 지도에 마커를 표시합니다
+          marker.setMap(map);
+          
+          // 지도에 클릭 이벤트를 등록합니다
+          // 지도를 클릭하면 마지막 파라미터로 넘어온 함수를 호출합니다
+          kakao.maps.event.addListener(map, 'click', function(mouseEvent) {        
+              
+              // 클릭한 위도, 경도 정보를 가져옵니다 
+              var latlng = mouseEvent.latLng; 
+              
+              // 마커 위치를 클릭한 위치로 옮깁니다
+              marker.setPosition(latlng);
+              
+              var message = '클릭한 위치의 위도는 ' + latlng.getLat() + ' 이고, ';
+              message += '경도는 ' + latlng.getLng() + ' 입니다';
+              
+              var resultDiv = document.getElementById('clickLatlng'); 
+              resultDiv.innerHTML = message;
+              
+          });
+          </script>
+        <button type="button" class="close_pop loop"><span class="hide">닫기</span></button>
+      </form>
+    </div>
+    <!-- // 지도 선택 팝업 -->
+    <!-- 파일 선택 팝업 -->
+      <div id="aditDta" class="popup fileup"  tabindex="0" data-pop="pop6">
+        <div class="pop_tit">사고자료 추가</div>
+        <div class="inp_set">
+          <div class="select w200">
+            <select name="doc_ty">
+              <option value="I">사진</option>
+              <option value="V">영상</option>
+            </select>
+          </div>
+          <div class="inp">
+            <input type="text" name="doc_nm" id="image_doc_nm" maxlength="100" placeholder="자료 제목 입력 예) 00가0000">
+          </div>
+        </div>
+        <div class="inp_file">
+          <button type="button" class="btn2 grey upload" name="btnSelFile">파일선택</button>
+          <input type="file" class="hide" id="upload_1" name="fileList[]" multiple="multiple" style="width: 100%;">
+        </div>
+        <div id="dropZone_1" class="margin-bottom dropZone11" style="margin-bottom: 20px;">
+          <div id="fileDragDesc">
+            파일을 드래그 해주세요.
+          </div>
+        </div>
+        <div class="table">
+          <table id="upload_1_tbody">
+            <colgroup>
+              <col style="width: auto;">
+              <col style="width: 100px;">
+            </colgroup>
+            <thead>
+              <tr>
+                <th colspan="2">파일명</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="fileNone">
+                <td colspan="2" style="text-align:center">사고자료를 등록하여 주세요.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="btn_box">
+          <a href="javascript:void(0);" class="btn2 green close_pop" name="btnAddSplemnt" onclick="fnInsertAditFileAjax(); return false;">확인</a>
+        </div>
+        <button type="button" class="close_pop loop" name="btnPopClose"><span class="hide">닫기</span></button>
+      </div>
+    <!-- 파일 선택 팝업 -->
+
+  </div>
+</body>
+</html>
+

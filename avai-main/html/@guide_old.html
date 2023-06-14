@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>자율주행자동차 사고조사위원회 포털 퍼블리싱 작업현황판</title>
+  <style>
+    html,
+    body,
+    div,
+    span,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a,
+    em,
+    img,
+    strong,
+    b,
+    dl,
+    dt,
+    dd,
+    ul,
+    ol,
+    li,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    footer,
+    header,
+    menu,
+    nav,
+    section {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      padding: 2em;
+      line-height: 1.4;
+      font-family: applegothic, '나눔고딕', nanumgothic, '맑은 고딕', malgungothic, dotum, '돋움';
+      font-size: 13px;
+      color: #333;
+    }
+
+    ul,
+    ol {
+      list-style-type: none;
+    }
+
+    table {
+      border-spacing: 0;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    h1 {
+      font-size: 1.45em;
+    }
+
+    h2 {
+      margin-bottom: 5px;
+      font-size: 1.3em;
+    }
+
+    h3 {
+      font-size: 1.2em;
+    }
+
+    th {
+      vertical-align: middle;
+      word-break: break-all;
+    }
+
+    td {
+      vertical-align: middle;
+      word-break: break-all;
+    }
+
+    a {
+      color: #666;
+    }
+
+    .hidden {
+      position: absolute;
+      top: -99999em;
+      left: -99999em;
+    }
+
+    .info {
+      margin: 0 0 3em;
+      width: 100%;
+      border-top: 1px dashed #ddd;
+    }
+
+    .info th {
+      padding: 0.5em 1em;
+      border-bottom: 1px dashed #ddd;
+      text-align: left;
+      border-right: 0;
+      background-color: #f6f6f6;
+    }
+
+    .info td {
+      padding: 0.5em 1em;
+      border-bottom: 1px dashed #ddd;
+      text-align: left;
+      border-left: 0;
+    }
+
+    .work {
+      width: 100%;
+      margin: 0 0 3em;
+      width: 100%;
+      border-top: 2px solid #aaa;
+    }
+
+    .work th {
+      font-family: 'calbri';
+      padding: 0.5em;
+      border: 1px solid #ddd;
+      border-left-width: 0;
+      background: #f9f9f9;
+    }
+
+    .work td {
+      padding: 0.5em;
+      border-bottom: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      background: #fff;
+      vertical-align: middle;
+    }
+
+    .work th:last-child,
+    .work td:last-child {
+      border-right-width: 0;
+    }
+
+    .tit td {
+      border-top: 2px solid #ccc;
+    }
+
+    .work td:nth-last-child(2),
+    .work td:nth-last-child(3) {
+      text-align: center;
+      color: #666;
+    }
+    .work {counter-reset: num;}
+    .work td:nth-last-child(2):before{
+      content:counter(num);counter-increment: num;
+    }
+
+    .yellow td {
+      background: #fff8d0;
+    }
+
+    .red {
+      color: #dc5959;
+    }
+
+    .status {
+      text-align: right;
+      margin-bottom: 10px;
+    }
+
+    .status h2 {
+      float: left;
+    }
+
+    .status span {
+      display: inline-block;
+      margin-left: 10px;
+    }
+
+    .tit1 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h2 style="font-family: 'calbri'">Project info.</h2>
+  <table class="info">
+    <caption>
+      <span class="hidden">프로젝트 기본 정보</span>
+    </caption>
+    <colgroup>
+      <col style="width: 150px" />
+      <col />
+    </colgroup>
+    <tbody>
+      <tr>
+        <th scope="row">1. 프로젝트명</th>
+        <td>자율주행자동차 사고조사위원회 포털</td>
+      </tr>
+      <tr>
+        <th scope="row">2. 인코딩 방식</th>
+        <td>utf-8</td>
+      </tr>
+      <tr>
+        <th scope="row">3. dtd 사용</th>
+        <td>Html5</td>
+      </tr>
+      <tr>
+        <th scope="row">4. css 사용</th>
+        <td>css3</td>
+      </tr>
+      <tr>
+        <th scope="row">5. 크로스 브라우징</th>
+        <td>IE9</td>
+      </tr>
+      <tr>
+        <th scope="row">6. 웹 접근성</th>
+        <td>준수</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="status">
+    <h2 style="font-family: 'calbri'">Publish List</h2>
+  </div>
+  <table class="work">
+    <colgroup>
+      <col style="width: 180px" />
+      <col style="width: 180px" />
+      <col style="width: 180px" />
+      <col style="width: 180px" />
+      <col style="width: auto" />
+      <col style="width: 80px" />
+      <col style="width: auto" />
+    </colgroup>
+    <thead>
+      <tr>
+        <th scope="col">1 Depth</th>
+        <th scope="col">2 Depth</th>
+        <th scope="col">3 Depth</th>
+        <th scope="col">4 Depth</th>
+        <th scope="col">FileName</th>
+        <th scope="col">num</th>        
+        <th scope="col">Memo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="tit yellow">
+        <td>UI</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="common.html" target="_blank">common.html</a></td>
+        <td></td>        
+        <td>버튼, form, popup, tab, box, title 등 UI모음</td>
+      </tr>
+      <tr class="tit">
+        <td>메인</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="../html/PSUI-M0001.html" target="_blank">PSUI-M0001.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr>
+      <tr class="tit">
+        <td>로그인 및 회원가입</td>
+        <td>로그인</td>
+        <td></td>
+        <td></td>
+        <td><a href="../html/PSUI-07001.html" target="_blank">PSUI-07001.html</a></td>
+        <td></td>        
+        <td>팝업(3)</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>아이디찾기</td>
+        <td></td>
+        <td></td>
+        <td><a href="../html/PSUI-07002.html" target="_blank">PSUI-07002.html</a></td>
+        <td></td>        
+        <td>팝업(1)</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>비밀번호찾기</td>
+        <td></td>
+        <td></td>
+        <td><a href="../html/PSUI-07003.html" target="_blank">PSUI-07003.html</a></td>
+        <td></td>        
+        <td>팝업(2)</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>6개월 비밀번호 변경</td>
+        <td></td>
+        <td></td>
+        <td><a href="../html/PSUI-07004.html" target="_blank">PSUI-07004.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>비밀번호 5회 오류 잠금</td>
+        <td></td>
+        <td></td>
+        <td><a href="../html/PSUI-07005.html" target="_blank">PSUI-07005.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr>
+     
+      <tr>
+        <td></td>
+        <td>휴면계정안내</td>
+        <td></td>
+        <td></td>
+        <td><a href="../html/PSUI-08001.html" target="_blank">PSUI-08001.html</a></td>
+        <td></td>        
+        <td>팝업(2)</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>회원가입</td>
+        <td>약관동의</td>
+        <td></td>
+        <td><a href="../html/PSUI-09001.html" target="_blank">PSUI-09001.html</a></td>
+        <td></td>        
+        <td>팝업(1)</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>본인인증</td>
+        <td></td>
+        <td><a href="../html/PSUI-09002.html" target="_blank">PSUI-09002.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr>      
+      <tr>
+        <td></td>
+        <td></td>
+        <td>회원정보입력</td>
+        <td></td>
+        <td><a href="../html/PSUI-09003.html" target="_blank">PSUI-09003.html</a></td>
+        <td></td>        
+        <td>사업자법인인증 팝업 없음</td>
+      </tr>  
+      <tr>
+        <td></td>
+        <td></td>
+        <td>회원가입승인대기</td>
+        <td></td>
+        <td><a href="../html/PSUI-09005.html" target="_blank">PSUI-09005.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>가입완료</td>
+        <td></td>
+        <td><a href="../html/PSUI-09006.html" target="_blank">PSUI-09006.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr>
+      <tr class="tit">
+        <td>사고접수 및 현황</td>
+        <td>신규사고접수</td>
+        <td>등록</td>
+        <td></td>
+        <td><a href="../html/PSUI-01001.html" target="_blank">PSUI-01001.html</a></td>
+        <td></td>        
+        <td>(select,input)</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>촬영사진</td>
+        <td></td>
+        <td><a href="../html/PSUI-01003.html" target="_blank">PSUI-01003.html</a></td>
+        <td></td>        
+        <td>팝업3</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>블랙박스</td>
+        <td></td>
+        <td><a href="../html/PSUI-01004.html" target="_blank">PSUI-01004.html</a></td>
+        <td></td>        
+        <td>영상재생btn</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>사고접수현황(목록, 조회)</td>
+        <td></td>
+        <td></td>
+        <td><a href="../html/PSUI-01005.html" target="_blank">PSUI-01005.html</a></td>
+        <td></td>        
+        <td>th</td>
+      </tr>          
+      <tr>
+        <td></td>
+        <td>사고접수상세</td>
+        <td></td>
+        <td></td>
+        <td><a href="../html/PSUI-01006.html" target="_blank">PSUI-01006.html</a></td>
+        <td></td>        
+        <td>팝업</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>사고발생신고서</td>
+        <td></td>
+        <td><a href="../html/PSUI-01007.html" target="_blank">PSUI-01007.html</a></td>
+        <td></td>        
+        <td>버튼 디자인필요</td>
+      </tr>     
+      <tr>
+        <td></td>
+        <td>재심의 신청리스트</td>
+        <td>재심의 신청 목록</td>
+        <td></td>
+        <td><a href="../html/PSUI-01011.html" target="_blank">PSUI-01011.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr> 
+    </tr>     
+    <tr>
+      <td></td>
+      <td></td>
+      <td>재심의 신청</td>
+      <td></td>
+      <td><a href="../html/PSUI-01012.html" target="_blank">PSUI-01012.html</a></td>
+      <td></td>        
+      <td>안건추가 버튼 필요</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>재심의 신청 상세</td>
+      <td></td>
+      <td><a href="../html/PSUI-01013.html" target="_blank">PSUI-01013.html</a></td>
+      <td></td>        
+      <td></td>
+    </tr> 
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>재심의 신청 출력</td>
+      <td><a href="../html/PSUI-01014.html" target="_blank">PSUI-01014.html</a></td>
+      <td></td>        
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>조사결과 정보제공 신청서 리스트</td>
+      <td>목록</td>
+      <td></td>
+      <td><a href="../html/PSUI-01015.html" target="_blank">PSUI-01015.html</a></td>
+      <td></td>        
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>조사결과 정보제공 신청서</td>
+      <td></td>
+      <td><a href="../html/PSUI-01016.html" target="_blank">PSUI-01016.html</a></td>
+      <td></td>        
+      <td></td>
+    </tr> 
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>조사결과 정보제공 신청서 출력</td>
+      <td><a href="../html/PSUI-01018.html" target="_blank">PSUI-01018.html</a></td>
+      <td></td>        
+      <td></td>
+    </tr>
+    <tr class="tit">
+      <td>자율주행 사고조사안내</td>
+      <td>자율주행자동차 사고조사란</td>
+      <td></td>
+      <td></td>
+      <td><a href="#" target="_blank"></a></td>
+      <td></td>        
+      <td></td>
+    </tr>
+    <tr >
+      <td></td>
+      <td>사고조사 처리절차 안내</td>
+      <td></td>
+      <td></td>
+      <td><a href="#" target="_blank"></a></td>
+      <td></td>        
+      <td></td>
+    </tr>
+    <tr >
+      <td></td>
+      <td>제도 및 법령</td>
+      <td></td>
+      <td></td>
+      <td><a href="../html/PSUI-02003.html" target="_blank">PSUI-02003.html</a></td>
+      <td></td>        
+      <td></td>
+    </tr>
+      <tr class="tit">
+        <td>사고조사위원회</td>
+        <td>설립목적</td>
+        <td></td>
+        <td></td>
+        <td><a href="#" target="_blank"></a></td>
+        <td></td>        
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>위원장인사말</td>
+        <td></td>
+        <td></td>
+        <td><a href="../html/PSUI-03002.html" target="_blank">PSUI-03002.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>위원장프로필</td>
+        <td></td>
+        <td></td>
+        <td><a href="../html/PSUI-03003.html" target="_blank">PSUI-03003.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>조직도</td>
+        <td></td>
+        <td></td>
+        <td><a href="../html/PSUI-03004.html" target="_blank">PSUI-03004.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>찾아보시는길</td>
+        <td></td>
+        <td></td>
+        <td><a href="../html/PSUI-03005.html" target="_blank">PSUI-03005.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr>
+      <tr class="tit">
+        <td>알림 및 참여마당</td>
+        <td>공지사항</td>
+        <td>리스트</td>
+        <td></td>
+        <td><a href="../html/PSUI-04001.html" target="_blank">PSUI-04001.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>뷰</td>
+        <td></td>
+        <td><a href="../html/PSUI-04001_.html" target="_blank">PSUI-04001_.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>보도자료</td>
+        <td>리스트</td>
+        <td></td>
+        <td><a href="../html/PSUI-04002.html" target="_blank">PSUI-04002.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>뷰</td>
+        <td></td>
+        <td><a href="../html/PSUI-04002_.html" target="_blank">PSUI-04002_.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>공지사항</td>
+        <td>리스트</td>
+        <td></td>
+        <td><a href="../html/PSUI-04003.html" target="_blank">PSUI-04003.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>뷰</td>
+        <td></td>
+        <td><a href="../html/PSUI-04003_.html" target="_blank">PSUI-04003_.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>민원상담</td>
+        <td></td>
+        <td></td>
+        <td><a href="../html/PSUI-04006.html" target="_blank">PSUI-04006.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>시스템개선제안</td>
+        <td></td>
+        <td></td>
+        <td><a href="../html/PSUI-04007.html" target="_blank">PSUI-04007.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>자주하는 질문</td>
+        <td></td>
+        <td></td>
+        <td><a href="../html/PSUI-04005.html" target="_blank">PSUI-04005.html</a></td>
+        <td></td>        
+        <td>드롭다운 리스트</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>전문용어사전</td>
+        <td>리스트</td>
+        <td></td>
+        <td><a href="../html/PSUI-04004.html" target="_blank">PSUI-04004.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr>
+      <tr class="tit">
+        <td>이용안내</td>
+        <td>개인정보처리방침</td>
+        <td></td>
+        <td></td>
+        <td><a href="#" target="_blank"></a></td>
+        <td></td>        
+        <td>전달자료확인요청</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>관련누리집</td>
+        <td></td>
+        <td></td>
+        <td><a href="../html/PSUI-05001.html" target="_blank">PSUI-05001.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>사이트맵</td>
+        <td></td>
+        <td></td>
+        <td><a href="../html/PSUI-05004.html" target="_blank">PSUI-05004.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>이용약관</td>
+        <td></td>
+        <td></td>
+        <td><a href="#" target="_blank"></a></td>
+        <td></td>        
+        <td>전달자료확인요청</td>
+      </tr>
+      <tr class="tit">
+        <td>마이페이지</td>
+        <td>나의민원상담</td>
+        <td>리스트</td>
+        <td></td>
+        <td><a href="../html/PSUI-06005.html" target="_blank">PSUI-06005.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>뷰</td>
+        <td></td>
+        <td><a href="../html/PSUI-06006.html" target="_blank">PSUI-06006.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>나의사고접수현황</td>
+        <td></td>
+        <td></td>
+        <td><a href="../html/PSUI-06004.html" target="_blank">PSUI-06004.html</a></td>
+        <td></td>        
+        <td>기획서와 디자인 다름 </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>시스템개선제안</td>
+        <td>리스트</td>
+        <td></td>
+        <td><a href="../html/PSUI-06008.html" target="_blank">PSUI-06008.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>뷰</td>
+        <td></td>
+        <td><a href="../html/PSUI-06009.html" target="_blank">PSUI-06009.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>회원정보</td>
+        <td></td>
+        <td></td>
+        <td><a href="../html/PSUI-06001.html" target="_blank">PSUI-06001.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>회원탈퇴신청</td>
+        <td></td>
+        <td></td>
+        <td><a href="../html/PSUI-06011.html" target="_blank">PSUI-06011.html</a></td>
+        <td></td>        
+        <td>라디오btn 공통과다름</td>
+      </tr>
+      <tr class="tit">
+        <td>기타</td>
+        <td>404에러</td>
+        <td></td>
+        <td></td>
+        <td><a href="../html/404_error.html" target="_blank">404_error.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr>
+      <tr>
+        <td>기타</td>
+        <td>500에러</td>
+        <td></td>
+        <td></td>
+        <td><a href="../html/500_error.html" target="_blank">500_error.html</a></td>
+        <td></td>        
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자율주행자동자 사고조사위원회 홈페이지에 오신것을 환영합니다.</title>
+    <link rel="stylesheet" href="../common/css/default.css" />
+  <link rel="stylesheet" href="../common/css/dev.css" />
+    <link rel="stylesheet" href="../common/lib/slickslider/slick.css">
+    <link rel="stylesheet" href="../common/lib/datepicker/datepicker.css">
+    <link rel="stylesheet" href="../common/lib/timepicker/timepicker.css">
+    <script src="../common/js/jquery-3.6.0.min.js"></script>
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/lib/datepicker/datepicker.js"></script>
+    <script src="../common/lib/slickslider/slick.js"></script>
+    <script src="../common/lib/timepicker/timepicker.js"></script>
+  </head>
+<body>
+  <div id="wrap">
+    <div class="header">
+      <div class="util container">
+        <a href="#">로그인</a>
+        <a href="#">회원가입</a>
+      </div>
+      <div class="hd_menu container">
+        <h1 class="logo"><a href="#"><span class="hide">로고 이미지</span></a></h1>
+        <div id="gnb">
+          <div class="gnb_hd">
+            <img src="../common/images/logo_w.png" alt="">
+            <button type="button" class="close_gnb"><span class="hide">닫기</span></button>
+          </div>
+          <ul class="m_util">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+          </ul>
+          <ul class="dep1">
+            <li><a href="#"><span>사고접수 및 현황</span></a>
+              <div>
+                <div class="container">
+                  <div>
+                    <strong>
+                      사고접수<em>및 현황</em>
+                    </strong>
+                    <img src="../common/images/lnb_icon01.png" alt="">
+                  </div>
+                  <ul class="dep2">
+                    <li><a href="#">신규 사고 접수</a></li>
+                    <li><a href="#">사고 접수현황</a></li>
+                    <li><a href="#">조사결과 정보제공 신청</a></li>
+                    <li><a href="#">재심의 신청</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#"><span>자율주행 사고조사안내</span></a>
+              <div>
+                <div class="container">
+                  <div>
+                    <strong>
+                      자율주행<em>사고조사안내</em>
+                    </strong>
+                    <img src="../common/images/lnb_icon02.png" alt="">
+                  </div>
+                  <ul class="dep2">
+                    <li><a href="#">자율주행자동차 사고조사란</a></li>
+                    <li><a href="#">사고조사 처리절차 안내</a></li>
+                    <li><a href="#">제도 및 법령</a></li>
+                  </ul>
+               </div>
+              </div>
+            </li>
+            <li>
+              <a href="#"><span>사고조사위원회</span></a>
+              <div>
+                <div class="container">
+                  <div>
+                    <strong>
+                      사고조사<em>위원회</em>
+                    </strong>
+                    <img src="../common/images/lnb_icon03.png" alt="">
+                  </div>
+                  <ul class="dep2">
+                    <li><a href="#">설립목적</a></li>
+                    <li><a href="#">위원장 소개</a></li>
+                    <li><a href="#">조직도</a></li>
+                    <li><a href="#">찾아오시는 길</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </li>
+            <li>
+              <a href="#"><span>알림 및 참여마당</span></a>
+              <div>
+                <div class="container">
+                  <div>
+                    <strong>알림 및 <em>참여마당</em></strong>
+                    <img src="../common/images/lnb_icon04.png" alt="">
+                  </div>
+                  <ul class="dep2">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">보도자료</a></li>
+                    <li><a href="#">공개 자료실</a></li>
+                    <li><a href="#">전문 용어사전</a></li>
+                    <li><a href="#">자주하는 질문</a></li>
+                    <li><a href="#">민원상담</a></li>
+                    <li><a href="#">시스템 개선제안</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#"><span>이용안내</span></a>
+              <div>
+                <div  class="container">
+                  <div>
+                    <strong>이용<em>안내</em></strong>
+                    <img src="../common/images/lnb_icon05.png" alt="">
+                  </div>
+                  <ul class="dep2">
+                    <li><a href="#">관련 누리집</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#"><span>마이페이지</span></a>
+              <div>
+                <div  class="container">
+                  <div>
+                    <strong>마이<em>페이지</em></strong>
+                    <img src="../common/images/lnb_icon06.png" alt="">
+                  </div>
+                  <ul class="dep2 ">
+                    <li><a href="#">회원정보</a></li>
+                    <li><a href="#">나의 사고접수 현황</a></li>
+                    <li><a href="#">나의 민원상담</a></li>
+                    <li><a href="#">시스템 개선제안</a></li>
+                    <li><a href="#">회원탈퇴 신청</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="m_btn">
+          <button type="button" class="open_gnb"><span class="hide">메뉴</span></button>
+        </div>
+      </div>
+    </div>
+    <div class="page_spot bg3">
+      <!-- bg1 로그인 Login -->
+      <!-- bg2 회원가입 Membership -->
+      <!-- bg3 사고접수 및 현황 Autonomous Vehicle Accident -->
+      <!-- bg4 사고조사 위원회 Autonomous Vehicle Accident -->
+      <!-- bg5 알림 및 참여마당 Notification & Partcipation -->
+      <!-- bg6 이용 안내 Information Use -->
+      <!-- bg7 마이 페이지 My Page -->
+      <div class="tit_bg" id="div_lnb_bg">
+        <img src="../common/images/bg_visual3.jpg" alt="사고접수 및 현황 Autonomous Vehicle Accident">
+       <!--  
+        <img src="../common/images/bg_visual1.jpg" alt="로그인 Login">
+        <img src="../common/images/bg_visual2.jpg" alt="회원가입 Membership">
+        <img src="../common/images/bg_visual3.jpg" alt="사고접수 및 현황 Autonomous Vehicle Accident">
+        <img src="../common/images/bg_visual4.png" alt="사고조사 위원회 Autonomous Vehicle Accident">
+        <img src="../common/images/bg_visual5.png" alt="알림 및 참여마당 Notification & Partcipation ">
+        <img src="../common/images/bg_visual6.png" alt="이용 안내 Information Use ">
+        <img src="../common/images/bg_visual7.png" alt="마이 페이지 My Page "> -->
+      </div>
+      <div class="page_title">
+        <span>
+            사고접수 및 <b>현황</b>
+            <em>Autonomous Vehicle Accident</em>
+        </span>
+      </div>
+      <div class="lnb type1">
+        <div class="container">
+          <a href="/" class="home"><span class="hide">HOME</span></a>
+          <div class="menu dropdown">
+            <button type="button" class="btn" title="열기">로그인</button>
+            <ul>
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">아이디찾기</a></li>
+              <li><a href="#">비밀번호찾기</a></li>
+              <li><a href="#">회원가입</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contents">
+      <div class="container">
+        <h2 class="tit_lg">재심의 신청</h2>
+        <div class="con">
+          <div class="bd_box">
+            <img src="../common/images/icon_bdbox_4.png" alt="">
+            <div>
+              [ 자율주행자동차사고조사위원회 구성 운영 등에관한 규정 ] 재24조(정보제공) 1항에 따라 피해자, 제작자, 보험사 등은 [별지 제8호 서식]의 정보제공 신청서를 제출하여 조사 결과의 열람 및 제공을 요구할 수 있습니다.
+           <span class="block"> 단, 사고관계자외 신청은 정보의 특성상 신청이 반려될 수 있으며 열람 불가 합니다.</span>
+            </div>
+            <ol class="join_step mt50 mb20">
+                <li >
+                  <div>
+                    Step<b>01</b>
+                    <em>정보제공 신청</em>
+                  </div>
+                </li>
+                <li >
+                  <div>
+                    Step<b>02</b>
+                    <em>사고조사위원회 <span class="block">사무국 확인</span></em>
+                  </div>
+                </li>
+                <li >
+                  <div>
+                    Step<b>03</b>
+                    <em>정보제공 열람<span class="block">(또는 반려)</span></em>
+                  </div>
+                </li>         
+            </ol>
+          </div>
+        </div>
+        <div class="con">
+            <!-- 약관동의 -->
+            <div class="head">
+              <h3 class="tit_md lt">
+                정보제공 약관 동의</h3>
+            </div>
+            <div class="agree_box">
+              <div class="scroll_box" tabindex="0">
+                <ol>
+                  <li>제 1장 총칙
+                    <ol class="br">
+                      <li>제 1 조 (목적)
+                        <p>이 약관은 한국교통안전공단(이하 "공단"라 합니다)이 제공하는 모든 서비스를 이용자가 이용함에 있어 공단과 이용자의 권리, 의무 및 책임사항을 정함을 목적으로 합니다.
+                        </p>
+                      </li>
+                      <li class="br">제 2 조 약관의 명시와 개정
+                        <ol>
+                          <li>① 공단은 이 약관의 내용과 상호, 영업소 소재지, 대표자의 성명, 고객만족센터 등을 이용자가 알 수 있도록 게시합니다.</li>
+                          <li>② 공단은 약관의 규제 등에 관한 법률, 전자거래기본법, 전자서명법, 정보통신망이용촉진 등에 관한 법률, 방문판매 등에 관한 법률, 소비자보호법 등 관련법을
+                            위배하지
+                            않는
+                            범위에서 이 약관을 개정할 수 있습니다.</li>
+                        </ol>
+                      </li>
+                    </ol>
+                  </li>
+                  <li class="br">제 2장 총칙
+                    <ol class="br">
+                      <li>제 1 조 (목적)
+                        <p>이 약관은 한국교통안전공단(이하 "공단"라 합니다)이 제공하는 모든 서비스를 이용자가 이용함에 있어 공단과 이용자의 권리, 의무 및 책임사항을 정함을 목적으로 합니다.
+                        </p>
+                      </li>
+                      <li class="br">제 2 조 약관의 명시와 개정
+                        <ol>
+                          <li>① 공단은 이 약관의 내용과 상호, 영업소 소재지, 대표자의 성명, 고객만족센터 등을 이용자가 알 수 있도록 게시합니다.</li>
+                          <li>② 공단은 약관의 규제 등에 관한 법률, 전자거래기본법, 전자서명법, 정보통신망이용촉진 등에 관한 법률, 방문판매 등에 관한 법률, 소비자보호법 등 관련법을
+                            위배하지
+                            않는
+                            범위에서 이 약관을 개정할 수 있습니다.</li>
+                        </ol>
+                      </li>
+                    </ol>
+                  </li>
+                </ol>
+              </div>
+              <div class="chk_box">
+                <input type="checkbox" name="#" id="agree1" class="chk_agree">
+                <label for="agree1">약관에 동의합니다.</label>
+              </div>
+            </div>
+            <!-- //약관동의 -->
+        </div>
+        <div class="con">
+            <h3 class="tit_md">신청서 작성</h3>
+            <h4 class="tit_sm  mt20">신청인</h4>
+            <div class="table">
+              <table>
+                    <colgroup>
+                        <col style="width:140px" >
+                        <col>
+                        <col style="width:140px">
+                        <col>
+                        <col style="width:140px">
+                        <col>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th class="grey2">성명(법인ㆍ단체명 및 대표자 성명)</th>
+                            <td  colspan="3">
+                                <div class="inp w300">
+                                    <input type="text" name="#" title="신청인" >
+                                </div>
+                            </td>
+                            <th class="grey2" >주민등록(여권ㆍ외국인등록)번호</th>
+                            <td>
+                                <div class="inp w300">
+                                    <input type="text" name="#" title="주민등록" placeholder="&quot;-&quot; 포함 입력" >
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="grey2">주소(소재지)</th>
+                            <td colspan="3" class="m_block">
+                              <div class="inp_set ads">
+                                <div>
+                                  <div class="inp w100">
+                                    <input type="text" name="#" title="우편번호">
+                                  </div>
+                                  <button type="button" class="btn5 ml10">우편번호찾기</button>
+                                </div>
+                                <div class="inp w300 ml20">
+                                  <input type="text" name="#" title="주소" placeholder="우편번호 찾기 먼저 진행해주세요.">
+                                </div>
+                                <div class="inp w300 ml10">
+                                  <input type="text" name="#" title="상세주소" placeholder="상세주소">
+                                </div>
+                              </div>
+                            </td>
+                            <th class="grey2">사업자(법인ㆍ단체)등록번호</th>
+                            <td>
+                                <div class="inp_set w315">
+                                    <div class="inp">
+                                    <input type="text" name="#" title="연락처 첫자리">
+                                    </div>
+                                    <span class="behind">－</span>
+                                    <div class="inp">
+                                    <input type="text" name="#" title="연락처 중간자리">
+                                    </div>
+                                    <span class="behind">－</span>
+                                    <div class="inp">
+                                    <input type="text" name="#" title="연락처 끝자리">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class=" grey2">전화번호</th>
+                            <td>
+                                <div class="inp_set w315">
+                                    <div class="inp">
+                                    <input type="text" name="#" title="연락처 첫자리">
+                                    </div>
+                                    <span class="behind">－</span>
+                                    <div class="inp">
+                                    <input type="text" name="#" title="연락처 중간자리">
+                                    </div>
+                                    <span class="behind">－</span>
+                                    <div class="inp">
+                                    <input type="text" name="#" title="연락처 끝자리">
+                                    </div>
+                                </div>
+                            </td>
+                            <th class=" grey2">팩스번호</th>
+                            <td>
+                                <div class="inp_set w315">
+                                    <div class="inp">
+                                    <input type="text" name="#" title="팩스 첫자리">
+                                    </div>
+                                    <span class="behind">－</span>
+                                    <div class="inp">
+                                    <input type="text" name="#" title="팩스 중간자리">
+                                    </div>
+                                    <span class="behind">－</span>
+                                    <div class="inp">
+                                    <input type="text" name="#" title="팩스 끝자리">
+                                    </div>
+                                </div>
+                            </td>
+                            <th class=" grey2">전자우편주소</th>
+                            <td>
+                                <div class="inp">
+                                    <input type="text" name="#" title="전자우편주소">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+              </table>
+            </div>
+            <h4 class="tit_sm mt20">신고정보확인을 위한사항</h4>
+            <div class="table">
+              <table>
+                <tbody>
+                  <tr>
+                      <th class="grey2">사고차량번호</th>
+                      <td class="m_view"> 
+                        <div class="inp">
+                        <input type="text" name="#" title="사고차량번호" placeholder="공백없이 입력" >
+                        </div>
+                    </td>
+                      <th class="grey2">사고일시</th>
+                      <td class="m_view">
+                        <div class="inp date">
+                            <input type="text" name="#" title="연도-월-일" placeholder="연도-월-일" autocomplete="off">
+                        </div>
+                      </td>
+                      <th class="grey2">사고장소</th>
+                      <td class="m_view">   
+                        <div class="inp">
+                            <input type="text" name="#" title="사고차량번호" placeholder="공백없이 입력" >
+                        </div>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="m_none"> 
+                        <div class="inp">
+                        <input type="text" name="#" title="사고차량번호" placeholder="공백없이 입력" >
+                        </div>
+                      </td>
+                      <td class="m_none">
+                        <div class="inp date">
+                            <input type="text" name="#" title="연도-월-일" placeholder="연도-월-일" autocomplete="off">
+                        </div>
+                      </td>
+                      <td class="m_none">   
+                        <div class="inp">
+                            <input type="text" name="#" title="사고차량번호" placeholder="공백없이 입력" >
+                        </div>
+                      </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h4 class="tit_sm mt20">신청자료의 범위</h4>
+            <div class="table">
+              <table>
+                  <tbody>
+                      <tr>
+                        <td colspan="6">
+                          <div class="agree_box">
+                              <div class="scroll_box h160" tabindex="0">
+                                <ol>
+                                  <li  class="br">1. 자료의 사용목적</li>
+                                  <li class="br">2. 자율주행정보 기록장치에 저장된 항목에 대한 사항
+                                  </li>
+                                  <li class="br">3. 현장조사 항목에 대한 사항
+                                  </li>
+                                  <li class="br">4. 사고조사 보고서에 대한 사항
+                                  </li>
+                                </ol>
+                              </div>
+                            </div>
+                        </td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+            <h4 class="tit_sm  mt20">신청방법</h4>
+            <div class="table">
+              <table>
+                <tbody>
+                    <tr>
+                      <td colspan="6">
+                          <ul class="type_list">
+                              <li>
+                                <input type="radio" name="radio_01" id="radio_01" title="열람ㆍ시청">
+                                <label for="radio_01">열람ㆍ시청</label>
+                              </li>
+                              <li>
+                                <input type="radio" name="radio_01" id="radio_02"  title="사본ㆍ출력물">
+                                <label for="radio_02">사본ㆍ출력물</label>
+                              </li>
+                              <li>
+                                <input type="radio" name="radio_01" id="radio_03"  title="전자파일">
+                                <label for="radio_03">전자파일</label>
+                              </li>
+                              <li>
+                                  <input type="radio" name="radio_01" id="radio_04"  title="복제ㆍ인화물">
+                                  <label for="radio_04">복제ㆍ인화물</label>
+                              </li>
+                              <li>
+                                  <input type="radio" name="radio_01" id="radio_05"  title="기타">
+                                  <label for="radio_05"  >기타</label>
+                                  <div class="inp w300 ml10" >
+                                      <input type="text" name="#" title="기타" >
+                                  </div>
+                              </li>
+                            </ul>
+                      </td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+            <h4 class="tit_sm mt20">수령방법</h4>
+            <div class="table">
+              <table>
+                <tbody>
+                  <tr>
+                    <td colspan="6">
+                      <ul class="type_list">
+                          <li>
+                            <input type="radio" name="radio_02" id="radio_06" title="직접방문">
+                            <label for="radio_01">직접 방문</label>
+                          </li>
+                          <li>
+                            <input type="radio" name="radio_02" id="radio_07" title="우편">
+                            <label for="radio_02">우편</label>
+                          </li>
+                          <li>
+                            <input type="radio" name="radio_02" id="radio_08" title="팩스 전송">
+                            <label for="radio_03">팩스 전송</label>
+                          </li>
+                          <li>
+                              <input type="radio" name="radio_02" id="radio_09" title="정보통신망">
+                              <label for="radio_04">정보통신망</label>
+                          </li>
+                          <li>
+                              <input type="radio" name="radio_02" id="radio_10" title="기타">
+                              <label for="radio_05"  >기타</label>
+                              <div class="inp w300 ml10" >
+                                  <input type="text" name="#" title="기타" >
+                              </div>
+                          </li>
+                        </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="ta_c fc_grey mt30"><span>「자동차손해배상 보장법」제39조의17의 제4항 및 같은 법 시행령 제39조의16에 따라 위와 같이 정보제공을 신청합니다.<br>(신청 후에는 정보변경 및 수정이 불가 합니다.)</span></p>
+        </div>
+        <div class="btn_box">
+            <a href="#" class="btn1 grey">취소</a>
+            <a href="#" class="btn1">정보제공 신청</a>
+          </div>
+      </div>
+    </div>
+    <ul class="quick_menu">
+        <li>
+          <a href="#">
+            <span>
+              <img src="../common/images/icon_quick_1.png" alt="">
+              공지사항
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <img src="../common/images/icon_quick_2.png" alt="">
+              자주하는질문<br>(FAQ)
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <img src="../common/images/icon_quick_3.png" alt="">
+              위원회 소개
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <img src="../common/images/icon_quick_4.png" alt="">
+              조직안내
+            </span>
+          </a>
+        </li>
+      </ul>
+    <div class="footer">
+      <div class="ft_nav">
+        <div class="container">
+          <ul class="ft_menu">
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">찾아오시는 길</a></li>
+            <li><a href="#">시스템 개선제안</a></li>
+          </ul>
+          <ul class="partner">
+            <li><a href="#"><img src="../common/images/logo_partner_3.png" alt=""></a></li>
+            <li><a href="#"><img src="../common/images/logo_partner_2.png" alt=""></a></li>
+            <li><a href="#"><img src="../common/images/logo_partner_1.png" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ft_info">
+        <div class="container">
+          <div class="address">
+            <p>본 페이지에 게시된 이메일 주소가 자동 수집되는 것을 거부하며, 이를 위반시 정보통신법에 의해 처벌됨을 유념하시기 바랍니다.</p>
+            <ul>
+              <li class="br">18247 경기도 화성시 송산면 삼존로 200</li>
+              <li>대표번호 : 080-357-2500</li>
+              <li>팩스 : 031-369-0399 / 0502-384-5498</li>
+            </ul>
+          </div>
+          <div class="website dropdown">
+            <button type="button" class="btn" title="열기">관련사이트</button>
+            <ul>
+              <li><a href="#">국토교통부</a></li>
+              <li><a href="#">한국교통안전공단</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

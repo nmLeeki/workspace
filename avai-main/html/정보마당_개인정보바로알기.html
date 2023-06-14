@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자율주행자동자 사고조사위원회 홈페이지에 오신것을 환영합니다.</title>
+  <link rel="stylesheet" href="../common/css/default.css" />
+  <link rel="stylesheet" href="../common/css/dev.css" />
+  <link rel="stylesheet" href="../common/lib/slickslider/slick.css">
+  <link rel="stylesheet" href="../common/lib/datepicker/datepicker.css">
+  <link rel="stylesheet" href="../common/lib/timepicker/timepicker.css">
+  <script src="../common/js/jquery-3.6.0.min.js"></script>
+  <script src="../common/js/prefixfree.min.js"></script>
+  <script src="../common/js/common.js"></script>
+  <script src="../common/lib/datepicker/datepicker.js"></script>
+  <script src="../common/lib/slickslider/slick.js"></script>
+  <script src="../common/lib/timepicker/timepicker.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="header">
+      <div class="util ">
+        <div class="container">
+          <h1 class="logo"><a href="#"><span class="hide">로고 이미지</span></a></h1>
+          <div>
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+          </div>
+        </div>
+      </div>
+      <div class="hd_menu">
+        <div class=" container">
+          <div id="gnb">
+            <div class="gnb_hd">
+              <img src="../common/images/logo.png" alt="자율주행자동차 사고조사위원회">
+              <button type="button" class="close_gnb"><span class="hide">닫기</span></button>
+            </div>
+            <ul class="m_util">
+              <li><a href="#"><img src="../common/images/login_btn.png" alt="로그인버튼"><span>로그인</span></a></li>
+              <li><a href="#"><img src="../common/images/join_btn.png" alt="회원가입버튼"><span>회원가입</span></a></li>
+            </ul>
+            <ul class="dep1">
+              <li><a href="#"><span>신고마당</span></a>
+                <ul class="dep2">
+                  <li> <!-- <h2>신고마당</h2> -->
+                    <a href="#">사고조사 접수안내</a>
+                    <ul class="dep3">
+                      <li><a href="#">사고조사 제도</a></li>
+                      <li><a href="#">사고조사 신고</a></li>
+                      <li><a href="#">사고조사 조회</a></li>
+                      <li><a href="#">사고조사 통보</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">재심의 접수</a>
+                    <ul class="dep3">
+                      <li><a href="#">재심의 제도</a></li>
+                      <li><a href="#">재심의 신청</a></li>
+                      <li><a href="#">재심의 조회</a></li>
+                      <li><a href="#">재심의 결과확인</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">사고조사 진행 중인 사건</a></li>
+                  <li><a href="#">자율차사고 안전정보</a></li>               
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>조사마당</span></a>
+                <ul class="dep2">
+                  <li>
+                    <!-- <h2>조사마당</h2> -->
+                    <a href="#">자율차 사고조사란?</a>
+                    <ul class="dep3">
+                      <li><a href="#">사고조사 대상</a></li>
+                      <li><a href="#">사고조사 절차</a></li>
+                      <li><a href="#">자율주행기록장치</a></li>
+                      <li><a href="#">사고조사 장비&#183;시설</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">자율차사고 대처요령</a></li>
+                  <li><a href="#">자율주행차 사고현황</a>
+                    <ul class="dep3">
+                      <li><a href="#">국내 사고현황</a></li>
+                      <li><a href="#">국외 사고현황</a></li>
+                    </ul>
+                  </li>           
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>정보마당</span></a>
+                <ul class="dep2">
+                  <li>
+                   <!--  <h2>정보마당</h2> -->
+                    <a href="#">정보제공제도</a>
+                    <ul class="dep3">
+                      <li><a href="#">정보제공 절차</a></li>
+                      <li><a href="#">정보공개 청구</a></li>
+                      <li><a href="#">정보목록</a></li>
+                      <li><a href="#">자료정보 열람</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">공공데이터 개방</a></li>
+                  <li><a href="#">관련법령</a></li>    
+                  <li><a href="#">용어사전</a></li>    
+                  <li><a href="#">개인정보 바로알기</a>
+                    <ul class="dep3">
+                      <li><a href="#">개인정보처리지침</a></li>
+                    </ul>
+                  </li>  
+                  <li><a href="#">통계자료</a></li>    
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>참여마당</span></a>
+                <ul class="dep2">
+                  <li> <!-- <h2>참여마당</h2> -->
+                    <a href="#">자유게시판</a></li>
+                  <li><a href="#">자주하는 질문(FAQ)</a></li>    
+                  <li><a href="#">Q&A</a></li>    
+                  <li><a href="#">시스템 개선제안</a></li>   
+                  <li><a href="#">국민의 소리</a>
+                    <ul class="dep3">
+                      <li><a href="#">전자신청</a></li>
+                      <li><a href="#">서면신청</a></li>
+                      <li><a href="#">방문상담</a></li>
+                      <li><a href="#">전화상담</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>알림마당</span></a>
+                <ul class="dep2">
+                  <li> <!-- <h2>알림마당</h2> -->
+                    <a href="#">공지사항</a></li>
+                  <li><a href="#">이용약관</a></li>    
+                  <li><a href="#">보도자료</a></li>    
+                  <li><a href="#">공개자료실</a></li>   
+                  <li><a href="#">관련사이트</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>소개마당</span></a>
+                <ul class="dep2">
+                  <li> <!-- <h2>소개마당</h2> -->
+                    <a href="#">위원장 소개</a>
+                    <ul class="dep3">
+                      <li><a href="#">위원장 인사말</a></li>
+                      <li><a href="#">프로필</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">사고조사위원회 소개</a>
+                    <ul class="dep3">
+                      <li><a href="#">설립목적</a></li>
+                      <li><a href="#">심의위원</a></li>
+                      <li><a href="#">위원회 임무 및 비전</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">조직안내</a>
+                    <ul class="dep3">
+                      <li><a href="#">조직도</a></li>
+                      <li><a href="#">사무국 연락처</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">찾아오시는 길</a></li>
+                  <li><a href="#">사이트맵</a></li>                         
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="m_btn">
+            <button type="button" class="open_gnb"><span class="hide">메뉴</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page_spot bg3">
+      <!-- bg1  -->
+      <!-- bg2 -->
+      <!-- bg3 정보마당 -->
+      <!-- bg4 참여마당-->
+      <!-- bg5  -->
+      <!-- bg6 소개마당-->
+    <!-- 추가 -->
+      <div class="tit_bg" id="div_lnb_bg">
+        <img src="../common/images/bg_visual3.png" alt="정보마당">
+       <!--  
+        <img src="../common/images/bg_visual1.jpg" alt="신고마당">
+        <img src="../common/images/bg_visual2.jpg" alt="조사마당">
+        <img src="../common/images/bg_visual3.jpg" alt="정보마당">
+        <img src="../common/images/bg_visual4.png" alt="참여마당">
+        <img src="../common/images/bg_visual5.png" alt="알림마당">
+        <img src="../common/images/bg_visual6.png" alt="소개마당"> -->
+      </div>
+    <!-- // 추가 -->
+      <div class="page_title">
+        <img src="../common/images/bg_visual3_tit.png" alt="자율주행자동차사고의 발생원인을 과학적사고조사로 밝혀드리겠습니다.">
+       <!--  
+        <img src="../common/images/bg_visual1_tit.png" alt="자율주행자동차 사고조사는 무사고로 가는 지름길 입니다.">
+        <img src="../common/images/bg_visual2_tit.png" alt="">
+        <img src="../common/images/bg_visual3_tit.png" alt="자율주행자동차사고의 발생원인을 과학적사고조사로 밝혀드리겠습니다.">
+        <img src="../common/images/bg_visual4_tit.png" alt="자율주행차사고조사위원회는 항상당신곁에 있겠습니다.">
+        <img src="../common/images/bg_visual5_tit.png" alt="정보공유를통해 국민과 더 가까이에서 소통하겠습니다.">
+        <img src="../common/images/bg_visual6_tit.png" alt="사람이 안전한 자율주행자동차 시대를 만들어 가겠습니다."> -->
+      </div>
+      <!-- lnb -->
+      <div class="lnb"> 
+        <div class="container">
+          <a href="/" class="home"><span class="hide">HOME</span></a>
+          <div class="menu dropdown">
+            <button type="button" class="btn" title="열기">정보마당</button>
+            <ul>
+              <li><a href="#">신고마당</a></li>
+              <li><a href="#">조사마당</a></li>
+              <li><a href="#">참여마당</a></li>
+              <li><a href="#">알림마당</a></li>
+              <li><a href="#">소개마당</a></li>
+            </ul>
+          </div>
+          <div class="menu dropdown">
+            <button type="button" class="btn" title="열기">개방개인정보 바로알기</button>
+            <ul>
+              <li><a href="#">정보제공제도</a></li>
+              <li><a href="#">공공데이터 </a></li>
+              <li><a href="#">관련법령</a></li>
+              <li><a href="#">용어사전</a></li>
+              <li><a href="#">통계자료</a></li>
+            </ul>
+          </div>
+          <div class="menu dropdown">
+            <button type="button" class="btn" title="열기">개방개인정보 처리지침</button>
+          </div>
+        </div>
+      </div> 
+      <!-- //lnb -->
+    </div>
+    <div id="contents">
+      <div class="container">
+          <h3 class="tit_lg">개인정보 바로알기</h3>
+        <!-- 컨텐츠 구분 -->
+        <div class="con">
+          <h3 class="tit_md">개인정보</h3>
+          <ul class="bar_list mt5">
+            <li>개인정보란?
+              <h3 class="tit_2 mb15">살아있는 개인에 관한 정보로</h3>
+              <ul class="num_list">
+                <li>성명, 주민등록번호 및 영상 등을 통해 개인을 식별할 수 있는 정보</li>
+                <li>다른 정보와 쉽게 결합하여 개인을 식별할 수 있는 정보</li>
+                <li>가명처리함으로써 원 상태로 복원하기 위한 추가 정보의 사용, 결합 없이는 특정 개인을 알아볼 수 없는 가명정보 이러한 정보들을 개인정보로 [개인정보보허법]에서 정의하고 있습니다.</li>
+              </ul>
+              <p class="rqd2"> 개인정보의 주체는 자연인(自然人)이며, 법인(法人)이나 단체의 정보는 해당하지 않습니다.</p>
+              <p class="rqd2"> 법인의 상호, 소재지, 임원 정보, 실적 등의 정보는 [개인정보보호법]에서 보호하는 개인정보에 해당하지 않습니다.</p>
+            </li>
+          </ul>
+          <div class="Abox mt50">
+            <a href="#">개인정보보호법 바로가기</a>
+            <a href="#">개인정보호위원회 바로가기</a>
+          </div>
+          <h4 class="tit_sm mt50">
+            개인정보의 종류
+          </h4>
+          <em class="m_scroll_txt">표 부분을 좌우로 밀어 자세한 정보를 확인하세요.</em>
+          <div class="table scr table_info">
+            <table>
+              <colgroup>
+                <col style="width:15%;">
+                <col style="width:15%;">
+                <col style="width:auto;">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th colspan="2">구분</th>
+                  <th>내용</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2" class="ta_c">인적사항</td>
+                  <td class="ta_c">일반정보</td>
+                  <td>성명, 주민등록번호, 주소, 연락처, 생년월일, 충생지, 성별 등</td>
+                </tr>
+                <tr>
+                  <td class="ta_c">가족정보</td>
+                  <td>가족관계 및 가족구성원 정보 등</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="ta_c">신체적 정보</td>
+                  <td class="ta_c">신체정보</td>
+                  <td>얼굴, 홍채, 음성, 유전자 정보, 지문, 키, 몸무게 등</td>
+                </tr>
+                <tr>
+                  <td class="ta_c">의료·건강 정보</td>
+                  <td>건강상태, 진료기록, 신체장애, 장애등급, 병력, 혈액형, IQ, 약물테스트 등의 신체검사 정보 등</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="ta_c">정신적 정보</td>
+                  <td  class="ta_c">기호·성향 정보</td>
+                  <td>도서·비디오 등 대여기록, 잡지구독정보, 물품구매내역, 웹사이트 검색내역 등</td>
+                </tr>
+                <tr>
+                  <td class="ta_c">내면의 비밀 정보</td>
+                  <td>사상, 신조, 종교, 가치관, 정당·노조 가입여부 및 활동내역 등</td>
+                </tr>
+                <tr>
+                  <td rowspan="4" class="ta_c">사회적 정보</td>
+                  <td class="ta_c">교육정보</td>
+                  <td>학력, 성적, 출석상황, 기술 자격증, 밑 전문 면허증 보유 내역, 상벌기록, 생활기록부. 건강기록부 등</td>
+                </tr>
+                <tr>
+                  <td class="ta_c">병역정보</td>
+                  <td>병역여부, 군번 및 계급, 제대유형, 근무부대, 주특기 등</td>
+                </tr>
+                <tr>
+                  <td class="ta_c">근로정보</td>
+                  <td>직장, 고용주, 근무처, 근로경력, 상벌기록, 직무평가기록 등</td>
+                </tr>
+                <tr>
+                  <td class="ta_c">법적정보</td>
+                  <td>전과·범죄 기록, 재판기록, 과태료 납부내역 등</td>
+                </tr>
+                <tr>
+                  <td rowspan="4" class="ta_c">재산적 정보</td>
+                  <td  class="ta_c">소득정보</td>
+                  <td>봉급액, 보너스 및 수수료, 이자소득, 사업소득 등</td>
+                </tr>
+                <tr>
+                  <td class="ta_c">신용정보</td>
+                  <td>대출 및 담보설정 내역, 신용카드번호, 통장계좌번호, 신용평가 정보 등</td>
+                </tr>
+                <tr>
+                  <td class="ta_c">부동산 정보</td>
+                  <td>소유주택, 토지, 자동차, 기타소유차량, 상점 및 건물 등</td>
+                </tr>
+                <tr>
+                  <td class="ta_c">기타 수익 정보</td>
+                  <td>보험(건강, 생명 등) 가입현황, 휴가, 병가 등</td>
+                </tr>
+                <tr>
+                  <td rowspan="3" class="ta_c">기타 정보</td>
+                  <td  class="ta_c">통신정보</td>
+                  <td>이메일 주소, 전화통화내역, 로그파일, 쿠키 등</td>
+                </tr>
+                <tr>
+                  <td class="ta_c">위치정보</td>
+                  <td>GPS 및 휴대폰에 의한 개인의 위치정보</td>
+                </tr>
+                <tr>
+                  <td class="ta_c">습관 및 취미정보</td>
+                  <td>흡연여부, 음주량, 선호하는 스포츠 및 오락, 여가활동, 도박성향 등</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="con">
+          <h3 class="tit_md">개인정보침해</h3>
+          <ul class="bar_list">
+            <li>개인정보 침해란?
+              <h3 class="tit_xs">‘개인정보 침해‘란 개인정보 처리 전 과정에서 발생하는 것으로 법적 근거 없는 개인정보의 수집·이용·제공, 개인정보 유출·오남용·불법유통 등을 모두 포괄하는 행위를
+                뜻합니다. <br>
+                개인정보 침해는 행위 그 자체의 피해도 발생하지만 침해로 인한2차, 3차 추가 피해의 위험 또한 높습니다. 따라서, 사전에 개인정보침해를 예방하는 것이 무엇보다 중요합니다.</h3>
+            </li>
+          </ul>
+          <h4 class="tit_sm mt50">
+            개인정보침해의 범위
+          </h4>
+          <em class="m_scroll_txt">표 부분을 좌우로 밀어 자세한 정보를 확인하세요.</em>
+          <div class="table scr table_info">
+            <table>
+              <colgroup>
+                <col style="width:20%;">
+                <col style="width:auto;">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>침해범위</th>
+                  <th>침해에 따른 피해</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="ta_c">개인의 경우</td>
+                  <td>정신적피해, 명의도용, 보이스피싱에 의한 금전적 손해, 유괴 등 범죄에 노출</td>
+                </tr>
+                <tr>
+                  <td class="ta_c">기업의 경우</td>
+                  <td>고객의 신뢰 하락, 이미지 훼손, 집단적 손해배상 시 기업 경영에 타격</td>
+                </tr>
+                <tr>
+                  <td class="ta_c">국가의 경우</td>
+                  <td>IT산업의 해외수출 애로사항, 전자정부 신뢰도 하락, 국가 브랜드 하락</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h4 class="tit_sm mt50">
+            개인정보의 침해의 유형
+          </h4>
+          <em class="m_scroll_txt">표 부분을 좌우로 밀어 자세한 정보를 확인하세요.</em>
+          <div class="table scr table_info">
+            <table>
+              <colgroup>
+                <col style="width:20%;">
+                <col style="width:40%;">
+                <col style="width:40%;">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>종류</th>
+                  <th colspan="2">설명</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td  class="ta_c">개인정보 유출</td>
+                  <td colspan="2">법령이나 처리자의 자유로운 의사에 의하지 않고, 정보 주체의 개인정보에 대하여 처리자가 통제를 잃거나 권한 없는 자의 접근을 허용한 경우</td>
+                </tr>
+                <tr>
+                  <td  class="ta_c">개인정보 불법유통</td>
+                  <td rowspan="2">개인정보가 이용 및 관리 과정에서 부주의 및 실수, 악의적 유출, 해킹 등으로 유출된 후</td>
+                  <td>금전적 이익 수취를 위해 불법적인 방법을 통해 거래되는 경우</td>
+                </tr>
+                <tr>
+                  <td  class="ta_c">개인정보 오남용</td>
+                  <td>불법스팸, 마케팅, 보이스피싱 등에 악용돼 개인정보 침해가 발생하는 경우</td>
+                </tr>
+                <tr>
+                  <td  class="ta_c">홈페이지 노출</td>
+                  <td colspan="2">관리 부주의로 인하여 개인정보가 홈페이지 게시물, 파일, 소스코드 및 링크(URL)에 포함되어 유출되는 경우</td>
+                </tr>
+                <tr>
+                  <td  class="ta_c">허술한 관리·방치</td>
+                  <td colspan="2">개인정보처리자는 개인정보를 처리할 때 분실, 도난, 유출, 위조, 변조 또는 훼손되지 않도록 하는 안전조치가 미흡한 경우</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
+
+        <!-- //컨텐츠 구분 -->
+      </div>
+    </div>
+    <ul class="quick_menu">
+        <li>
+          <a href="#">
+            <span>
+              <img src="../common/images/icon_quick_1.png" alt="">
+              공지사항
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <img src="../common/images/icon_quick_2.png" alt="">
+              자주하는질문<br>(FAQ)
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <img src="../common/images/icon_quick_3.png" alt="">
+              위원회 소개
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <img src="../common/images/icon_quick_4.png" alt="">
+              조직안내
+            </span>
+          </a>
+        </li>
+      </ul>
+    <div class="footer">
+      <div class="ft_nav">
+        <div class="container">
+          <ul class="ft_menu">
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">찾아오시는 길</a></li>
+            <li><a href="#">시스템 개선제안</a></li>
+          </ul>
+          <ul class="partner">
+            <li><a href="#"><img src="../common/images/logo_partner_3.png" alt=""></a></li>
+            <li><a href="#"><img src="../common/images/logo_partner_2.png" alt=""></a></li>
+            <li><a href="#"><img src="../common/images/logo_partner_1.png" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ft_info">
+        <div class="container">
+          <div class="address">
+            <p>본 페이지에 게시된 이메일 주소가 자동 수집되는 것을 거부하며, 이를 위반시 정보통신법에 의해 처벌됨을 유념하시기 바랍니다.</p>
+            <ul>
+              <li class="br">18247 경기도 화성시 송산면 삼존로 200</li>
+              <li>대표번호 : 080-357-2500</li>
+              <li>팩스 : 031-369-0399 / 0502-384-5498</li>
+            </ul>
+          </div>
+          <div class="website dropdown">
+            <button type="button" class="btn" title="열기">관련사이트</button>
+            <ul>
+              <li><a href="#">국토교통부</a></li>
+              <li><a href="#">한국교통안전공단</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

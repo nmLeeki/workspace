@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자율주행자동자 사고조사위원회 홈페이지에 오신것을 환영합니다.</title>
+    <link rel="stylesheet" href="../common/css/default.css" />
+  <link rel="stylesheet" href="../common/css/dev.css" />
+    <link rel="stylesheet" href="../common/lib/slickslider/slick.css">
+    <link rel="stylesheet" href="../common/lib/datepicker/datepicker.css">
+    <link rel="stylesheet" href="../common/lib/timepicker/timepicker.css">
+    <script src="../common/js/jquery-3.6.0.min.js"></script>
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/lib/datepicker/datepicker.js"></script>
+    <script src="../common/lib/slickslider/slick.js"></script>
+    <script src="../common/lib/timepicker/timepicker.js"></script>
+  </head>
+
+<body>
+    <div>
+      <a href="#" class="btn6 grey"  data-pop-open="pop1">사유 입력 팝업</a>
+      <a href="#" class="btn6 ml10" data-pop-open="pop2">슬라이드 팝업</a>
+      <a href="#" class="btn6 ml10" data-pop-open="pop3">사진/영상추가 팝업</a>
+    </div>
+    <div class="pop_wrap">
+      <div class="popup form" tabindex="0" data-pop="pop1">
+        <form action="#" method="post" name="#">
+          <div class="pop_tit">사고접수 취하</div>
+          <div>
+            <div class="textarea"><textarea name="#" disabled  title="사고접수 취히" placeholder="사고접수 취하 사유를 명확하게 작성하여 주시기 바랍니다."></textarea>
+            </div>
+          </div>
+          <div class="btn_box">
+            <a href="#" class="close_pop btn2 grey">취소</a>
+            <a href="#" class="close_pop btn2">확인</a>
+          </div>
+          <button type="button" class="close_pop loop"><span class="hide">닫기</span></button>
+        </form>
+      </div>
+      <div class="popup zoom" tabindex="0" data-pop="pop2">
+        <form action="#" method="post" name="#">
+          <div>
+            <div class="img_slide">
+              <div class="item">
+                <div class="img"><img src="../common/images/zoom_img_2_1.png" alt=""></div>
+                <div class="txt">
+                  <div>
+                    <span>[보험사] 이순신<b>2020-08-03 15:35:43</b>
+                    피해차량</span>
+                  </div>
+                  <a href="#" class="down">Download</a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img"><img src="../common/images/zoom_img_2_1.png" alt=""></div>
+                <div class="txt">
+                  <div>
+                    <span><b>[보험사] 이순신</b> 2020-08-03 15:35:43</span>
+                    피해차량
+                  </div>
+                  <a href="#" class="down">Download</a>
+                </div>
+              </div>            
+            </div>
+          </div>      
+          <button type="button" class="close_pop loop"><span class="hide">닫기</span></button>
+        </form>
+      </div>
+      <div class="popup blackbox" tabindex="0" data-pop="pop3">
+        <form action="#" method="post" name="#">
+          <div class="pop_tit">영상추가</div>
+          <div>
+            <img src="../common/images/black_box.png" alt="">
+            <span>영상추가</span>
+          </div>
+          <div class="btn_box">
+            <a href="#" class="close_pop btn2 grey">취소</a>
+            <a href="#" class="close_pop btn2">저장</a>
+          </div>
+          <button type="button" class="close_pop loop"><span class="hide">닫기</span></button>
+        </form>
+      </div>
+    </div>
+</body>
+
+</html>

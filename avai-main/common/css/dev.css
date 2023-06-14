@@ -1,0 +1,341 @@
+/*# sourceURL=/common/css/dev.css */
+/*@ sourceURL=/common/css/dev.css */
+@import url("https://avaib.katri.or.kr/common/css/../css/font-awesome.css");
+
+.board_detail .bo_head > div ul li { width: auto; height:auto}
+.fa { cursor:pointer; color:#666; font-size:16px; padding:0 5px}
+.fa:hover { color:#333;}
+.fa.fa-file-o, .fa.fa-print {font-size:22px;}
+.fa-file-movie-o, .fa-file-picture-o, .fa-file-text-o { font-size:20px}
+.datepicker--buttons { display:none !important}
+.btn6.green {background:#1bb711}
+
+/* 상단이미지 정렬문제 220927 */
+#div_lnb_bg {margin-top: 85px; height: 200px; overflow: hidden;}
+
+.head .bo_sch button:last-child, .head .bo_sch a{background:#7a7a7a !important; margin-left: 0px !important; padding: 0 15px !important; min-width: auto !important;}
+.tit_sm { margin-top:30px;}
+
+/* 메인화면 팝업창 */
+.layer_popup {display: none; position: fixed; left: 0; top: 0; bottom: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.5); overflow: hidden; z-index: 9;}
+.layer_popup .popup { display: none; position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); background-color: #fff; min-width:200px; min-height:200px; border-radius: 8px; max-width: 80%; padding:0 30px 40px;-webkit-box-shadow: 5px 5px 15px -4px #000000; box-shadow: 5px 5px 15px -4px #000000; overflow:hidden }
+.layer_popup .popup .loop { position: absolute; top: 22px; right: 39px; cursor:pointer; background: url("https://avaib.katri.or.kr/common/css/../images/btn_pop2_close.png") no-repeat 50% 50%; width: 21px; height: 21px; z-index:1}
+.layer_popup .popup table { max-width:980px !important }
+.layer_popup .popup img { max-width:100% !important }
+
+/* lnb */
+.page_spot .lnb .menu {font-size: inherit;}
+.page_spot .lnb .menu>ul>li>a { line-height:62px; font-size:16px}
+
+/* 회원가입 약관동의 */
+.agree_box .scroll_box #contents { padding:10px 0}
+.agree_box .scroll_box .con { margin-top:0}
+.agree_box .scroll_box .con .tit_md, .agree_box .scroll_box .con .tit_md.mb10{ margin-bottom:0; margin:20px 0 10px}
+.agree_box .scroll_box .tit_lg, .agree_box .scroll_box .bd_box { display:none}
+
+/* 사고접수 조회 */
+.mhide { display:none}
+.crashSearch { position:relative}
+.crashSearch tbody th { width:123px !important}
+.crashSearch input, select, textarea { display:inline-block}
+.crashSearch select, input { font-size:inherit !important}
+.crashSearch .inp { border:none}
+.crashSearch [type=text] { border:1px solid #999}
+.crashSearch .inp.date { width:120px !important}
+.crashSearch #search_toggle {position:absolute; left:50%;}
+.crashSearch #search_toggle + label span { width:50px; height:50px; content:"\f107"; font-size:16px; font-family:font-awesome; text-align:center; border:1px solid #ddd; border-radius:50%;}
+.crashSearch #search_toggle:checked + label span {content:"\f106";}
+.crashSearch .btn_box { margin:25px 0 50px !important}
+
+.crashList .head, .crashList .table { margin:0 0 5px !important}
+.crashList .head .bo_sch { margin:9px 0 0 !important}
+.crashList input, .crashList select { display:inline-block; font-size:16px; border:1px solid #ccc; border-radius:4px; line-height:33px; height:33px; vertical-align: middle;}
+.crashList #sch_row_per_page { width:65px; font-size:16px} /* 목록개수 */
+
+/* 사고접수목록 */
+.crashTableList { width:100%; overflow:hidden}
+.crashTableList th { padding:15px 0 !important; line-height: normal;}
+.crashTableList td { padding:10px 5px !important; font-weight:400; text-align:center; line-height: 1.4 !important; border-bottom:1px solid #ddd}
+.crashTableList .clrn { width:55px; white-space:nowrap;}
+.crashTableList .cltxt { width:140px; color:#333; cursor:pointer }/* 접수번호 */
+.crashTableList .cltxt span { display:block; font-size:15px; font-weight:400}
+.crashTableList tbody tr:hover .cltxt, .crashTableList tbody .cltxt:hover { color:#ee0700 }/* 접수번호 */
+.crashTableList .cltdt, .crashTableList .cltst, .crashTableList .cltsct, .crashTableList .cltit {width:55px}
+.crashTableList .clsttu {width:75px}
+.w30p { width:38% !important}
+.w50p { width:59% !important}
+
+/* 사고조사결과 보기 */
+.reprtPreview {width:100%; overflow:hidden}
+.reprtPreview th { padding:15px 0 !important; line-height: normal;}
+.reprtPreview tbody td { padding:10px 5px !important; font-weight:400; text-align:center; line-height: 1.4 !important; border-bottom:1px solid #ddd}
+.reprtPreview .rp_no { width:55px}
+.reprtPreview .rp_ct,
+.reprtPreview .rp_file {width:75px}
+.reprtPreview .rp_page,
+.reprtPreview .rp_wr { width:85px}
+.reprtPreview .rp_edt { width:100px}
+
+/* 재심의 신청현황 목록 */
+table.objecList { width:100%; overflow:hidden}
+table.objecList th { padding:15px 0 !important; line-height: normal;}
+table.objecList th.onum span { display:none}
+table.objecList tbody tr{ cursor:pointer;}
+table.objecList td { padding:10px 5px !important; font-weight:400; text-align:center; line-height: 1.4 !important; border-bottom:1px solid #ddd}
+table.objecList td a.btn6 { min-width:auto}
+table.objecList .lnum { width:85px; white-space:nowrap;}/* 번호 */
+table.objecList .onum { width:150px;}/* 접수번호 */
+table.objecList tbody tr:hover .onum span:first-child { color:#ee0700}
+table.objecList .onum span {display:block; width:150px;}
+table.objecList .onum span:last-child {display:none; font-size:14px}
+table.objecList .lview a.btn6 { background:#1bb711}/* 결과보기 */
+table.objecList .lprint a.btn6 { background:#6ca1cb}/* 출력버튼 */
+
+/* 정보제공 */
+table.provisionList { width:100%; overflow:hidden}
+table.provisionList th { padding:15px 0 !important; line-height: normal;}
+table.provisionList td { padding:10px 5px !important; font-weight:400; text-align:center; line-height: 1.4 !important; border-bottom:1px solid #ddd}
+table.provisionList thead .plrn { width: 75px; white-space:nowrap}/* 번호 */
+table.provisionList thead .pltxt { width: 142px; }/* 접수번호 */
+table.provisionList thead .pdate1, table.provisionList thead .pdate2 { width: 95px; }/* 신청-접수일자 */
+table.provisionList tbody tr:hover .pltxt { color:#ee0700 }/* 접수번호 */
+table.provisionList .pview1 a.btn6 { background:#1bb711}/* 결과보기 */
+table.provisionList thead th:last-child { width:75px }/* 처리상태 */
+
+/* 제공자료 */
+.pop_wrap .popup2 {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); padding: 10px 40px 30px; border: 1px solid #999; border-radius:10px; background-color: #fff;max-width: 1200px;}
+.pop_wrap .popup2[data-pop="pop4"] video {max-height: 680px;}
+.pop_wrap .popup2 .loop {position: absolute;right: 20px;top: 20px;background: url("https://avaib.katri.or.kr/common/css/../images/popup_close.png") no-repeat 50% 50%;width: 19px;height: 19px;}
+.pop_wrap .popup2 .pop_tit{ padding: 13.5px 0; line-height: 1.4;  font-size: 30px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; /* 220914 */}
+.pop_wrap .popup2 .img_slide .item img { }
+.pop_wrap .popup2 video { width:500px; max-width:100%;}
+
+/* 게시판 목록 */
+.bo_sch .select+.inp {margin:0 3px;}
+.bbs1.select, .bbs2.select { font-size:16px !important; margin:0 3px;}
+.bbs1.select select, .bbs2.select select { font-size:16px !important}
+.bbs2.select { width:80px !important}
+.bbsinput { width:80px !important}
+
+#bbsaADaddList, #bbsUserList, #myBbsList {max-width:1200px !important; font-weight:400 !important; transition: all ease 0.5s}
+#bbsaADaddList thead th, #bbsUserList thead th, #myBbsList thead th {padding:15px 0; text-align:center !important;}
+#bbsaADaddList tbody tr, #bbsUserList tbody tr, #myBbsList tbody tr { position:relative}
+#bbsaADaddList tbody tr:hover, #bbsUserList tbody tr:hover, #myBbsList tbody tr:hover { background:#f9f9f9; cursor:pointer}
+#bbsaADaddList tbody tr:hover .bbsTitle, #bbsUserList tbody tr:hover .bbsTitle, #myBbsList tbody tr:hover .bbsTitle,
+#bbsaADaddList tbody td a:active, #bbsUserList tbody td a:active, #myBbsList td a:active { color:#3664ff;}
+#bbsaADaddList tbody td, #bbsUserList tbody td, #myBbsList tbody td {line-height:35px; color:#666; text-align:center; border-bottom:1px solid #ddd; padding:10px 0 !important}
+#bbsaADaddList .impor, #bbsUserList .impor, #myBbsList .impor {min-width:auto}
+#bbsaADaddList .bbsPoint, #bbsUserList .bbsPoint, #myBbsList .bbsPoint,
+#bbsaADaddList .bbsNo, #bbsUserList .bbsNo, #myBbsList .bbsNo {width:100px; white-space:nowrap}
+#bbsaADaddList .bbsTitle, #bbsUserList .bbsTitle, #myBbsList .bbsTitle {text-align:left; color:#444; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#bbsaADaddList .bbsTitle a, #bbsUserList .bbsTitle a, #myBbsList .bbsTitle a{ overflow: hidden; text-overflow: ellipsis; white-space: nowrap;  }
+#bbsaADaddList .bbsUser, #bbsUserList .bbsUser, #myBbsList .bbsUser,
+#bbsaADaddList .bbsFile, #bbsUserList .bbsFile, #myBbsList .bbsFile,
+#bbsaADaddList .bbsRestu, #bbsUserList .bbsRestu, #myBbsList .bbsRestu {width:95px;}
+#bbsaADaddList .bbsView, #bbsUserList .bbsView, #myBbsList .bbsView {width:110px;}
+#bbsaADaddList .bbsDate, #bbsUserList .bbsDate, #myBbsList .bbsDate {width:110px;}.impor
+#bbsaADaddList .fa, #bbsUserList .fa, #myBbsList .fa {font-size:20px}
+.bbsL.null { border-bottom:1px solid #ddd; text-align:center; line-height:80px}
+/* 게시판 상세 */
+.board_detail .bo_head h2 { border-top:none; padding:0 0 10px !important; font-size:20px}
+.board_detail .impor { min-width:auto; margin-right: 15px !important;}
+.board_detail .bo_file td a { font-weight:400}
+.board_detail .bo_con img, .board_detail .bo_con table, .board_detail .bo_con video { display:block !important; max-width:90% !important;}
+.board_detail .bo_con table { display:block !important; max-width:90% !important;}
+.bo_pagination a { font-size:inherit !important}
+/* 자주하는질문 */
+.list_dropdown dt a { position:relative;}
+.list_dropdown.faq_list a[title~="파일다운로드"] { margin:0 0 8px}
+.list_dropdown.faq_list .fa { font-size:20px; color:#666;}
+.list_dropdown dt a span { width:90% !important}
+.list_dropdown dt a span .fa.fa-file-o { position:absolute; top:calc(50% - 10px); right:70px;}
+.list_dropdown dt a span i:hover:after { position:absolute; top:-18px; left:-55px;content:"첨부파일 확인 바랍니다."; font-size:14px; color:#666}
+.list_dropdown.faq_list a:hover .fa { color:#ff4500}
+.list_dropdown dd > div p span {vertical-align: unset;}
+.list_dropdown dd > div img { display:block !important; max-width:90% !important;}
+
+/*유비리포트*/
+.hidden { display:none }
+
+@media screen and (max-width: 1280px) {
+	.quick_menu { display:none} /* 퀵메뉴 */
+	/* 사고접수목록 */
+	.crashSearch tr td:nth-child(2) { width:185px}
+	.bo_sch {margin:0}
+}
+
+@media screen and (max-width: 1130px) {
+	/* 사고접수목록 */
+	.crashTableList .cluser { display:none} /* 접수자 정보 */
+}
+
+@media screen and (max-width: 1024px){
+	.container { margin:0 15px;}
+	.crashSearch tbody th { width:85px !important}/* 사고접수목록 */
+}
+
+@media screen and (max-width: 1023px){
+	.print_page {padding: 0 0px 30px;}/* 프린트 영역설정 */
+	.bo_sch.type2 .inp {clear: none;}
+	.bo_sch.type2 > .inp+button {margin:0}
+}
+
+@media screen and (max-width: 990px){
+
+	/* 사고접수목록 */
+	.crashSearch table th, .crashSearch table td { font-size: inherit;}
+	.crashSearch table th { display:inline-block; width:20% !important; text-align:left; padding:10px 0; background:#fff}
+	.crashSearch table td { display:inline-block;  width:80% !important; padding: 8px 0;}
+	.w50p {width: 49% !important;}
+
+	.bo_info, .bo_sch { display:inline-block; width:auto}
+	.bo_sch { float:right; text-align: right;}
+
+	/* 사고,재심, 정보제공 접수목록 */
+	.crashTableList thead, table.objecList thead, table.provisionList thead { display:none}
+	.crashTableList .mhide {display:inline-block; margin-right:5px;}
+	.crashTableList tr, table.objecList tr, table.provisionList tr { position:relative; display:block; margin:5px 0 8px; padding:15px; border:1px solid #ddd; border-radius:5px; overflow:hidden}
+	.crashTableList tr td, table.objecList td, table.provisionList td { display:inline-block; font-size:16px; border:none; text-align:left; padding:5px !important}
+
+	.crashTableList .clrn { width:auto; font-size:13px; margin-right:10px;}
+	.crashTableList .clrn:before { content:"No.";}
+	.crashTableList .clnm { width:auto;}
+	.crashTableList .cltxt { display:block; width:100%}
+	.crashTableList .cltxt:before { content:"[접수번호] "; margin-right:8px}
+	.crashTableList .cltxt span { display:inline-block}
+	.crashTableList .cltbn:before { display:inline-block;  content:"- 제작자 : "; margin-right:8px}
+	.crashTableList .cltcn:before { display:inline-block; content:"- 차종 : "; margin-right:8px}
+	.crashTableList .cltbn, .crashTableList .cltcn {width:calc(50% - 15px);}
+	.crashTableList .cltdt:before { content:"- 사망 : "}
+	.crashTableList .cltst:before { content:"중상 : "}
+	.crashTableList .cltsct:before { content:"경상 : "}
+	.crashTableList .cltit:before { content:"부상 : "}
+	.crashTableList .cldate1:before { content:"- 사고일자 : "}
+	.crashTableList .cldate1 { display:block; text-align:left}
+	.crashTableList .cldate2:before { content:"- 접수일자 : "}
+	.crashTableList .cltdt, .crashTableList .cltst, .crashTableList .cltsct, .crashTableList .cltit {width:auto; white-space:nowrap; margin-right:8px}
+	.crashTableList .clsttu { position:absolute; top:15px; right:15px; text-align:right !important; width:82px}
+
+	.reprtPreview thead th { display:none}
+	.reprtPreview tbody tr { display:block; border:1px solid #ddd; margin:8px 0!important; border-radius:5px; padding:10px;}
+	.reprtPreview tbody tr td { display:block; border:none; padding:5px 10px !important; text-align:left}
+	.reprtPreview .rp_no, .reprtPreview .rp_ct, .reprtPreview .rp_file, .reprtPreview .rp_page, .reprtPreview .rp_wr, .reprtPreview .rp_edt{width:100%}
+	.reprtPreview .rp_no:before {content:"No."}
+	.reprtPreview .rp_ct:before {content:"- 심의 구분 : "; font-size:15px; color:#646464;}
+	.reprtPreview .rp_nm1:before {content:"- 조사 책임자 : "; font-size:15px; color:#646464;}
+	.reprtPreview .rp_nm2:before {content:"- 조사자 : "; font-size:15px; color:#646464;}
+	.reprtPreview .rp_file:before {content:"- 파일 : "; font-size:15px; color:#646464;}
+	.reprtPreview .rp_page:before {content:"- page : "; font-size:15px; color:#646464;}
+	.reprtPreview .rp_size:before {content:"- 파일 용량 : "; font-size:15px; color:#646464;}
+	.reprtPreview .rp_edt:before {content:"- 종결일자 : "; font-size:15px; color:#646464;}
+	.reprtPreview .rp_wr:before {content:"- 등록자 : "; font-size:15px; color:#646464;}
+	.reprtPreview .rp_dt:before {content:"- 등록일시 : "; font-size:15px; color:#646464;}
+
+	table.objecList .lnum { width:100%; color:#646464; font-size:13px; min-width:55px}
+	table.objecList .lnum:before { content:"No.";}
+	table.objecList .onum {width:100%;}
+	table.objecList .onum:before { content:"[접수번호] ";}
+	table.objecList .onum:after { content:""; clear:both; overflow:hidden}
+	table.objecList .onum span {display:inline-block; width:auto; margin-right:10px;}
+	table.objecList .name, table.objecList .tdata, table.objecList .cname, table.objecList .lprint{ display:none}/* 신청자, 종결일시, 제작자 */
+	table.objecList .snum { border:1px solid #ddd; border-radius:5px; margin:5px 10px 5px 5px; padding:5px 15px !important}
+	table.objecList .snum:before {content:"안건번호 : "}
+	table.objecList .cdata { width:158px; white-space:nowrap; overflow:hidden; margin-right:10px;}/* 신청일시 */
+	table.objecList .cdata:before { content:"접수일자 : ";}
+	table.objecList .lstuts { position:absolute; right:10px; top:15px}/* 상태 */
+	table.objecList .lview { position:absolute; right:10px; top:48px}/* 프린트 */
+
+	table.provisionList td:nth-child(n+3) { display:block; width:100%}
+	table.provisionList .plrn:before { content:"No."}
+	table.provisionList .plrn { width:100%; color:#646464; font-size:13px; min-width:55px}
+	table.provisionList .pltxt:before { content:"[접수번호] "}
+	table.provisionList .pltxt:after { content:""; clear:both; overflow:hidden}
+	table.provisionList .pltxt { width:100%;}
+	table.provisionList .pltxt a { display:inline-block}
+	table.provisionList .pluser:before { content:"- 신청자 : ";}
+	table.provisionList .pcode1:before { content:"- 신청방법 : ";}
+	table.provisionList .pcode2:before { content:"- 수령방법 : ";}
+	table.provisionList .pdate1:before { content:"- 신청일 : ";}
+	table.provisionList .pdate2:before { content:"- 접수일 : ";}
+	table.provisionList .pdate1, table.provisionList .pdate2 { white-space:nowrap;overflow:hidden}
+	table.provisionList .pluser, table.provisionList .pcode1, table.provisionList .pcode2 { margin-right:10px}
+	table.provisionList .pview1 { position:absolute; right:5px; top:65px; min-width:auto; width: 150px !important}/* 보기 */
+	table.provisionList .psttu { position:absolute; right:10px; top:15px; width:75px !important; text-align:right !important}/* 상태 */
+
+	/* 자료제공 열람 */
+	.provd_tit { font-size:16px}
+	.provdInfoList01 thead th, .provdInfoList02 thead th, .provdInfoList03 thead th { display:none}
+	.provdInfoList01 tbody tr, .provdInfoList02 tbody tr, .provdInfoList03 tbody tr { display:block; border:1px solid #ddd; margin:8px 0!important; border-radius:5px; padding:10px;}
+	.provdInfoList01 tbody tr td, .provdInfoList02 tbody tr td, .provdInfoList03 tbody tr td { display:block; border:none; padding:5px 10px !important; text-align:left}
+	.provdInfoList01 .prov_no:before, .provdInfoList02 .prov_no:before, .provdInfoList03 .prov_no:before { content:"No."; font-size:15px; color:#646464;}
+	.provdInfoList01 .prov_car:before, .provdInfoList02 .prov_car:before, .provdInfoList03 .prov_car:before { content:"- 차량번호 : "; font-size:15px; font-weight:400; color:#646464;}
+	.provdInfoList01 .prov_pds:before { content:"- 자료 구분 : "; font-size:15px; font-weight:400; color:#646464;}
+	.provdInfoList01 .prov_nm { display:none}
+	.provdInfoList01 .prov_memo:before { content:"- 메모 및 설명 : "; font-size:15px; font-weight:400; color:#646464;}
+	.provdInfoList02 .prov_pds:before { content:"- 기록데이터 : "; font-size:15px; font-weight:400; color:#646464;}
+	.provdInfoList03 .prov_pds:before { content:"- 보고서 : "; font-size:15px; font-weight:400; color:#646464;}
+	.provdInfoList01 .prov_icon:before { content:"- 자료 : "; font-size:15px; font-weight:400; color:#646464;}
+	.provdInfoList02 .prov_icon:before { content:"- 원본파일 : "; font-size:15px; font-weight:400; color:#646464;}
+	.provdInfoList03 .prov_icon:before { content:"- 파일 : "; font-size:15px; font-weight:400; color:#646464;}
+	.provdInfoList01 .prov_tt:before { content:"- 자료 개수 : "; font-size:15px; font-weight:400; color:#646464;}
+	.provdInfoList01 .prov_dt:before{ content:"- 등록일시 : "; font-size:15px; font-weight:400; color:#646464;}
+	.provdInfoList02 .prov_dt:before{ content:"- 취득일 : "; font-size:15px; font-weight:400; color:#646464;}
+	.provdInfoList03 .prov_ct:before{ content:"- 심의 구분 : "; font-size:15px; font-weight:400; color:#646464;}
+	.provdInfoList03 .prov_nm:before{ content:"- 조사자 : "; font-size:15px; font-weight:400; color:#646464;}
+	.provdInfoList03 .prov_dt:before{ content:"- 종결일자 : "; font-size:15px; font-weight:400; color:#646464;}
+	.provdInfoList03 td:nth-child(6){display:none}
+
+	/* 게시판 */
+	#bbsaADaddList thead th, #bbsUserList thead th, #myBbsList thead th {display:none}
+	#bbsaADaddList tbody tr, #bbsUserList tbody tr, #myBbsList tbody tr { display:block; border:1px solid #ddd; margin:8px 0!important; border-radius:5px; padding:10px;}
+	#bbsaADaddList tbody td, #bbsUserList tbody td, #myBbsList tbody td { line-height: normal; border:none; display:inline-block; padding:0 0 5px !important}
+	#bbsaADaddList td.bbsPoint, #bbsUserList td.bbsPoint, #myBbsList td.bbsPoint {display:block; width:auto; text-align:left;}
+	#bbsaADaddList td.bbsNo:before, #bbsUserList td.bbsNo:before, #myBbsList td.bbsNo:before {content:"No.";}
+	#bbsaADaddList td.bbsNo, #bbsUserList td.bbsNo, #myBbsList td.bbsNo {display:block; width:auto; font-size:15px; color:#646464; text-align:left}
+	#bbsaADaddList .bbsTitle, #bbsUserList .bbsTitle, #myBbsList .bbsTitle,
+	#bbsaADaddList .bbsTitle a, #bbsUserList .bbsTitle a, #myBbsList .bbsTitle a {width:98%; font-size:18px !important; white-space: normal;}
+	#bbsaADaddList .bbsUser:before, #bbsUserList .bbsUser:before, #myBbsList .bbsUser:before { content:"- 작성자 : "}
+	#bbsaADaddList .bbsView:before, #bbsUserList .bbsUser:before, #myBbsList .bbsView:before { content:"- Hit."}
+	#bbsaADaddList .bbsUser, #bbsUserList .bbsUser, #myBbsList .bbsUser,
+	#bbsaADaddList .bbsView, #bbsUserList .bbsView, #myBbsList .bbsView,
+	#bbsaADaddList .bbsDate, #bbsUserList .bbsDate, #myBbsList .bbsDate { width:auto; color:#646464; margin-right:20px; font-size:15px}
+	#bbsaADaddList .bbsFile, #bbsUserList .bbsFile, #myBbsList .bbsFile { display:none}
+	#bbsaADaddList .bbsRestu, #bbsUserList .bbsRestu, #myBbsList .bbsRestu { position:absolute; top:10px; right:10px; width:55px; font-size:13px; border:1px solid #ddd; border-radius:3px}
+
+}
+
+@media screen and (max-width: 720px){
+	/* 상단 이미지 */
+	.page_spot .tit_bg { height: 150px !important;}
+	.page_spot .page_title { top:calc(50% - 46px)}
+	.crashTableList .cldate1, .crashTableList .cldate2 { width:100%}
+}
+
+@media screen and (max-width: 653px){
+	/* 사고접수목록 */
+	.bo_info, .bo_sch { display:block; width:auto; text-align:center}
+	.bo_sch { float:none}
+	.crashList select[name=sch_drver_ty_code] { display:none}
+	.crashTableList .cltxt { width:100%; margin-top:15px;}
+	.crashTableList .cltbn, .crashTableList .cltcn {width:98%; margin-top:0px;}
+	.crashTableList .cldate1, .crashTableList .cldate2, .crashTableList .clsttu { width:98%}
+
+	table.objecList .onum span:last-child { display:none} /* 재심신청리스트 제작자 */
+	.bo_pagination .next, .bo_pagination .prev {float: none; display:block; width:100%}/* 게시판상세 다음글, 이전글 */
+	.bo_pagination .next { border-bottom:1px solid #aaa;}
+	.bo_pagination .next span{border-right:none}
+	.bo_pagination .prev b {float:left;}
+}
+
+@media screen and (max-width: 412px){
+
+	table.objecList .cdata { display:block; width: 100%;}
+	table.objecList .lstuts { top:7px}
+
+	.bo_sch.type2 .btn6 { min-width:auto !important}
+	.bbs1.select { width:110px !important}
+	.bbs2.select { display:none}
+
+	.footer .ft_nav .ft_menu > li:nth-child(3) {display:none; width: 33%;}
+	.footer .ft_nav .ft_menu > li{width: 33%;}
+}
