@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+  <title>한의학</title>
+  <link rel="stylesheet" href="../common/css/default.css" />
+  <link rel="stylesheet" href="../common/css/slick.css" />
+  <script src="../common/js/jquery-1.12.4.min.js"></script>
+  <script src="../common/js/slick.js"></script>
+  <script src="../common/js/common.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- 헤더 영역 -->
+    <!-- header -->
+    <div id="header">
+      <span class="left">
+        <a href="../html/index.html" class="icon_back">
+          <span class="hide">뒤로가기</span>
+        </a>
+        <a href="../html/index.html" class="icon_home">
+          <span class="hide">홈으로</span>
+        </a>
+      </span>
+      <h3>운동량</h3>
+      <span class="right">
+        <a href="#" class="icon_menu"><span class="hide">전체메뉴 열기</span></a>
+      </span>
+    </div>
+    <div class="menu">
+      <div>
+        <h3>
+          <span><b>홍길동</b>님</span>
+          오늘도 건강한 하루되세요!
+        </h3>
+        <div>
+          <button type="button" class="setting">설정</button>
+          <button type="button" class="logout">로그아웃</button>
+        </div>
+      </div>
+      <ul class="list">
+        <li>
+          <a href="../html/dep1_myActivity.html">나의 활동</a>
+        </li>
+        <li>
+          <a href="../html/dep1_myHealth.html">나의 건강</a>
+        </li>
+        <li>
+          <a href="../html/dep1_healthInfo.html">건강 정보</a>
+        </li>
+        <li>
+          <a href="../html/dep1_myPage.html">마이페이지</a>
+        </li>
+      </ul>
+      <ol class="attr">
+        <li>
+          <a href="#" class="home"><span class="hide">홈으로</span></a>
+        </li>
+        <li>
+          <a href="#" class="back"><span class="hide">전체메뉴 닫기</span></a>
+        </li>
+      </ol>
+    </div>
+    <!-- //header -->
+    <!-- 컨테이너 -->
+    <div id="contents">
+      <div class="con bg0">
+        <div class="date_box">
+          <button type="button" class="prev"><span class="hide">이전날짜이동</span></button>
+          <button type="button" class="today" data-btn="pop1">2021년 10월 26일</button>
+          <button type="button" class="next"><span class="hide">다음날짜이동</span></button>
+        </div>
+      </div>
+      <div class="con">
+        <form action="#" method="post" name="#" class="form_box">
+          <fieldset>
+            <legend>
+              번호있는 문항을 fieldset으로 구분 합니다.(legend 에는 입력사항에 대한 타이틀이 들어갑니다. 예)
+            </legend>
+            <div class="tit_box">
+              <h2 class="tit_md">1. 증감</h2>
+              <button type="button" class="tip" data-btn="pop1"></button>
+            </div>
+            <ul class="inp_box">
+              <li>
+                <b>하위문항 또는 설명이 들어가는 영역입니다.
+                  <button type="button" class="tip" data-btn="pop1"></button></b>
+                <div class="inp_wrap">
+                  <div class="btn">
+                    <button type="button"><span class="hide">감소</span></button>
+                  </div>
+                  <div class="inp">
+                    <input type="text" name="#" value="1회" />
+                  </div>
+                  <div class="btn">
+                    <button type="button"><span class="hide">증가</span></button>
+                  </div>
+                </div>
+              </li>
+              <li class="col2">
+                <span>소제목1 <button type="button" class="tip" data-btn="pop1"></button></span>
+                <div class="inp_wrap">
+                  <div class="btn">
+                    <button type="button"><span class="hide">감소</span></button>
+                  </div>
+                  <div class="inp">
+                    <input type="text" name="#" value="1회" />
+                  </div>
+                  <div class="btn">
+                    <button type="button"><span class="hide">증가</span></button>
+                  </div>
+                </div>
+              </li>
+              <li class="col2">
+                <span>소제목2 <button type="button" class="tip" data-btn="pop1"></button></span>
+                <div class="inp_wrap">
+                  <div class="btn">
+                    <button type="button"><span class="hide">감소</span></button>
+                  </div>
+                  <div class="inp">
+                    <input type="text" name="#" value="1회" />
+                  </div>
+                  <div class="btn">
+                    <button type="button"><span class="hide">증가</span></button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <span>소제목3(2개의 input)<button type="button" class="tip" data-btn="pop1"></button></span>
+                <div class="item2">
+                  <div class="inp_wrap">
+                    <div class="btn">
+                      <button type="button"><span class="hide">감소</span></button>
+                    </div>
+                    <div class="inp">
+                      <input type="text" name="#" value="1회" />
+                    </div>
+                    <div class="btn">
+                      <button type="button"><span class="hide">증가</span></button>
+                    </div>
+                  </div>
+                  <span class="space"></span>
+                  <div class="inp_wrap">
+                    <div class="btn">
+                      <button type="button"><span class="hide">감소</span></button>
+                    </div>
+                    <div class="inp">
+                      <input type="text" name="#" value="1회" />
+                    </div>
+                    <div class="btn">
+                      <button type="button"><span class="hide">증가</span></button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="inp_wrap">
+                  <div class="btn">
+                    <button type="button"><span class="hide">감소</span></button>
+                  </div>
+                  <div class="inp">
+                    <input type="text" name="#" value="1회" />
+                  </div>
+                  <div class="btn">
+                    <button type="button"><span class="hide">증가</span></button>
+                  </div>
+                  <div class="reload">
+                    <button type="button"><span class="hide">새로고침</span></button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>
+              번호있는 문항을 fieldset으로 구분 합니다.(legend 에는 입력사항에 대한 타이틀이 들어갑니다. 예)
+            </legend>
+            <div class="tit_box">
+              <h2 class="tit_md">2. Select박스</h2>
+            </div>
+            <ul class="inp_box">
+              <li>
+                <b>문항 또는 설명이 들어가는 영역입니다. <span>(###에 대해서 선택해주세요.)</span></b>
+                <span>소제목 - 선택상자</span>
+                <div class="select">
+                  <select name="#" title="구분">
+                    <option value="#">select</option>
+                    <option value="#">select1</option>
+                    <option value="#">select2</option>
+                    <option value="#">select3</option>
+                  </select>
+                </div>
+              </li>
+              <li>
+                <span>소제목 - 점심</span>
+                <div class="inp_wrap">
+                  <div class="select">
+                    <select name="#" title="구분">
+                      <option value="#">시간</option>
+                      <option value="#">select1</option>
+                      <option value="#">select2</option>
+                      <option value="#">select3</option>
+                    </select>
+                  </div>
+                  <span class="space"></span>
+                  <div class="select">
+                    <select name="#" title="구분">
+                      <option value="#">분</option>
+                      <option value="#">select1</option>
+                      <option value="#">select2</option>
+                      <option value="#">select3</option>
+                    </select>
+                  </div>
+                </div>
+                <p class="ref">※ 부가설명 스타일입니다.</p>
+              </li>
+              <!-- 220513 추가된 UI -->
+              <li>
+                <span>날짜선택</span>
+                <div class="inp_wrap">
+                  <div class="inp">
+                    <input type="text" name="#" placeholder="직접입력">
+                    <span>년</span>
+                  </div>
+                  <span class="space"></span>
+                  <div class="inp">
+                    <input type="text" name="#" placeholder="직접입력">
+                    <span>월</span>
+                  </div>
+                  <span class="space"></span>
+                  <div class="inp">
+                    <input type="text" name="#" placeholder="직접입력">
+                    <span>일</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <b>관련 사진 첨부</b>
+                <span>사진을 첨부하시겠습니까?</span>                
+                <div class="inp_file">
+                  <ul class="type_list txt">
+                    <li>
+                      <input type="radio" name="#" value="1" id="radio1" checked>
+                      <label for="radio1"><b>예</b></label>
+                    </li>
+                    <li>
+                      <input type="radio" name="#" value="0" id="radio2">
+                      <label for="radio2"><b>아니오</b></label>
+                    </li>
+                  </ul>
+                  <div class="file_list">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <span class="thumb">
+                            <img src="../common/images/sub/con_bg_01.png" alt="">
+                          </span>
+                          <div>
+                            file title areafile title area.jpg
+                            <span>70.6KB</span>
+                          </div>
+                        </a>
+                        <button type="button">닫기</button>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="thumb">                          
+                            <!-- 첨부파일이 이미지가 아닐경우 -->
+                          </span>
+                          <div>
+                            일반파일, 섬네일 없어도 될 경우.hwp
+                            <span>70.6KB</span>
+                          </div>
+                        </a>
+                        <button type="button">닫기</button>
+                      </li>
+                    </ul>
+                    <button type="button" class="upload">파일첨부</button>
+                  </div>
+                </div>
+                <!-- 개발 방향에 맞게 수정필요 -->
+                <script>
+                  $('.inp_file input[type="radio"]').on('change',function(){
+                    var k = $(this).val();
+                    if(k>0){
+                      $(this).closest('.inp_file').find('.file_list').show();
+                    }else{
+                      $(this).closest('.inp_file').find('.file_list').hide();
+                    }
+                  });
+                </script>
+                 <!-- //개발 방향에 맞게 수정필요 -->
+              </li>           
+            </ul>
+          </fieldset>
+          <fieldset>
+            <div class="tit_box">
+              <h2 class="tit_md">하위 추가선택 항목이 있는경우</h2>              
+            </div>
+            <ul class="inp_box">
+              <li>
+                <b>단일선택 (radio)</b>
+                <ul class="type_list block">
+                  <li>
+                    <input type="radio" name="rd1" value="#" id="rd1">
+                    <label for="rd1">
+                      <b>1depth option1-하위 없는 경우</b>
+                    </label>
+                  </li> 
+                  <li>
+                    <input type="radio" name="rd1" value="#" id="rd2" class="sct" checked>
+                    <label for="rd2">
+                      <b>1depth option1-하위 있는 경우 sct 클래스</b>
+                    </label>
+                    <ul class="type_list">
+                      <li>
+                        <input type="radio" name="rd1-1" value="#" id="rd2-1">
+                        <label for="rd2-1">
+                          <b>2depth option radio1</b>
+                        </label>
+                        <div class="inp">
+                          <input type="text" placeholder="직접입력">
+                        </div>
+                      </li>
+                      <li>
+                        <input type="radio" name="rd1-1" value="#" id="rd2-2">
+                        <label for="rd2-2">
+                          <b>2depth option radio2</b>
+                        </label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="chk1" value="#" id="chk2-3">
+                        <label for="chk2-3">
+                          <b>2depth option checkbox</b>
+                        </label>
+                        <div class="inp">
+                          <input type="text" placeholder="직접입력">
+                        </div>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="chk2" value="#" id="chk2-4">
+                        <label for="chk2-4">
+                          <b>2depth option checkbox</b>
+                        </label>
+                      </li>
+                    </ul>
+                  </li>                  
+                </ul>
+              </li>
+              <li>
+                <b>다중선택 (checkbox)</b>
+                <ul class="type_list block">
+                  <li>
+                    <input type="checkbox" name="ck1" value="#" id="ck1" class="sct" checked>
+                    <label for="ck1">
+                      <b>1depth option1-하위 있는경우</b>
+                    </label>
+                    <ul class="type_list">
+                      <li>
+                        <input type="checkbox" name="ck1-1" value="#" id="ck2-1">
+                        <label for="ck2-1">
+                          <b>2depth option checkbox1</b>
+                        </label>
+                        <div class="inp">
+                          <input type="text" placeholder="직접입력">
+                        </div>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="ck1-2" value="#" id="ck2-2">
+                        <label for="ck2-2">
+                          <b>2depth option checkbox1</b>
+                        </label>
+                        <div class="inp">
+                          <input type="text" placeholder="직접입력">
+                        </div>
+                      </li>                     
+                    </ul>
+                  </li> 
+                  <li>
+                    <input type="checkbox" name="chk2-4" value="#" id="ck2" class="sct">
+                    <label for="ck2">
+                      <b>1depth option1-selected</b>
+                    </label>
+                    <ul class="type_list">
+                      <li>
+                        <input type="checkbox" name="ck3" value="#" id="ck3">
+                        <label for="ck3">
+                          <b>2depth option checkbox1</b>
+                        </label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="ck4" value="#" id="ck4">
+                        <label for="ck4">
+                          <b>2depth option checkbox1</b>
+                        </label>                       
+                      </li>                     
+                    </ul>
+                  </li>  
+                  <li>
+                    <input type="checkbox" name="chk2-5" value="#" id="ck5" class="sct">
+                    <label for="ck5">
+                      <b>그 외 조치</b>
+                    </label>
+                    <ul class="type_list">
+                      <li>
+                        조치 사항을 입력해주세요.
+                        <div class="inp">
+                          <input type="text" name="#" placeholder="직접입력">
+                        </div>
+                      </li>
+                                     
+                    </ul>
+                  </li>                 
+                </ul>
+              </li>
+            </ul>
+          </fieldset>
+          <!-- // 220513 추가된 UI -->
+          <fieldset>
+            <legend>
+              번호있는 문항을 fieldset으로 구분 합니다.(legend 에는 입력사항에 대한 타이틀이 들어갑니다. 예)
+            </legend>
+            <div class="tit_box">
+              <h2 class="tit_md">3. Text 입력</h2>
+            </div>
+            <ul class="inp_box">
+              <li>
+                <b>문항 또는 설명이 들어가는 영역입니다.</b>
+                <div class="inp">
+                  <input type="text" name="#" placeholder="직접입력" />
+                  <span>개</span>
+                </div>
+              </li>
+              <li>
+                <div class="inp">
+                  <input type="text" name="#" placeholder="직접입력" />
+                  <span>개</span>
+                </div>
+                <p class="ref">※ 부가설명 스타일입니다.</p>
+              </li>
+              <li class="col2">
+                <span>입력내용1</span>
+                <div class="inp">
+                  <input type="text" name="#" placeholder="직접입력" />
+                </div>
+              </li>
+              <li class="col2">
+                <span>입력내용2</span>
+                <div class="inp">
+                  <input type="text" name="#" placeholder="직접입력" />
+                </div>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>
+              번호있는 문항을 fieldset으로 구분 합니다.(legend 에는 입력사항에 대한 타이틀이 들어갑니다. 예)
+              월경기간, 평균 월경기간
+            </legend>
+            <div class="tit_box">
+              <h2 class="tit_md">
+                4. 선택(checkbox/radio) 문항수에 따른 자동 너비/높이 조절(txt, block, img 클래스)
+              </h2>
+            </div>
+            <p class="ref">※ 제목 아래 참고 설명이 들어가는 경우 현재 위치에 입력 합니다.</p>
+            <ul class="inp_box">
+              <li>
+                <b>txt radio 자동분할 1/n (6개 이상부터 1/3)</b>
+                <ul class="type_list txt">
+                  <li>
+                    <input type="radio" name="#" value="1" id="radio1" />
+                    <label for="radio1"><b>radio1 radio1</b></label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="2" id="radio2" />
+                    <label for="radio2"><b>radio2</b></label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="3" id="radio3" />
+                    <label for="radio3"><b>radio3 radio3 radio3 radio3 radio3</b></label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>txt radio2 분할없이 100%</b>
+                <ul class="type_list block">
+                  <li>
+                    <input type="radio" name="#" value="1" id="radio21" />
+                    <label for="radio21">
+                      <b>설태 없이 혀가 매끄러움</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="2" id="radio22" />
+                    <label for="radio22">
+                      <b>설태 없이 혀가 매끄러움</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="3" id="radio23" />
+                    <label for="radio23">
+                      <b>설태가 있지만 혀 몸통의 붉은 색이 설태 색과 대비되어 잘 보임</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="4" id="radio24" />
+                    <label for="radio24">
+                      <b>설태가 있지만 혀 몸통의 붉은 색이 설태 색과 대비되어 잘 보임</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="5" id="radio25" />
+                    <label for="radio25">
+                      <b>설태가 있지만 혀 몸통의 붉은 색이 설태 색과 대비되어 잘 보임</b>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>img radio (이미지가 있는경우 1/3)</b>
+                <ul class="type_list img">
+                  <li>
+                    <input type="radio" name="#" value="1" id="radio4" />
+                    <label for="radio4">
+                      <span class="img"><img src="../common/images/sub/radio_sample.png" alt="" /></span>
+                      <b>설태 없이 혀가 매끄러움</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="2" id="radio5" />
+                    <label for="radio5">
+                      <span class="img"><img src="../common/images/sub/radio_sample.png" alt="" /></span>
+                      <b>설태 없이 혀가 매끄러움</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="3" id="radio6" />
+                    <label for="radio6">
+                      <span class="img"><img src="../common/images/sub/radio_sample.png" alt="" /></span>
+                      <b>설태가 있지만 혀 몸통의 붉은 색이 설태 색과 대비되어 잘 보임</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="4" id="radio7" />
+                    <label for="radio7">
+                      <span class="img"><img src="../common/images/sub/radio_sample.png" alt="" /></span>
+                      <b>설태가 있지만 혀 몸통의 붉은 색이 설태 색과 대비되어 잘 보임</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="5" id="radio8" />
+                    <label for="radio8">
+                      <span class="img"><img src="../common/images/sub/radio_sample.png" alt="" /></span>
+                      <b>설태가 있지만 혀 몸통의 붉은 색이 설태 색과 대비되어 잘 보임</b>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>img radio (이미지가 있는경우 1/3)</b>
+                <ul class="type_list img">
+                  <li>
+                    <input type="radio" name="#" value="1" id="radio4" />
+                    <label for="radio4">
+                      <span class="img2"><img src="../common/images/sub/radio_sample.png" alt="" /></span>
+                      <b>설태 없이 혀가 매끄러움</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="2" id="radio5" />
+                    <label for="radio5">
+                      <span class="img2"><img src="../common/images/sub/radio_sample.png" alt="" /></span>
+                      <b>설태 없이 혀가 매끄러움</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="3" id="radio6" />
+                    <label for="radio6">
+                      <span class="img2"><img src="../common/images/sub/radio_sample.png" alt="" /></span>
+                      <b>설태가 있지만 혀 몸통의 붉은 색이 설태 색과 대비되어 잘 보임</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="4" id="radio7" />
+                    <label for="radio7">
+                      <span class="img2"><img src="../common/images/sub/radio_sample.png" alt="" /></span>
+                      <b>설태가 있지만 혀 몸통의 붉은 색이 설태 색과 대비되어 잘 보임</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="5" id="radio8" />
+                    <label for="radio8">
+                      <span class="img2"><img src="../common/images/sub/radio_sample.png" alt="" /></span>
+                      <b>설태가 있지만 혀 몸통의 붉은 색이 설태 색과 대비되어 잘 보임</b>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>img radio2 (100% 타입과 동일 label태그 .img만 추가)</b>
+                <ul class="type_list block">
+                  <li>
+                    <input type="radio" name="#" value="1" id="radio9" />
+                    <label for="radio9">
+                      <span class="img"><img src="../common/images/sub/radio_sample.png" alt="" /></span>
+                      <b>설태 없이 혀가 매끄러움</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="2" id="radio10" />
+                    <label for="radio10">
+                      <span class="img"><img src="../common/images/sub/radio_sample.png" alt="" /></span>
+                      <b>설태 없이 혀가 매끄러움</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="3" id="radio11" />
+                    <label for="radio11">
+                      <span class="img"><img src="../common/images/sub/radio_sample.png" alt="" /></span>
+                      <b>설태가 있지만 혀 몸통의 붉은 색이 설태 색과 대비되어 잘 보임</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="4" id="radio12" />
+                    <label for="radio12">
+                      <span class="img"><img src="../common/images/sub/radio_sample.png" alt="" /></span>
+                      <b>설태가 있지만 혀 몸통의 붉은 색이 설태 색과 대비되어 잘 보임</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="5" id="radio13" />
+                    <label for="radio13">
+                      <span class="img"><img src="../common/images/sub/radio_sample.png" alt="" /></span>
+                      <b>설태가 있지만 혀 몸통의 붉은 색이 설태 색과 대비되어 잘 보임</b>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>최근 1주일동안 <span>가장 자주 보았던</span> 대변색</b>
+                <ul class="type_list img">
+                  <li>
+                    <input type="radio" name="#" value="1" id="radio14" />
+                    <label for="radio14">
+                      <span class="color bg_y1"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="2" id="radio15" />
+                    <label for="radio15">
+                      <span class="color bg_y2"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="3" id="radio16" />
+                    <label for="radio16">
+                      <span class="color bg_y3"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="4" id="radio17" />
+                    <label for="radio17">
+                      <span class="color bg_y4"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="5" id="radio18" />
+                    <label for="radio18">
+                      <span class="color bg_y5"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="6" id="radio19" />
+                    <label for="radio19">
+                      <span class="color bg_y6"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="7" id="radio20" />
+                    <label for="radio20">
+                      <span class="color bg_y7"></span>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>최근 1주일동안 <span>한번이라도</span> 본 적 있는 대변색</b>
+                <ul class="type_list img">
+                  <li>
+                    <input type="radio" name="#" value="1" id="radio21" />
+                    <label for="radio21">
+                      <span class="color bg_w"></span>
+                      <b>없다</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="2" id="radio22" />
+                    <label for="radio22">
+                      <span class="color bg_red"></span>
+                      <b>붉은색</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="3" id="radio23" />
+                    <label for="radio23">
+                      <span class="color bg_pink"></span>
+                      <b>분홍색</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="4" id="radio24" />
+                    <label for="radio24">
+                      <span class="color bg_b"></span>
+                      <b>검정색</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="5" id="radio25" />
+                    <label for="radio25">
+                      <span class="color bg_g"></span>
+                      <b>초록색</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="6" id="radio26" />
+                    <label for="radio26">
+                      <span class="color bg_g2"></span>
+                      <b>회백색</b>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>선호하는 물 온도</b>
+                <ul class="type_list img">
+                  <li>
+                    <input type="radio" name="#" value="1" id="radio27" />
+                    <label for="radio27">
+                      <span class="color bg_blue"></span>
+                      <b>얼음(0℃)</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="2" id="radio28" />
+                    <label for="radio28">
+                      <span class="color bg_blue2"></span>
+                      <b>얼음물(5℃)</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="3" id="radio29" />
+                    <label for="radio29">
+                      <span class="color bg_blue3"></span>
+                      <b>정수기 냉수 (10℃)</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="4" id="radio30" />
+                    <label for="radio30">
+                      <span class="color bg_wy"></span>
+                      <b>상온(20℃)</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="5" id="radio31" />
+                    <label for="radio31">
+                      <span class="color bg_wp"></span>
+                      <b>미온수(30℃)</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="6" id="radio32" />
+                    <label for="radio32">
+                      <span class="color bg_wp2"></span>
+                      <b>정수기온수(85℃)</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="7" id="radio33" />
+                    <label for="radio33">
+                      <span class="color bg_red2"></span>
+                      <b>바로 끓인 물(95℃)</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="8" id="radio34" />
+                    <label for="radio34">
+                      <span class="color bg_w2"></span>
+                      <b>가리지 않음</b>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>최근 1주일동안 <span>가장 자주 보았던</span> 소변색</b>
+                <ul class="type_list img">
+                  <li>
+                    <input type="radio" name="#" value="1" id="radio35" />
+                    <label for="radio35">
+                      <span class="color bg_wy2"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="2" id="radio36" />
+                    <label for="radio36">
+                      <span class="color bg_wy3"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="3" id="radio37" />
+                    <label for="radio37">
+                      <span class="color bg_wy4"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="4" id="radio38" />
+                    <label for="radio38">
+                      <span class="color bg_wy5"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="5" id="radio39" />
+                    <label for="radio39">
+                      <span class="color bg_wy6"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="6" id="radio40" />
+                    <label for="radio40">
+                      <span class="color bg_wy7"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="7" id="radio41" />
+                    <label for="radio41">
+                      <span class="color bg_wy8"></span>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>최근 1주일동안 <span>한번이라도</span> 본 적 있는 소변색</b>
+                <ul class="type_list img">
+                  <li>
+                    <input type="radio" name="#" value="1" id="radio42" />
+                    <label for="radio42">
+                      <span class="color bg_w"></span>
+                      <b>없다</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="2" id="radio43" />
+                    <label for="radio43">
+                      <span class="color bg_red"></span>
+                      <b>붉은색</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="3" id="radio44" />
+                    <label for="radio44">
+                      <span class="color bg_pink"></span>
+                      <b>분홍색</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="4" id="radio45" />
+                    <label for="radio45">
+                      <span class="color bg_b"></span>
+                      <b>검정색</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="5" id="radio46" />
+                    <label for="radio46">
+                      <span class="color bg_g"></span>
+                      <b>초록색</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="6" id="radio47" />
+                    <label for="radio47">
+                      <span class="color bg_g2"></span>
+                      <b>회백색</b>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>생리적 색상 (가장 최근 월경기간 월경혈 색상)</b>
+                <ul class="type_list img">
+                  <li>
+                    <input type="radio" name="#" value="1" id="radio48" />
+                    <label for="radio48">
+                      <span class="color bg_pink2"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="2" id="radio49" />
+                    <label for="radio49">
+                      <span class="color bg_pink3"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="3" id="radio50" />
+                    <label for="radio50">
+                      <span class="color bg_pink4"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="4" id="radio51" />
+                    <label for="radio51">
+                      <span class="color bg_brown1"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="5" id="radio52" />
+                    <label for="radio52">
+                      <span class="color bg_brown2"></span>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>병리적 색상 (가장 최근 월경기간 월경혈 색상)</b>
+                <ul class="type_list img">
+                  <li>
+                    <input type="radio" name="#" value="1" id="radio53" />
+                    <label for="radio53">
+                      <span class="color bg_w3">없다</span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="2" id="radio54" />
+                    <label for="radio54">
+                      <span class="color bg_og"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="3" id="radio55" />
+                    <label for="radio55">
+                      <span class="color bg_g3"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="4" id="radio56" />
+                    <label for="radio56">
+                      <span class="color bg_b2"></span>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>checkbox (input type만 다름)</b>
+                <ul class="type_list txt">
+                  <li>
+                    <input type="checkbox" name="#" value="1" id="checkbox1" />
+                    <label for="checkbox1"><b>드물게 있었다</b></label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="#" value="2" id="checkbox2" />
+                    <label for="checkbox2"><b>가끔 있었다</b></label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="#" value="3" id="checkbox3" />
+                    <label for="checkbox3"><b>자주 있었다</b></label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="#" value="4" id="checkbox4" />
+                    <label for="checkbox4"><b>항상 있었다</b></label>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>
+              번호있는 문항을 fieldset으로 구분 합니다.(legend 에는 입력사항에 대한 타이틀이 들어갑니다. 예)
+              월경기간, 평균 월경기간
+            </legend>
+            <div class="tit_box">
+              <h2 class="tit_md">5. 탭버튼 컨텐츠</h2>
+            </div>
+            <p class="ref">※ 주로 땀이 나는 부위를 표시해주세요.</p>
+            <div class="tab_box">
+              <ul class="tab_list">
+                <li class="active">
+                  <button type="button">앞면</button>
+                </li>
+                <li>
+                  <button type="button">뒷면</button>
+                </li>
+              </ul>
+              <ol>
+                <li class="active">
+                  <img src="../common/images/sub/img_sample_body1.png" alt="" />
+                </li>
+
+                <li>
+                  <span style="display: block; width: 100%; height: 200px; text-align: center">탭 컨텐츠 입니다(2). 개발시 span태그는
+                    지워주세요.</span>
+                </li>
+              </ol>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>월경량</legend>
+            <div class="tit_box">
+              <h2 class="tit_md">5. 월경량</h2>
+            </div>
+            <p class="ref">※월경 주기당 여성용품 소모량/ 단위: 여성용품 중형기준</p>
+            <ul class="inp_box">
+              <li>
+                <div class="inp_wrap">
+                  <div class="blood">
+                    <span>1ml</span>
+                    <img src="../common/images/sub/img_blood_1.png" alt="" />
+                  </div>
+                  <div class="inp">
+                    <input type="text" name="#" placeholder="직접입력" />
+                    <span>개</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="inp_wrap">
+                  <div class="blood">
+                    <span>2ml</span>
+                    <img src="../common/images/sub/img_blood_2.png" alt="" />
+                  </div>
+                  <div class="inp">
+                    <input type="text" name="#" placeholder="직접입력" />
+                    <span>개</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="inp_wrap">
+                  <div class="blood">
+                    <span>3ml</span>
+                    <img src="../common/images/sub/img_blood_3.png" alt="" />
+                  </div>
+                  <div class="inp">
+                    <input type="text" name="#" placeholder="직접입력" />
+                    <span>개</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="inp_wrap">
+                  <div class="blood">
+                    <span>4ml</span>
+                    <img src="../common/images/sub/img_blood_4.png" alt="" />
+                  </div>
+                  <div class="inp">
+                    <input type="text" name="#" placeholder="직접입력" />
+                    <span>개</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="inp_wrap">
+                  <div class="blood">
+                    <span>5ml</span>
+                    <img src="../common/images/sub/img_blood_5.png" alt="" />
+                  </div>
+                  <div class="inp">
+                    <input type="text" name="#" placeholder="직접입력" />
+                    <span>개</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>월경량</legend>
+            <div class="tit_box">
+              <h2 class="tit_md">6. 월경통</h2>
+            </div>
+            <ul class="inp_box">
+              <li>
+                <b>통증</b>
+                <ol class="color_bar">
+                  <li>
+                    0
+                    <span>통증<br />없다</span>
+                  </li>
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                  <li>
+                    4
+                    <span>진통제<br />필요</span>
+                  </li>
+                  <li>5</li>
+                  <li>6</li>
+                  <li>
+                    7
+                    <span>마약성<br />진통제 필요</span>
+                  </li>
+                  <li>8</li>
+                  <li>9</li>
+                  <li>
+                    10
+                    <span>최악의<br />통증</span>
+                  </li>
+                </ol>
+                <div class="select">
+                  <select name="#" title="통증">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>대변 양</legend>
+            <div class="tit_box">
+              <h2 class="tit_md">7. 대변양</h2>
+            </div>
+            <div class="inp_wrap">
+              <div class="btn">
+                <button type="button"><span class="hide">감소</span></button>
+              </div>
+              <div class="inp">
+                <input type="text" name="#" value="60g" />
+              </div>
+              <div class="btn">
+                <button type="button"><span class="hide">증가</span></button>
+              </div>
+            </div>
+            <p class="ref">※정상 성인의 하루 평균 배변 양: 약 200g 이하(계란 3개 정도 부피)</p>
+            <div class="egg_box">
+              정상성인의 하루 평균 배병 양<br />
+              (계란 1개 = 약 60g)
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>월경량</legend>
+            <div class="tit_box">
+              <h2 class="tit_md">1. 1회 평균 물 섭취량</h2>
+            </div>
+            <ul class="inp_box">
+              <li>
+                <ul class="btn_water">
+                  <li>
+                    <button type="button">
+                      <img src="../common/images/sub/img_water_1.png" alt="" />
+                      <span>47.5ml</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button">
+                      <img src="../common/images/sub/img_water_2.png" alt="" />
+                      <span>95ml</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button">
+                      <img src="../common/images/sub/img_water_3.png" alt="" />
+                      <span>142.5ml</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button">
+                      <img src="../common/images/sub/img_water_4.png" alt="" />
+                      <span>190ml</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="inp_wrap">
+                  <div class="btn">
+                    <button type="button"><span class="hide">감소</span></button>
+                  </div>
+                  <div class="inp">
+                    <input type="text" name="#" value="0ml" />
+                  </div>
+                  <div class="btn">
+                    <button type="button"><span class="hide">증가</span></button>
+                  </div>
+                  <div class="reload">
+                    <button type="button"><span class="hide">새로고침</span></button>
+                  </div>
+                </div>
+                <p class="ref">※해당 용량 컵을 누르면 섭취량이 추가됩니다. +,-를 누르면 10ml씩 증가합니다.</p>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="btn_box">
+            <a href="#" class="submit" data-btn="pop2">저장</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <button type="button" class="top_btn">
+      <span class="hide">화면상단으로 이동</span>
+    </button>
+    <!-- 툴팁 설명 팝업 -->
+    <div class="modal_wrap">
+      <div class="modal" data-pop="pop1">
+        <h2>평소질환 입력사유</h2>
+        <div>
+          평소질환을 입력해주셔야만 <br />
+          KIOM 라이프로그를 효과적으로 <br />
+          사용하실 수 있습니다.
+        </div>
+        <button type="button" class="close"><span class="hide">닫기</span></button>
+      </div>
+    </div>
+    <!-- //툴팁 설명 팝업 -->
+    <!-- 다음 문진으로 넘어가는 경우 팝업 -->
+    <div class="modal_wrap">
+      <div data-pop="pop2">
+        <h2>작성완료</h2>
+        <div class="check_ok">
+          <img src="../common/images/sub/check_ok1.png" alt="" />
+          문진 작성이 완료되었습니다.<br />
+          다음을 누르시면 다음 문진으로 이동합니다.
+          <div class="link2">
+            <a href="#">종료</a>
+            <a href="#">다음</a>
+          </div>
+        </div>
+        <button type="button" class="close"><span class="hide">레이어팝업 닫기</span></button>
+      </div>
+    </div>
+    <!-- //다음 문진으로 넘어가는 경우 팝업 -->
+    <!-- 문진을 완료 할 경우 팝업 -->
+    <div class="modal_wrap">
+      <div data-pop="pop3">
+        <h2>수면 문진완료</h2>
+        <div class="check_ok">
+          <img src="../common/images/sub/check_ok2.png" alt="" />
+          수면에 대한 모든 문진 작성이<br />
+          완료되었습니다.
+          <div>
+            <a href="#">라이프로그 바로가기</a>
+          </div>
+        </div>
+        <button type="button" class="close"><span class="hide">레이어팝업 닫기</span></button>
+      </div>
+    </div>
+    <!-- //문진을 완료 할 경우 팝업 -->
+  </div>
+</body>
+
+</html>

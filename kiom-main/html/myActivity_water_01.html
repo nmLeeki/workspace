@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+        <title>한의학</title>
+        <link rel="stylesheet" href="../common/css/slick.css" />
+        <link rel="stylesheet" href="../common/css/rangeslider.css" />
+        <link rel="stylesheet" href="../common/css/default.css" />
+        <script src="../common/js/jquery-1.12.4.min.js"></script>
+        <script src="../common/js/slick.js"></script>
+        <script src="../common/js/common.js"></script>
+        <script src="../common/js/rangeslider.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- 헤더 영역 -->
+            <!-- header -->
+            <div id="header">
+                <span class="left">
+                    <a href="../html/index.html" class="icon_back">
+                        <span class="hide">뒤로가기</span>
+                    </a>
+                    <a href="../html/index.html" class="icon_home">
+                        <span class="hide">홈으로</span>
+                    </a>
+                </span>
+                <h3>수분</h3>
+                <span class="right">
+                    <a href="#" class="icon_menu"><span class="hide">전체메뉴 열기</span></a>
+                </span>
+            </div>
+            <div class="menu">
+                <div>
+                    <h3>
+                        <span><b>홍길동</b>님</span>
+                        오늘도 건강한 하루되세요!
+                    </h3>
+                    <div>
+                        <button type="button" class="setting">설정</button>
+                        <button type="button" class="logout">로그아웃</button>
+                    </div>
+                </div>
+                <ul class="list">
+                    <li>
+                        <a href="../html/dep1_myActivity.html">나의 활동</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_myHealth.html">나의 건강</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_healthInfo.html">건강 정보</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_myPage.html">마이페이지</a>
+                    </li>
+                </ul>
+                <ol class="attr">
+                    <li>
+                        <a href="#" class="home"><span class="hide">홈으로</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="back"><span class="hide">전체메뉴 닫기</span></a>
+                    </li>
+                </ol>
+            </div>
+            <!-- //header -->
+            <!-- 컨테이너 -->
+            <div id="contents">
+                <div class="form_wrap no_bg">
+                    <div class="date_box">
+                        <button type="button" class="prev"><span class="hide">이전날짜이동</span></button>
+                        <button type="button" class="today" data-btn="pop1">2021년 10월 26일</button>
+                        <button type="button" class="next"><span class="hide">다음날짜이동</span></button>
+                    </div>
+                    <div class="con bg5 my">
+                        <h3>
+                            홍길동님, 아침에 물 한잔은 보약입니다.
+                            <span>몇 잔의 물을 드셨나요?</span>
+                        </h3>
+                    </div>
+                    <div class="con">
+                        <div class="index_con">
+                            <h3>오늘 마신 물</h3>
+                            <div class="index_area">
+                                <span class="index_box">
+                                    <em>
+                                        <img src="../common/images/main/icon_index_03.png" alt="" />
+                                        <span> <em>1200</em><b class="slash">/</b>2000ml </span>
+                                    </em>
+                                    <b><strong>60</strong>%</b>
+                                </span>
+                                <div class="percent_bar"><span class="bar" style="width: 20%"></span></div>
+                                <!-- 100%가 되면 perfect 클래스 밑에 b태그에 추가하시면 색깔 바뀝니다. -->
+                                <b>800ml만 더 마시면 오늘의 목표 달성!</b>
+                            </div>
+                        </div>
+                        <div class="time_wrap water">
+                            <span class="txt">수분섭취량</span>
+                            <div class="time_box">
+                                <button type="button" class="minus" id="down2"><span class="hide">한컵 빼기</span></button>
+                                <div class="time_inp">
+                                    <div class="inp w120">
+                                        <input
+                                            type="text"
+                                            name="#"
+                                            title="섭취량"
+                                            value="00ml"
+                                            id="hour"
+                                            oninput="if(value>2680)value=2680;"
+                                        />
+                                    </div>
+                                </div>
+                                <button type="button" class="plus" id="up2"><span class="hide">한컵 더하기</span></button>
+                            </div>
+                            <div class="range_box">
+                                <div class="range">
+                                    <input type="range" min="0" max="2660" value="190" data-rangeslider />
+
+                                    <output></output>
+                                </div>
+                                <span>
+                                    오늘 마신 물의 양을 입력해주세요.
+                                    <em>(한 컵=종이컵 190ml기준)</em>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="con bg1">
+                        <div class="activity_index">
+                            <h3>일주일간 수분 섭취량</h3>
+                            <div class="graph">
+                                <ul>
+                                    <li>
+                                        <em>
+                                            <span style="height: 30%"></span>
+                                        </em>
+                                        <span>20</span>
+                                    </li>
+                                    <li>
+                                        <em>
+                                            <span style="height: 50%"></span>
+                                        </em>
+                                        <span>21</span>
+                                    </li>
+                                    <li>
+                                        <em>
+                                            <span style="height: 20%"></span>
+                                        </em>
+                                        <span>22</span>
+                                    </li>
+                                    <li>
+                                        <em>
+                                            <span style="height: 70%"></span>
+                                        </em>
+                                        <span>23</span>
+                                    </li>
+                                    <li>
+                                        <em>
+                                            <span style="height: 100%"></span>
+                                        </em>
+                                        <span>24</span>
+                                    </li>
+                                    <li>
+                                        <em>
+                                            <span style="height: 10%"></span>
+                                        </em>
+                                        <span>25</span>
+                                    </li>
+                                    <li class="today">
+                                        <em>
+                                            <span style="height: 50%"></span>
+                                        </em>
+                                        <span>26</span>
+                                    </li>
+                                </ul>
+                                <div class="g_index">
+                                    <span>12잔</span>
+                                    <span>6잔</span>
+                                </div>
+                            </div>
+                            <div class="btn_onoff">
+                                <div class="btn_box active" id="btn1">
+                                    <a href="#" class="submit">저장</a>
+                                </div>
+                                <div class="btn_box item2" id="btn2">
+                                    <a href="#" id="cancel">삭제</a>
+                                    <a href="#" class="submit">수정</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal_wrap type2">
+                <div class="modal" data-pop="pop1">
+                    <h2>날짜선택</h2>
+                    <div>
+                        <div class="cal_wrap">
+                            <div class="top">
+                                <button type="button" class="prev"><span class="hide">전 월로 이동</span></button>
+                                <h5>2021년 10월</h5>
+                                <button type="button" class="next"><span class="hide">다음 월로 이동</span></button>
+                            </div>
+                            <table>
+                                <caption>
+                                    일,월,화,수,목,금,토
+                                </caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">일</th>
+                                        <th scope="col">월</th>
+                                        <th scope="col">화</th>
+                                        <th scope="col">수</th>
+                                        <th scope="col">목</th>
+                                        <th scope="col">금</th>
+                                        <th scope="col">토</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#">1</a></td>
+                                        <td>
+                                            <a href="#">2</a>
+                                        </td>
+                                        <td><a href="#">3</a></td>
+                                        <td class=""><a href="#">4</a></td>
+                                        <td>
+                                            <a href="#">5</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">6</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">7</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">8</a></td>
+                                        <td><a href="#">9</a></td>
+                                        <td><a href="#">10</a></td>
+                                        <td><a href="#">11</a></td>
+                                        <td>
+                                            <a href="#">12</a>
+                                        </td>
+                                        <td><a href="#">13</a></td>
+                                        <td><a href="#">14</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">15</a></td>
+                                        <td><a href="#">16</a></td>
+                                        <td><a href="#" class="go">17</a></td>
+                                        <td><a href="#" class="active">18</a></td>
+                                        <td><a href="#" class="go">19</a></td>
+                                        <td><a href="#">20</a></td>
+                                        <td><a href="#" class="today">21</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">22</a></td>
+                                        <td><a href="#">23</a></td>
+                                        <td><a href="#">24</a></td>
+                                        <td>
+                                            <a href="#">25</a>
+                                        </td>
+                                        <td><a href="#">26</a></td>
+                                        <td><a href="#">27</a></td>
+                                        <td><a href="#">28</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">29</a></td>
+                                        <td><a href="#">30</a></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="bottom">
+                                <span class="go">운동기록일</span>
+                                <span class="today">오늘</span>
+                            </div>
+                        </div>
+                        <div class="btn_box btm">
+                            <a href="#" class="submit">확인</a>
+                        </div>
+                    </div>
+
+                    <button type="button" class="close"><span class="hide">닫기</span></button>
+                </div>
+            </div>
+        </div>
+        <script src="../common/js/range.js"></script>
+    </body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+  <title>한의학</title>
+  <link rel="stylesheet" href="../common/css/default.css" />
+  <link rel="stylesheet" href="../common/css/slick.css" />
+  <script src="../common/js/jquery-1.12.4.min.js"></script>
+  <script src="../common/js/slick.js"></script>
+  <script src="../common/js/common.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- header -->
+    <div id="header">
+      <span class="left">
+        <a href="../html/index.html" class="icon_back">
+          <span class="hide">뒤로가기</span>
+        </a>
+        <a href="../html/index.html" class="icon_home">
+          <span class="hide">홈으로</span>
+        </a>
+      </span>
+      <h3>라이프로그</h3>
+      <span class="right">
+        <a href="#" class="icon_menu"><span class="hide">전체메뉴 열기</span></a>
+      </span>
+    </div>
+    <div class="menu">
+      <div>
+        <h3>
+          <span><b>홍길동</b>님</span>
+          오늘도 건강한 하루되세요!
+        </h3>
+        <div>
+          <button type="button" class="setting">설정</button>
+          <button type="button" class="logout">로그아웃</button>
+        </div>
+      </div>
+      <ul class="list">
+        <li>
+          <a href="../html/dep1_myActivity.html">나의 활동</a>
+        </li>
+        <li>
+          <a href="../html/dep1_myHealth.html">나의 건강</a>
+        </li>
+        <li>
+          <a href="../html/dep1_healthInfo.html">건강 정보</a>
+        </li>
+        <li>
+          <a href="../html/dep1_myPage.html">마이페이지</a>
+        </li>
+      </ul>
+      <ol class="attr">
+        <li>
+          <a href="#" class="home"><span class="hide">홈으로</span></a>
+        </li>
+        <li>
+          <a href="#" class="back"><span class="hide">전체메뉴 닫기</span></a>
+        </li>
+      </ol>
+    </div>
+    <!-- //header -->
+
+    <!-- 컨테이너 -->
+    <div id="contents">
+      <div class="con tit_box">
+        <h2 class="tit_md mb0">나의 생활 습관을 기록해보세요.</h2>
+        <button type="button" class="tip" data-btn="pop1">
+          <span class="hide">생활습관 상태안내 팝업열기</span>
+        </button>
+      </div>
+      <ul class="con bg1 dep tab_menu tab_col">
+        <li class="active">
+          <button type="button">소화기능</button>
+          <div>
+            <ol>
+              <li><a href="#">소화</a></li>
+              <li><a href="#">대변</a></li>
+            </ol>
+            <span class="state_01">10일전</span>
+          </div>
+        </li>
+        <li>
+          <button type="button">수분대사</button>
+          <div>
+            <ol>
+              <li><a href="#">구갈, 구건, 음수</a></li>
+              <li><a href="#">소변</a></li>
+              <li><a href="#">땀</a></li>
+              <li><a href="#">피부</a></li>
+            </ol>
+            <span class="state_02">10일전</span>
+          </div>
+        </li>
+        <li>
+          <button type="button">열대사</button>
+          <div>
+            <ol>
+              <li><a href="#">한열</a></li>
+              <li><a href="#">설진</a></li>
+            </ol>
+            <span class="state_03">10일전</span>
+          </div>
+        </li>
+        <li>
+          <button type="button">건강습관</button>
+          <div>
+            <ol>
+              <li><a href="#">흡연</a></li>
+              <li><a href="#">음주</a></li>
+            </ol>
+            <span class="state_04">10일전</span>
+          </div>
+        </li>
+        <li>
+          <button type="button">정신건강</button>
+          <div>
+            <ol>
+              <li><a href="#">수면</a></li>
+              <li><a href="#">스트레스</a></li>
+            </ol>
+            <span class="state_05">10일전</span>
+          </div>
+        </li>
+        <li>
+          <button type="button">여성건강</button>
+          <div>
+            <ol>
+              <li><a href="#">월경</a></li>
+            </ol>
+            <span class="state_05">10일전</span>
+          </div>
+        </li>
+      </ul>
+      <div class="modal_wrap">
+        <div data-pop="pop1">
+          <h2>생활 습관 상태안내</h2>
+          <div>
+            <ul class="state">
+              <li><img src="../common/images/sub/state_01.png" alt="" />매우좋음</li>
+              <li><img src="../common/images/sub/state_02.png" alt="" />좋음</li>
+              <li><img src="../common/images/sub/state_03.png" alt="" />보통</li>
+              <li><img src="../common/images/sub/state_04.png" alt="" />나쁨</li>
+              <li><img src="../common/images/sub/state_05.png" alt="" />매우나쁨</li>
+            </ul>
+          </div>
+          <button type="button" class="close"><span class="hide">레이어팝업 닫기</span></button>
+        </div>
+      </div>
+      <div class="modal_wrap">
+        <div data-pop="pop2">
+          <h2>작성완료</h2>
+          <div class="check_ok">
+            <img src="../common/images/sub/check_ok1.png" alt="" />
+            문진 작성이 완료되었습니다.<br />
+            다음을 누르시면 다음 문진으로 이동합니다.
+            <div class="link2">
+              <a href="#">종료</a>
+              <a href="#">다음</a>
+            </div>
+          </div>
+          <button type="button" class="close"><span class="hide">레이어팝업 닫기</span></button>
+        </div>
+      </div>
+      <div class="modal_wrap">
+        <div data-pop="pop3">
+          <h2>소화기능 문진완료</h2>
+          <div class="check_ok">
+            <img src="../common/images/sub/check_ok2.png" alt="" />
+            소화기능에 대한 모든 문진 작성이<br />
+            완료되었습니다.
+            <div>
+              <a href="#">라이프로그 바로가기</a>
+            </div>
+          </div>
+          <button type="button" class="close"><span class="hide">레이어팝업 닫기</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function tabColumn() {//active li의 높이를 구하고 tab_box 높이 설정
+      var tabConH = $('.tab_col').find('.active > div').outerHeight();
+      $('.tab_col').css({ minHeight: tabConH + 'px', boxSizing: 'content-box' });
+    }
+    $('.tab_col > li > button').on('click', function () {
+      $(this).closest('li').addClass('active').closest('li').siblings('li').removeClass('active');
+      tabColumn();
+    });
+    $(window).on('resize load', function () {
+      tabColumn();
+    });
+  </script>
+</body>
+
+</html>

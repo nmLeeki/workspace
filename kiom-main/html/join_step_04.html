@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+        <title>한의학</title>
+        <link rel="stylesheet" href="../common/css/default.css" />
+        <link rel="stylesheet" href="../common/css/slick.css" />
+        <script src="../common/js/jquery-1.12.4.min.js"></script>
+        <script src="../common/js/slick.js"></script>
+        <script src="../common/js/common.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- 헤더 영역 -->
+            <!-- header -->
+            <div id="header">
+                <span class="left">
+                    <a href="../html/index.html" class="icon_back">
+                        <span class="hide">뒤로가기</span>
+                    </a>
+                    <a href="../html/index.html" class="icon_home">
+                        <span class="hide">홈으로</span>
+                    </a>
+                </span>
+                <h3>회원가입</h3>
+                <span class="right">
+                    <a href="#" class="icon_menu"><span class="hide">전체메뉴 열기</span></a>
+                </span>
+            </div>
+            <div class="menu">
+                <div>
+                    <h3>
+                        <span><b>홍길동</b>님</span>
+                        오늘도 건강한 하루되세요!
+                    </h3>
+                    <div>
+                        <button type="button" class="setting">설정</button>
+                        <button type="button" class="logout">로그아웃</button>
+                    </div>
+                </div>
+                <ul class="list">
+                    <li>
+                        <a href="../html/dep1_myActivity.html">나의 활동</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_myHealth.html">나의 건강</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_healthInfo.html">건강 정보</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_myPage.html">마이페이지</a>
+                    </li>
+                </ul>
+                <ol class="attr">
+                    <li>
+                        <a href="#" class="home"><span class="hide">홈으로</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="back"><span class="hide">전체메뉴 닫기</span></a>
+                    </li>
+                </ol>
+            </div>
+            <!-- //header -->
+            <!-- 컨테이너 -->
+            <div id="contents">
+                <div class="form_wrap">
+                    <div class="con">
+                        <form action="#" method="post" name="#" class="form_box">
+                            <fieldset>
+                                <legend>기본정보(필수입력)</legend>
+                                <div class="tit_box">
+                                    <h2 class="tit_md">기본정보(필수입력)</h2>
+                                </div>
+                                <ul class="inp_box">
+                                    <li>
+                                        <span>이름</span>
+                                        <div class="inp">
+                                            <input type="text" name="#" placeholder="이름 입력" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>생년월일</span>
+                                        <div class="rrn">
+                                            <div class="inp">
+                                                <input type="text" name="#" placeholder="주민등록번호 앞 6자리" />
+                                            </div>
+                                            <span class="behind">-</span>
+                                            <div class="inp">
+                                                <input type="text" name="#" />
+                                            </div>
+                                            <div class="hide_num">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>전화번호</span>
+                                        <div class="inp">
+                                            <input type="text" name="#" placeholder="전화번호(-없이 입력)" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>아이디</span>
+                                        <div class="inp_wrap">
+                                            <div class="inp">
+                                                <input type="text" name="#" placeholder="아이디" />
+                                            </div>
+                                            <div class="inp_btn">
+                                                <button type="button">중복확인</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>비밀번호</span>
+                                        <div class="inp">
+                                            <input type="password" name="#" placeholder="비밀번호" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>비밀번호 확인</span>
+                                        <div class="inp">
+                                            <input type="password" name="#" placeholder="비밀번호 확인" />
+                                        </div>
+                                        <p class="fc_red">※비밀번호를 영문, 숫자, 특수문자 9자 이상으로 구성하여 입력해주세요.</p>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <fieldset>
+                                <legend>선택정보(선택입력)</legend>
+                                <div class="tit_box">
+                                    <h2 class="tit_md">선택정보(선택입력)</h2>
+                                </div>
+                                <ul class="inp_box">
+                                    <li>
+                                        <span>이메일</span>
+                                        <div class="inp_wrap">
+                                            <div class="inp">
+                                                <input type="text" name="#" placeholder="이메일" />
+                                            </div>
+                                            <div class="inp_btn">
+                                                <button type="button">중복확인</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>성별</span>
+                                        <!-- 버튼타입의 경우 bt 클래스추가 -->
+                                        <ul class="type_list bt">
+                                            <li style="width: 50%">
+                                                <input type="radio" name="#" value="1" id="radio21" checked="checked" />
+                                                <label for="radio21">
+                                                    <b>남자</b>
+                                                </label>
+                                            </li>
+                                            <li style="width: 50%">
+                                                <input type="radio" name="#" value="2" id="radio22" />
+                                                <label for="radio22">
+                                                    <b>여자</b>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span>키</span>
+                                        <div class="inp">
+                                            <input type="text" name="#" placeholder="키" />
+                                            <span>cm</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>몸무게</span>
+                                        <div class="inp">
+                                            <input type="text" name="#" placeholder="몸무게" />
+                                            <span>kg</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>평소질환 <button type="button" class="tip" data-btn="pop1"></button> </span>
+                                        <div class="inp_wrap">
+                                            <div class="inp">
+                                                <input type="text" name="#" placeholder="평소에 불편한 점 입력(ex,비염,알러지)" />
+                                            </div>
+                                            <div class="inp_btn">
+                                                <button type="button" class="inp_del">삭제</button>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn_add">추가하기</button>
+                                        <p>※선택 정보를 입력해야만 건강관리 기능을 더 정확하게 확인하며 이용하실 수 있습니다.</p>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <div class="btn_box">
+                                <a href="#" class="submit">회원가입 완료</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal_wrap">
+                <div class="modal" data-pop="pop1">
+                    <h2>평소질환 입력사유</h2>
+                    <div>
+                        평소질환을 입력해주셔야만 <br />
+                        KIOM 라이프로그를 효과적으로 <br />
+                        사용하실 수 있습니다.
+                    </div>
+                    <button type="button" class="close"><span class="hide">닫기</span></button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

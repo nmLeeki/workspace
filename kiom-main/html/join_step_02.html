@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+        <title>한의학</title>
+        <link rel="stylesheet" href="../common/css/default.css" />
+        <link rel="stylesheet" href="../common/css/slick.css" />
+        <script src="../common/js/jquery-1.12.4.min.js"></script>
+        <script src="../common/js/slick.js"></script>
+        <script src="../common/js/common.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- 헤더 영역 -->
+            <!-- header -->
+            <div id="header">
+                <span class="left">
+                    <a href="../html/index.html" class="icon_back">
+                        <span class="hide">뒤로가기</span>
+                    </a>
+                    <a href="../html/index.html" class="icon_home">
+                        <span class="hide">홈으로</span>
+                    </a>
+                </span>
+                <h3>회원가입</h3>
+                <span class="right">
+                    <a href="#" class="icon_menu"><span class="hide">전체메뉴 열기</span></a>
+                </span>
+            </div>
+            <div class="menu">
+                <div>
+                    <h3>
+                        <span><b>홍길동</b>님</span>
+                        오늘도 건강한 하루되세요!
+                    </h3>
+                    <div>
+                        <button type="button" class="setting">설정</button>
+                        <button type="button" class="logout">로그아웃</button>
+                    </div>
+                </div>
+                <ul class="list">
+                    <li>
+                        <a href="../html/dep1_myActivity.html">나의 활동</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_myHealth.html">나의 건강</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_healthInfo.html">건강 정보</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_myPage.html">마이페이지</a>
+                    </li>
+                </ul>
+                <ol class="attr">
+                    <li>
+                        <a href="#" class="home"><span class="hide">홈으로</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="back"><span class="hide">전체메뉴 닫기</span></a>
+                    </li>
+                </ol>
+            </div>
+            <!-- //header -->
+            <!-- 컨테이너 -->
+            <div id="contents">
+                <div class="form_wrap">
+                    <div class="con bg1 center">
+                        <img src="../common/images/sub/icon_phone3.png" alt="" />
+                        <h2 class="tit_md center">휴대폰인증</h2>
+                    </div>
+                    <div class="con">
+                        <form action="#" method="post" name="#" class="form_box">
+                            <fieldset>
+                                <legend>기본정보(필수입력)</legend>
+                                <ul class="inp_box">
+                                    <li>
+                                        <span>이름</span>
+                                        <div class="inp">
+                                            <input type="text" name="#" placeholder="이름 입력" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>생년월일</span>
+                                        <div class="rrn">
+                                            <div class="inp">
+                                                <input type="text" name="#" placeholder="주민등록번호 앞 6자리" />
+                                            </div>
+                                            <span class="behind">-</span>
+                                            <div class="inp">
+                                                <input type="text" name="#" />
+                                            </div>
+                                            <div class="hide_num">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>통신사 선택</span>
+                                        <div class="select">
+                                            <select name="#" title="통신사 선택">
+                                                <option value="#">SKT</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>휴대폰 번호</span>
+                                        <div class="inp_wrap">
+                                            <div class="inp">
+                                                <input type="text" name="#" placeholder="휴대폰 번호 입력" />
+                                            </div>
+                                            <div class="inp_btn">
+                                                <button type="button">인증</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>인증번호 입력</span>
+                                        <div class="inp_wrap">
+                                            <div class="inp">
+                                                <input type="text" name="#" placeholder="인증 번호 입력" />
+                                                <span class="fc_red">03:00</span>
+                                            </div>
+                                            <div class="inp_btn">
+                                                <button type="button" class="reset">재전송</button>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            ※휴대폰 본인확인 시 타인명의를 도용할 경우, "정보통신망법 제 49조" 에 의거하여 5년
+                                            이하의 징역 또는 5천만원 이하의 벌금에 처할 수 있습니다.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <div class="btn_box item2">
+                                <a href="#">취소</a>
+                                <a href="#" class="submit">다음</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

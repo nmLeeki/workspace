@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+        <title>한의학</title>
+        <link rel="stylesheet" href="../common/css/default.css" />
+        <link rel="stylesheet" href="../common/css/slick.css" />
+        <script src="../common/js/jquery-1.9.1.js"></script>
+        <script src="../common/js/slick.js"></script>
+        <script src="../common/js/common.js"></script>
+        <script src="../common/js/hammer.min.js"></script>
+        <script src="../common/js/hammer.fakemultitouch.js"></script>
+        <link rel="stylesheet" href="../common/css/drum.css" />
+        <script src="../common/js/drum.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- 헤더 영역 -->
+            <!-- header -->
+            <div id="header">
+                <span class="left">
+                    <a href="../html/index.html" class="icon_back">
+                        <span class="hide">뒤로가기</span>
+                    </a>
+                    <a href="../html/index.html" class="icon_home">
+                        <span class="hide">홈으로</span>
+                    </a>
+                </span>
+                <h3>수면량</h3>
+                <span class="right">
+                    <a href="#" class="icon_menu"><span class="hide">전체메뉴 열기</span></a>
+                </span>
+            </div>
+            <div class="menu">
+                <div>
+                    <h3>
+                        <span><b>홍길동</b>님</span>
+                        오늘도 건강한 하루되세요!
+                    </h3>
+                    <div>
+                        <button type="button" class="setting">설정</button>
+                        <button type="button" class="logout">로그아웃</button>
+                    </div>
+                </div>
+                <ul class="list">
+                    <li>
+                        <a href="../html/dep1_myActivity.html">나의 활동</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_myHealth.html">나의 건강</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_healthInfo.html">건강 정보</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_myPage.html">마이페이지</a>
+                    </li>
+                </ul>
+                <ol class="attr">
+                    <li>
+                        <a href="#" class="home"><span class="hide">홈으로</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="back"><span class="hide">전체메뉴 닫기</span></a>
+                    </li>
+                </ol>
+            </div>
+            <!-- //header -->
+            <!-- 컨테이너 -->
+            <div id="contents">
+                <div class="form_wrap no_bg">
+                    <div class="date_box">
+                        <button type="button" class="prev"><span class="hide">이전날짜이동</span></button>
+                        <button type="button" class="today" data-btn="pop1">2021년 10월 26일</button>
+                        <button type="button" class="next"><span class="hide">다음날짜이동</span></button>
+                    </div>
+                    <div class="con bg3 my">
+                        <h3>
+                            홍길동님, 잠자리는 어떠셨나요?
+                            <span>수면량을 입력해주세요.</span>
+                        </h3>
+                    </div>
+                    <div class="con">
+                        <h3 class="today_tit">
+                            오늘 수면시간
+                            <span class="sleep_time"></span>
+                        </h3>
+                        <div class="sleep_circle">
+                            <div id="knobcontainer"></div>
+                            <div class="txt_box type2">
+                                <div>
+                                    <strong>10월 27일</strong>
+                                    <span class="sleep"></span>
+                                </div>
+                                <span>~</span>
+                                <div>
+                                    <strong>10월 27일</strong>
+                                    <span class="wakeup"></span>
+                                </div>
+                                <!-- 경과시간 -->
+                            </div>
+                            <button type="button" data-btn="pop2">직접입력</button>
+                        </div>
+                    </div>
+                    <div class="con bg1">
+                        <div class="sleep_qual">
+                            <ul class="inp_box">
+                                <li>
+                                    <span>수면의질 <button type="button" class="tip" data-btn="pop3"></button> </span>
+                                    <ol class="star_list">
+                                        <li>
+                                            <input type="radio" name="#" />
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="#" />
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="#" />
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="#" />
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="#" />
+                                        </li>
+                                    </ol>
+                                    <div class="btn_onoff">
+                                        <div class="btn_box active" id="btn1">
+                                            <a href="#" class="submit">저장</a>
+                                        </div>
+                                        <div class="btn_box item2" id="btn2">
+                                            <a href="#" id="cancel">삭제</a>
+                                            <a href="#" class="submit">수정</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal_wrap type2">
+                <div class="modal" data-pop="pop1">
+                    <h2>날짜선택</h2>
+                    <div>
+                        <div class="cal_wrap">
+                            <div class="top">
+                                <button type="button" class="prev"><span class="hide">전 월로 이동</span></button>
+                                <h5>2021년 10월</h5>
+                                <button type="button" class="next"><span class="hide">다음 월로 이동</span></button>
+                            </div>
+                            <table>
+                                <caption>
+                                    일,월,화,수,목,금,토
+                                </caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">일</th>
+                                        <th scope="col">월</th>
+                                        <th scope="col">화</th>
+                                        <th scope="col">수</th>
+                                        <th scope="col">목</th>
+                                        <th scope="col">금</th>
+                                        <th scope="col">토</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#">1</a></td>
+                                        <td>
+                                            <a href="#">2</a>
+                                        </td>
+                                        <td><a href="#">3</a></td>
+                                        <td class=""><a href="#">4</a></td>
+                                        <td>
+                                            <a href="#">5</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">6</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">7</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">8</a></td>
+                                        <td><a href="#">9</a></td>
+                                        <td><a href="#">10</a></td>
+                                        <td><a href="#">11</a></td>
+                                        <td>
+                                            <a href="#">12</a>
+                                        </td>
+                                        <td><a href="#">13</a></td>
+                                        <td><a href="#">14</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">15</a></td>
+                                        <td><a href="#">16</a></td>
+                                        <td><a href="#" class="go">17</a></td>
+                                        <td><a href="#" class="active">18</a></td>
+                                        <td><a href="#" class="go">19</a></td>
+                                        <td><a href="#">20</a></td>
+                                        <td><a href="#" class="today">21</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">22</a></td>
+                                        <td><a href="#">23</a></td>
+                                        <td><a href="#">24</a></td>
+                                        <td>
+                                            <a href="#">25</a>
+                                        </td>
+                                        <td><a href="#">26</a></td>
+                                        <td><a href="#">27</a></td>
+                                        <td><a href="#">28</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">29</a></td>
+                                        <td><a href="#">30</a></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="bottom">
+                                <span class="go">운동기록일</span>
+                                <span class="today">오늘</span>
+                            </div>
+                        </div>
+                        <div class="btn_box btm">
+                            <a href="#" class="submit">확인</a>
+                        </div>
+                    </div>
+
+                    <button type="button" class="close"><span class="hide">닫기</span></button>
+                </div>
+            </div>
+            <div class="modal_wrap type2">
+                <div class="modal" data-pop="pop2">
+                    <h2>수면시간 입력</h2>
+                    <div>
+                        <ul class="tab_list">
+                            <li class="active">
+                                <button type="button">취침시간</button>
+                            </li>
+                            <li>
+                                <button type="button">기상시간</button>
+                            </li>
+                        </ul>
+                        <div>
+                            <div class="date_wrapper outside">
+                                <!-- <div class="date_header">
+                                    <span class="title">Date Time:</span>
+                                    <span class="selection"></span>
+                                </div> -->
+                                <form name="date">
+                                    <div class="lines"><div>:</div></div>
+                                    <select class="date" id="fullYear" name="fullYear">
+                                        <option value="2011">2011</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                    </select>
+                                    <select class="date" id="month" name="month">
+                                        <option value="0">1월</option>
+                                        <option value="1">2월</option>
+                                        <option value="2">3월</option>
+                                        <option value="3">4월</option>
+                                        <option value="4">5월</option>
+                                        <option value="5">6월</option>
+                                        <option value="6">7월</option>
+                                        <option value="7">8월</option>
+                                        <option value="8">9월</option>
+                                        <option value="9">10월</option>
+                                        <option value="10">11월</option>
+                                        <option value="11">12월</option>
+                                    </select>
+                                    <select class="date" id="date" name="date">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                    <select name="am" id="am" class="date">
+                                        <option value="am">오전</option>
+                                        <option value="pm">오후</option>
+                                    </select>
+                                    <select class="date" id="hours" name="hours">
+                                        <option value="0">00</option>
+                                        <option value="1">01</option>
+                                        <option value="2">02</option>
+                                        <option value="3">03</option>
+                                        <option value="4">04</option>
+                                        <option value="5">05</option>
+                                        <option value="6">06</option>
+                                        <option value="7">07</option>
+                                        <option value="8">08</option>
+                                        <option value="9">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                    <select class="date" id="minutes" name="minutes">
+                                        <option value="0">00</option>
+                                        <option value="1">01</option>
+                                        <option value="2">02</option>
+                                        <option value="3">03</option>
+                                        <option value="4">04</option>
+                                        <option value="5">05</option>
+                                        <option value="6">06</option>
+                                        <option value="7">07</option>
+                                        <option value="8">08</option>
+                                        <option value="9">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                        <option value="32">32</option>
+                                        <option value="33">33</option>
+                                        <option value="34">34</option>
+                                        <option value="35">35</option>
+                                        <option value="36">36</option>
+                                        <option value="37">37</option>
+                                        <option value="38">38</option>
+                                        <option value="39">39</option>
+                                        <option value="40">40</option>
+                                        <option value="41">41</option>
+                                        <option value="42">42</option>
+                                        <option value="43">43</option>
+                                        <option value="44">44</option>
+                                        <option value="45">45</option>
+                                        <option value="46">46</option>
+                                        <option value="47">47</option>
+                                        <option value="48">48</option>
+                                        <option value="49">49</option>
+                                        <option value="50">50</option>
+                                        <option value="51">51</option>
+                                        <option value="52">52</option>
+                                        <option value="53">53</option>
+                                        <option value="54">54</option>
+                                        <option value="55">55</option>
+                                        <option value="56">56</option>
+                                        <option value="57">57</option>
+                                        <option value="58">48</option>
+                                        <option value="59">59</option>
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="btn_box btm">
+                            <a href="#" class="submit">확인</a>
+                        </div>
+                    </div>
+                    <button type="button" class="close"><span class="hide">닫기</span></button>
+                </div>
+            </div>
+            <div class="modal_wrap">
+                <div class="modal" data-pop="pop3">
+                    <h2>수면의 질 평가방법</h2>
+                    <div>
+                        <ul class="qual_list">
+                            <li>
+                                <div class="img">
+                                    <img src="../common/images/sub/icon_score_01.png" alt="" />
+                                </div>
+                                <span>매우 나쁨</span>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="../common/images/sub/icon_score_02.png" alt="" />
+                                </div>
+                                <span>상당히 나쁨</span>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="../common/images/sub/icon_score_03.png" alt="" />
+                                </div>
+                                <span>보통</span>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="../common/images/sub/icon_score_04.png" alt="" />
+                                </div>
+                                <span>상당히 좋음</span>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="../common/images/sub/icon_score_05.png" alt="" />
+                                </div>
+                                <span>매우 좋음</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="fade_alert">
+                        <em>자주하는 운동은 4개까지 등록이 가능합니다. 텍스트가 길어지는 경우입니다.</em>
+                    </span>
+                    <button type="button" class="close"><span class="hide">닫기</span></button>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+        <script src="../common/js/plugin.js"></script>
+        <script>
+            $('#knobcontainer').timerangewheel({
+                width: 250,
+                height: 250,
+                indicatorWidth: 40,
+                handleRadius: 20,
+                handleStrokeWidth: 0,
+                accentColor: 'url(#MyGradient)',
+                handleIconColor: '#000',
+                handleStrokeColor: '#000',
+                handleFillColorStart: 'url(#img1)',
+                handleFillColorEnd: 'url(#img2)',
+                tickColor: 'transparent',
+                indicatorBackgroundColor: '#f8f8f8',
+                data: { start: '00:00', end: '06:00' },
+                onChange: function (timeObj) {
+                    $('.sleep').html('' + timeObj.start);
+                    $('.wakeup').html('' + timeObj.end);
+                    $('.sleep_time').html(timeObj.duration + '');
+                },
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+        <title>한의학</title>
+        <link rel="stylesheet" href="../common/css/default.css" />
+        <link rel="stylesheet" href="../common/css/slick.css" />
+        <script src="../common/js/jquery-1.12.4.min.js"></script>
+        <script src="../common/js/slick.js"></script>
+        <script src="../common/js/common.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- header -->
+            <div id="header">
+                <h1>
+                    <a href="index.html"><span class="hide">KIOM</span></a>
+                </h1>
+                <span class="right">
+                    <a href="#" class="icon_menu"><span class="hide">전체메뉴 열기</span></a>
+                </span>
+            </div>
+            <div class="menu">
+                <div>
+                    <h3>
+                        <span><b>홍길동</b>님</span>
+                        오늘도 건강한 하루되세요!
+                    </h3>
+                    <div>
+                        <button type="button" class="setting">설정</button>
+                        <button type="button" class="logout">로그아웃</button>
+                    </div>
+                </div>
+                <ul class="list">
+                    <li>
+                        <a href="../html/dep1_myActivity.html">나의 활동</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_myHealth.html">나의 건강</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_healthInfo.html">건강 정보</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_myPage.html">마이페이지</a>
+                    </li>
+                </ul>
+                <ol class="attr">
+                    <li>
+                        <a href="#" class="home"><span class="hide">홈으로</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="back"><span class="hide">전체메뉴 닫기</span></a>
+                    </li>
+                </ol>
+            </div>
+            <!-- //header -->
+
+            <!-- 컨테이너 -->
+            <div id="main">
+                <div class="bar_wrap">
+                    <div class="progress-bar">
+                        <div class="left"></div>
+                        <div class="right"><div class="back"></div></div>
+                        <div class="barOverflow">
+                            <div class="bar"></div>
+                        </div>
+                        <div class="attr">
+                            <em>
+                                나의종합지수
+                                <b><span>50</span>%</b>
+                            </em>
+                            <div class="img">
+                                <img src="../common/images/main/icon_char_01.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_wrap">
+                    <div class="index_wrap">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../common/images/main/icon_walk.png" alt="" />
+                                    </div>
+                                    <div class="index_area">
+                                        <span class="index_box">
+                                            <em>걷기지수</em>
+                                            <b><strong>50</strong>%</b>
+                                        </span>
+                                        <div class="percent_bar"><span class="bar" style="width: 20%"></span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../common/images/main/icon_exercise.png" alt="" />
+                                    </div>
+                                    <div class="index_area">
+                                        <span class="index_box">
+                                            <em>운동지수</em>
+                                            <b><strong>60</strong>%</b>
+                                        </span>
+                                        <div class="percent_bar"><span class="bar" style="width: 20%"></span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../common/images/main/icon_water.png" alt="" />
+                                    </div>
+                                    <div class="index_area">
+                                        <span class="index_box">
+                                            <em>수분지수</em>
+                                            <b><strong>20</strong>%</b>
+                                        </span>
+                                        <div class="percent_bar"><span class="bar" style="width: 20%"></span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../common/images/main/icon_sleep.png" alt="" />
+                                    </div>
+                                    <div class="index_area">
+                                        <span class="index_box">
+                                            <em>수면지수</em>
+                                            <b><strong>40</strong>%</b>
+                                        </span>
+                                        <div class="percent_bar"><span class="bar" style="width: 20%"></span></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab_wrap">
+                            <div class="index_con">
+                                <h3>오늘 걸음 수</h3>
+                                <div class="index_area">
+                                    <span class="index_box">
+                                        <em>
+                                            <img src="../common/images/main/icon_index_01.png" alt="" />
+                                            <span><em>5000</em><b class="slash">/</b>10000걸음 </span>
+                                        </em>
+                                        <b><strong>50</strong>%</b>
+                                    </span>
+                                    <div class="percent_bar"><span class="bar" style="width: 20%"></span></div>
+                                    <b>5000걸음만 더 걸으면 오늘의 목표 달성!</b>
+                                </div>
+                                <button type="button"><span class="hide">닫기</span></button>
+                            </div>
+                            <div class="index_con">
+                                <h3>오늘 운동지수</h3>
+                                <div class="index_area">
+                                    <span class="index_box">
+                                        <em>
+                                            <img src="../common/images/main/icon_index_02.png" alt="" />
+                                            <span> <em>50</em><b class="slash">/</b>100점 </span>
+                                        </em>
+                                        <b><strong>50</strong>%</b>
+                                    </span>
+                                    <div class="percent_bar"><span class="bar" style="width: 20%"></span></div>
+                                    <b>오늘의 운동지수는 50점입니다.</b>
+                                </div>
+                                <button type="button"><span class="hide">닫기</span></button>
+                            </div>
+                            <div class="index_con">
+                                <h3>오늘 마신 물</h3>
+                                <div class="index_area">
+                                    <span class="index_box">
+                                        <em>
+                                            <img src="../common/images/main/icon_index_03.png" alt="" />
+                                            <span> <em>1200</em><b class="slash">/</b>2000ml </span>
+                                        </em>
+                                        <b><strong>60</strong>%</b>
+                                    </span>
+                                    <div class="percent_bar"><span class="bar" style="width: 20%"></span></div>
+                                    <b>800ml만 더 마시면 오늘의 목표 달성!</b>
+                                </div>
+                                <button type="button"><span class="hide">닫기</span></button>
+                            </div>
+                            <div class="index_con">
+                                <h3>오늘 수면지수</h3>
+                                <div class="index_area">
+                                    <span class="index_box">
+                                        <em>
+                                            <img src="../common/images/main/icon_index_04.png" alt="" />
+                                            <span> <em>50</em><b class="slash">/</b>100점 </span>
+                                        </em>
+                                        <b><strong>50</strong>%</b>
+                                    </span>
+                                    <div class="percent_bar"><span class="bar" style="width: 20%"></span></div>
+                                    <b>오늘의 수면지수는 50점입니다.</b>
+                                </div>
+                                <button type="button"><span class="hide">닫기</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="welcome_area">
+                        <h3>홍길동님, 안녕하세요!</h3>
+                        <div class="img">
+                            <img src="../common/images/main/welcome_bg_01.png" alt="" />
+                        </div>
+                        <span>오늘은 따뜻한 차 드시면서 스트레칭을 해보시는 건 어떨까요?</span>
+                        <div class="btn_box item2">
+                            <a href="#">요가,스트레칭</a>
+                            <a href="#" class="submit">소화기능 입력</a>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <span>
+                            건강한 하루를 위한 습관
+                            <b>라이프로그 시작하기</b>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

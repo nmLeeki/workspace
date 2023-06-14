@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+  <title>한의학</title>
+  <link rel="stylesheet" href="../common/css/default.css" />
+  <link rel="stylesheet" href="../common/css/slick.css" />
+  <script src="../common/js/jquery-1.12.4.min.js"></script>
+  <script src="../common/js/slick.js"></script>
+  <script src="../common/js/common.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- 헤더 영역 -->
+
+    <!-- 컨테이너 -->
+    <div id="contents">
+      <div class="con bg1 center">
+        <img src="../common/images/sub/icon_phone.png" alt="" />
+        <h2 class="tit_md center">휴대폰 인증</h2>
+      </div>
+      <div class="con">
+        <form action="#" method="post" name="#" class="form_box">
+          <fieldset>
+            <legend>기본정보(필수입력)</legend>
+            <div class="tit_box">
+              <h2 class="tit_md"><b>홍길동</b>님의 병원 예약 현황입니다.</h2>
+            </div>
+            <ul class="inp_box">
+              <li>
+                <div class="date_inp">
+                  <div class="inp">
+                    <input type="text" name="#" value="2021.11.10" />
+                  </div>
+                  <span class="behind">-</span>
+                  <div class="inp">
+                    <input type="text" name="#" value="2021.11.10" />
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="inp_wrap">
+                  <div class="select">
+                    <select name="#" title="검색조건">
+                      <option value="#">전체</option>
+                      <option value="#">예약완료</option>
+                      <option value="#">예약취소</option>
+                      <option value="#">접수완료</option>
+                      <option value="#">진료완료</option>
+                    </select>
+                  </div>
+                  <div class="inp_btn">
+                    <button type="button" class="sch">검색</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </div>
+      <div class="con bg1">
+        <div class="list1">
+          <em>총 <b>5</b>건</em>
+          <ul>
+            <li>
+              예약일:2021.11.01
+              <ol>
+                <li><b>진료일자</b> 2021.11.01 <strong>예약완료</strong></li>
+                <li><b>진료시간</b>14:00</li>
+                <li><b>병원명</b>000한의원</li>
+                <li><b>진료과목</b>여성질환</li>
+              </ol>
+            </li>
+            <li>
+              예약일:2021.11.01 / 예약취소일:2021.1104
+              <ol>
+                <li><b>진료일자</b> 2021.11.01 <strong class="cancle">예약취소</strong></li>
+                <li><b>진료시간</b>14:00</li>
+                <li><b>병원명</b>000한의원</li>
+                <li><b>진료과목</b>여성질환</li>
+              </ol>
+            </li>
+            <li>
+              예약일:2021.11.01
+              <ol>
+                <li><b>진료일자</b> 2021.11.01 <strong>접수완료</strong></li>
+                <li><b>진료시간</b>14:00</li>
+                <li><b>병원명</b>000한의원</li>
+                <li><b>진료과목</b>여성질환</li>
+              </ol>
+            </li>
+            <li>
+              예약일:2021.11.01 / 예약취소일:2021.1104
+              <ol>
+                <li><b>진료일자</b> 2021.11.01 <strong class="cancle">접수취소</strong></li>
+                <li><b>진료시간</b>14:00</li>
+                <li><b>병원명</b>000한의원</li>
+                <li><b>진료과목</b>여성질환</li>
+              </ol>
+            </li>
+            <li>
+              예약일:2021.11.01
+              <ol>
+                <li><b>진료일자</b> 2021.11.01 <strong>진료완료</strong></li>
+                <li><b>진료시간</b>14:00</li>
+                <li><b>병원명</b>000한의원</li>
+                <li><b>진료과목</b>여성질환</li>
+              </ol>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="con">
+        <form action="#" method="post" name="#" class="form_box">
+          <fieldset>
+            <legend>기본정보(필수입력)</legend>
+            <div class="tit_box">
+              <h2 class="tit_md">진료예약</h2>
+              <span class="fc_red">*는 필수입력값 입니다.</span>
+            </div>
+            <ul class="inp_box">
+              <li>
+                <div class="date_inp">
+                  <div class="inp">
+                    <input type="text" name="#" value="2021.11.10" />
+                  </div>
+                  <span class="behind">-</span>
+                  <div class="inp">
+                    <input type="text" name="#" value="2021.11.10" />
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="date_inp">
+                  <div class="inp">
+                    <input type="text" name="#" value="2021.11.10" />
+                  </div>
+                </div>
+              </li>
+              <li>
+                <span class="rqd">이름</span>
+                <div class="inp">
+                  <input type="text" name="#" placeholder="이름" />
+                </div>
+              </li>
+              <li>
+                <span>생년월일</span>
+                <div class="rrn">
+                  <div class="inp">
+                    <input type="text" name="#" placeholder="주민등록번호 앞 6자리" />
+                  </div>
+                  <span class="behind">-</span>
+                  <div class="inp">
+                    <input type="text" name="#" />
+                  </div>
+                  <div class="hide_num">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <span class="rqd">휴대폰</span>
+                <div class="inp">
+                  <input type="text" name="#" placeholder="휴대폰번호(-없이 입력)" />
+                </div>
+              </li>
+              <li>
+                <span class="rqd">이메일주소</span>
+                <div class="inp">
+                  <input type="text" name="#" placeholder="이메일주소" />
+                </div>
+              </li>
+              <li>
+                <span class="rqd">병원</span>
+                <div class="inp_wrap">
+                  <div class="inp">
+                    <input type="text" name="#" placeholder="진료병원" />
+                  </div>
+                  <div class="inp_btn">
+                    <button type="button">병원조회</button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <span class="rqd">일자</span>
+                <div class="date_inp">
+                  <div class="inp">
+                    <input type="text" name="#" placeholder="진료일" />
+                  </div>
+                </div>
+              </li>
+              <li>
+                <span class="rqd">시간</span>
+                <div class="select">
+                  <select name="#" title="진료시간">
+                    <option value="#">진료시간</option>
+                    <option value="#">09:00</option>
+                    <option value="#">10:00</option>
+                    <option value="#">11:00</option>
+                  </select>
+                </div>
+              </li>
+              <li>
+                <div class="inp_wrap">
+                  <div class="select">
+                    <select name="#" title="검색조건">
+                      <option value="#">전체</option>
+                      <option value="#">예약완료</option>
+                      <option value="#">예약취소</option>
+                      <option value="#">접수완료</option>
+                      <option value="#">진료완료</option>
+                    </select>
+                  </div>
+                  <div class="inp_btn">
+                    <button type="button" class="sch">검색</button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <span>TEXT1</span>
+                <div class="inp">
+                  <input type="text" name="#" placeholder="직접입력" />
+                  <span>개</span>
+                </div>
+              </li>
+              <li class="col2">
+                <span>2개</span>
+                <div class="inp">
+                  <input type="text" name="#" placeholder="직접입력" />
+                </div>
+              </li>
+              <li class="col2">
+                <span>2개</span>
+                <div class="inp">
+                  <input type="text" name="#" placeholder="직접입력" />
+                </div>
+              </li>
+              <li>
+                <span>radio</span>
+                <ul class="type_list txt">
+                  <li>
+                    <input type="radio" name="#" value="1" id="radio1" />
+                    <label for="radio1"><b>radio1</b></label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="2" id="radio2" />
+                    <label for="radio2"><b>radio2</b></label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="3" id="radio3" />
+                    <label for="radio3"><b>radio3</b></label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="4" id="radio4" />
+                    <label for="radio4"><b>radio4</b></label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="4" id="radio4" />
+                    <label for="radio4"><b>radio4</b></label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>img radio</b>
+                <ul class="type_list img">
+                  <li>
+                    <input type="radio" name="#" value="1" id="radio4" />
+                    <label for="radio4">
+                      <span class="img"><img src="../common/images/sub/radio_sample.png" alt="" /></span>
+                      <b>설태 없이 혀가 매끄러움</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="2" id="radio5" />
+                    <label for="radio5">
+                      <span class="img"><img src="../common/images/sub/radio_sample.png" alt="" /></span>
+                      <b>설태 없이 혀가 매끄러움</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="3" id="radio6" />
+                    <label for="radio6">
+                      <span class="img"><img src="../common/images/sub/radio_sample.png" alt="" /></span>
+                      <b>설태가 있지만 혀 몸통의 붉은 색이 설태 색과 대비되어 잘 보임</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="4" id="radio7" />
+                    <label for="radio7">
+                      <span class="img"><img src="../common/images/sub/radio_sample.png" alt="" /></span>
+                      <b>설태가 있지만 혀 몸통의 붉은 색이 설태 색과 대비되어 잘 보임</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="5" id="radio8" />
+                    <label for="radio8">
+                      <span class="img"><img src="../common/images/sub/radio_sample.png" alt="" /></span>
+                      <b>설태가 있지만 혀 몸통의 붉은 색이 설태 색과 대비되어 잘 보임</b>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>img radio2</b>
+                <ul class="type_list block">
+                  <li>
+                    <input type="radio" name="#" value="1" id="radio9" />
+                    <label for="radio9">
+                      <span class="img"><img src="../common/images/sub/radio_sample.png" alt="" /></span>
+                      <b>설태 없이 혀가 매끄러움</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="2" id="radio10" />
+                    <label for="radio10">
+                      <span class="img"><img src="../common/images/sub/radio_sample.png" alt="" /></span>
+                      <b>설태 없이 혀가 매끄러움</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="3" id="radio11" />
+                    <label for="radio11">
+                      <span class="img"><img src="../common/images/sub/radio_sample.png" alt="" /></span>
+                      <b>설태가 있지만 혀 몸통의 붉은 색이 설태 색과 대비되어 잘 보임</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="4" id="radio12" />
+                    <label for="radio12">
+                      <span class="img"><img src="../common/images/sub/radio_sample.png" alt="" /></span>
+                      <b>설태가 있지만 혀 몸통의 붉은 색이 설태 색과 대비되어 잘 보임</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="5" id="radio13" />
+                    <label for="radio13">
+                      <span class="img"><img src="../common/images/sub/radio_sample.png" alt="" /></span>
+                      <b>설태가 있지만 혀 몸통의 붉은 색이 설태 색과 대비되어 잘 보임</b>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>txt radio2</b>
+                <ul class="type_list block">
+                  <li>
+                    <input type="radio" name="#" value="1" id="radio21" />
+                    <label for="radio21">
+
+                      <b>설태 없이 혀가 매끄러움</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="2" id="radio22" />
+                    <label for="radio22">
+                      <b>설태 없이 혀가 매끄러움</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="3" id="radio23" />
+                    <label for="radio23">
+                      <b>설태가 있지만 혀 몸통의 붉은 색이 설태 색과 대비되어 잘 보임</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="4" id="radio24" />
+                    <label for="radio24">
+                      <b>설태가 있지만 혀 몸통의 붉은 색이 설태 색과 대비되어 잘 보임</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="5" id="radio25" />
+                    <label for="radio25">
+                      <b>설태가 있지만 혀 몸통의 붉은 색이 설태 색과 대비되어 잘 보임</b>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span>color radio</span>
+                <ul class="type_list color1 img">
+                  <li>
+                    <input type="radio" name="#" value="1" id="radio14" />
+                    <label for="radio14">
+                      <span class="color"></span>
+                      <b>얼음<br />(O℃)</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="2" id="radio15" />
+                    <label for="radio15">
+                      <span class="color"></span>
+                      <b>얼음물<br />(5℃)</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="3" id="radio16" />
+                    <label for="radio16">
+                      <span class="color"></span>
+                      <b>정수기 냉수<br />(1O℃)</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="4" id="radio17" />
+                    <label for="radio17">
+                      <span class="color"></span>
+                      <b>상온<br />(2O℃)</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="5" id="radio18" />
+                    <label for="radio18">
+                      <span class="color"></span>
+                      <b>미온수<br />(3O℃)</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="6" id="radio19" />
+                    <label for="radio19">
+                      <span class="color"></span>
+                      <b>정수기 온수<br />(85℃)</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="7" id="radio20" />
+                    <label for="radio20">
+                      <span class="color"></span>
+                      <b>바로 끓인 물<br />(95℃)</b>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span>평소질환</span>
+                <ul class="type_list txt">
+                  <li>
+                    <input type="checkbox" name="#" value="1" id="checkbox1" />
+                    <label for="checkbox1"><b>checkbox1</b></label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="#" value="2" id="checkbox2" />
+                    <label for="checkbox2"><b>checkbox2</b></label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="#" value="3" id="checkbox3" />
+                    <label for="checkbox3"><b>checkbox3</b></label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="#" value="4" id="checkbox4" />
+                    <label for="checkbox4"><b>checkbox4</b></label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="#" value="5" id="checkbox5" />
+                    <label for="checkbox5"><b>checkbox5</b></label>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>선택정보(선택입력)</legend>
+            <div class="tit_box">
+              <h2 class="tit_md">선택정보(선택입력)</h2>
+            </div>
+            <ul class="inp_box">
+              <li>
+                <span>성별</span>
+                <!-- 버튼타입의 경우 bt 클래스추가 -->
+                <ul class="type_list bt">
+                  <li>
+                    <input type="radio" name="#" value="1" id="radio21" checked="checked" />
+                    <label for="radio21">
+                      <b>남자</b>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="#" value="2" id="radio22" />
+                    <label for="radio22">
+                      <b>여자</b>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span>평소질환 <button type="button" class="tip" data-btn="pop1"></button> </span>
+                <div class="inp_wrap">
+                  <div class="inp">
+                    <input type="text" name="#" placeholder="평소에 불편한 점 입력(ex,비염,알러지)" />
+                  </div>
+                  <div class="inp_btn">
+                    <button type="button" class="inp_del">삭제</button>
+                  </div>
+                </div>
+                <button type="button" class="btn_add">추가하기</button>
+                <p class="fc_red">
+                  ※선택 정보를 입력해야만 건강관리 기능을 더 정확하게 확인하며 이용하실 수 있습니다.
+                </p>
+              </li>
+              <li>
+                <span>인증번호 입력</span>
+                <div class="inp_wrap">
+                  <div class="inp">
+                    <input type="text" name="#" placeholder="인증 번호 입력" />
+                    <span class="fc_red">03:00</span>
+                  </div>
+                  <div class="inp_btn">
+                    <button type="button" class="reset">재전송</button>
+                  </div>
+                </div>
+                <p>
+                  ※휴대폰 본인확인 시 타인명의를 도용할 경우, "정보통신망법 제 49조" 에 의거하여 5년 이하의
+                  징역 또는 5천만원 이하의 벌금에 처할 수 있습니다.
+                </p>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>개인정보 취급방침</legend>
+            <div class="tit_box">
+              <h2 class="tit_md">개인정보 취급방침<b>(필수)</b></h2>
+            </div>
+            <div class="scr_box">
+              1. 수집하는 개인정보의 항목 및 수집방법<br /><br />
+
+              가. 수집하는 개인정보의 항목<br /><br />
+
+              첫째, 각종 서비스의 제공을 위한 본인확인 및 개인식별을 위해 이름, 이메일 등을 포함한 개인정보를
+              수집하고 있습니다.<br /><br />
+              1. 수집하는 개인정보의 항목 및 수집방법<br /><br />
+
+              가. 수집하는 개인정보의 항목<br /><br />
+
+              첫째, 각종 서비스의 제공을 위한 본인확인 및 개인식별을 위해 이름, 이메일 등을 포함한 개인정보를
+              수집하고 있습니다.<br /><br />
+              1. 수집하는 개인정보의 항목 및 수집방법<br /><br />
+
+              가. 수집하는 개인정보의 항목<br /><br />
+
+              첫째, 각종 서비스의 제공을 위한 본인확인 및 개인식별을 위해 이름, 이메일 등을 포함한 개인정보를
+              수집하고 있습니다.<br /><br />
+            </div>
+            <ul class="type_list">
+              <li>
+                <input type="checkbox" name="#" id="checkbox6" />
+                <label for="checkbox6"><b>개인정보 취급 방침에 동의합니다.</b></label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>서비스 이용약관</legend>
+            <div class="tit_box">
+              <h2 class="tit_md">서비스 이용약관</h2>
+            </div>
+            <div class="scr_box">
+              1. 수집하는 개인정보의 항목 및 수집방법<br /><br />
+
+              가. 수집하는 개인정보의 항목<br /><br />
+
+              첫째, 각종 서비스의 제공을 위한 본인확인 및 개인식별을 위해 이름, 이메일 등을 포함한 개인정보를
+              수집하고 있습니다.<br /><br />
+              1. 수집하는 개인정보의 항목 및 수집방법<br /><br />
+
+              가. 수집하는 개인정보의 항목<br /><br />
+
+              첫째, 각종 서비스의 제공을 위한 본인확인 및 개인식별을 위해 이름, 이메일 등을 포함한 개인정보를
+              수집하고 있습니다.<br /><br />
+              1. 수집하는 개인정보의 항목 및 수집방법<br /><br />
+
+              가. 수집하는 개인정보의 항목<br /><br />
+
+              첫째, 각종 서비스의 제공을 위한 본인확인 및 개인식별을 위해 이름, 이메일 등을 포함한 개인정보를
+              수집하고 있습니다.<br /><br />
+            </div>
+            <ul class="type_list">
+              <li>
+                <input type="checkbox" name="#" id="checkbox6" />
+                <label for="checkbox6"><b>개인정보 취급 방침에 동의합니다.</b></label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="btn_box item2">
+            <a href="#">취소</a>
+            <a href="#" class="submit">확인</a>
+          </div>
+          <div class="btn_box">
+            <a href="#" class="submit">확인</a>
+          </div>
+        </form>
+      </div>
+      <div class="btn_box footer">
+        <a href="#" class="submit">진료예약</a>
+      </div>
+    </div>
+    <div class="modal_wrap">
+      <div class="modal" data-pop="pop1">
+        <h2>평소질환 입력사유</h2>
+        <div>
+          평소질환을 입력해주셔야만 <br />
+          KIOM 라이프로그를 효과적으로 <br />
+          사용하실 수 있습니다.
+        </div>
+        <button type="button" class="close"><span class="hide">닫기</span></button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

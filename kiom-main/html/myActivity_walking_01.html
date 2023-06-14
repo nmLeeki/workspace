@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+        <title>한의학</title>
+        <link rel="stylesheet" href="../common/css/default.css" />
+        <link rel="stylesheet" href="../common/css/slick.css" />
+        <script src="../common/js/jquery-1.12.4.min.js"></script>
+        <script src="../common/js/slick.js"></script>
+        <script src="../common/js/common.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- 헤더 영역 -->
+            <!-- header -->
+            <div id="header">
+                <span class="left">
+                    <a href="../html/index.html" class="icon_back">
+                        <span class="hide">뒤로가기</span>
+                    </a>
+                    <a href="../html/index.html" class="icon_home">
+                        <span class="hide">홈으로</span>
+                    </a>
+                </span>
+                <h3>걷기</h3>
+                <span class="right">
+                    <a href="#" class="icon_menu"><span class="hide">전체메뉴 열기</span></a>
+                </span>
+            </div>
+            <div class="menu">
+                <div>
+                    <h3>
+                        <span><b>홍길동</b>님</span>
+                        오늘도 건강한 하루되세요!
+                    </h3>
+                    <div>
+                        <button type="button" class="setting">설정</button>
+                        <button type="button" class="logout">로그아웃</button>
+                    </div>
+                </div>
+                <ul class="list">
+                    <li>
+                        <a href="../html/dep1_myActivity.html">나의 활동</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_myHealth.html">나의 건강</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_healthInfo.html">건강 정보</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_myPage.html">마이페이지</a>
+                    </li>
+                </ul>
+                <ol class="attr">
+                    <li>
+                        <a href="#" class="home"><span class="hide">홈으로</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="back"><span class="hide">전체메뉴 닫기</span></a>
+                    </li>
+                </ol>
+            </div>
+            <!-- //header -->
+            <!-- 컨테이너 -->
+            <div id="contents">
+                <div class="form_wrap no_bg">
+                    <div class="date_box">
+                        <button type="button" class="prev"><span class="hide">이전날짜이동</span></button>
+                        <button type="button" class="today" data-btn="pop1">2021년 10월 26일</button>
+                        <button type="button" class="next"><span class="hide">다음날짜이동</span></button>
+                    </div>
+                    <div class="con bg4 my">
+                        <h3>
+                            홍길동님, 오늘은 얼마나 걸었나요?
+                            <span>걸음 수를 확인해 보세요</span>
+                        </h3>
+                    </div>
+                    <div class="con">
+                        <div class="index_con">
+                            <h3>오늘 걸음 수</h3>
+                            <div class="index_area">
+                                <span class="index_box">
+                                    <em>
+                                        <img src="../common/images/main/icon_index_01.png" alt="" />
+                                        <span><em>5000</em><b class="slash">/</b>10000걸음 </span>
+                                    </em>
+                                    <b><strong>50</strong>%</b>
+                                </span>
+                                <div class="percent_bar"><span class="bar" style="width: 20%"></span></div>
+                                <b>5000걸음만 더 걸으면 오늘의 목표 달성!</b>
+                            </div>
+                        </div>
+                        <ul class="main_circle_fill_list">
+                            <li>
+                                <div class="circle_fill_ui" data-percent="40">
+                                    <div class="circle_con">
+                                        <div class="in">
+                                            <span class="type">걸음</span>
+                                            <span class="unit_num">
+                                                2215
+                                                <span class="unit">보</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <span class="half"><span class="fill"></span></span>
+                                    <span class="half two"><span class="fill"></span></span>
+                                </div>
+                                <p class="recommend_txt">권장 1200보</p>
+                            </li>
+                            <li>
+                                <div class="circle_fill_ui" data-percent="70">
+                                    <div class="circle_con">
+                                        <div class="in">
+                                            <span class="type">빠른걸음</span>
+                                            <span class="unit_num">
+                                                23
+                                                <span class="unit">보</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <span class="half"><span class="fill"></span></span>
+                                    <span class="half two"><span class="fill"></span></span>
+                                </div>
+
+                                <p class="recommend_txt">권장 600보</p>
+                            </li>
+                            <li>
+                                <div class="circle_fill_ui" data-percent="75">
+                                    <div class="circle_con">
+                                        <div class="in">
+                                            <span class="type">달리기</span>
+                                            <span class="unit_num">
+                                                54
+                                                <span class="unit">보</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <span class="half"><span class="fill"></span></span>
+                                    <span class="half two"><span class="fill"></span></span>
+                                </div>
+
+                                <p class="recommend_txt">권장 300보</p>
+                            </li>
+                        </ul>
+                        <div class="detail_box">
+                            <span>
+                                목표 달성을 위해
+                                <em>조금만 더 힘을 내보세요!</em>
+                            </span>
+                            <div class="img">
+                                <img src="../common/images/sub/icon_detail_02.png" alt="" />
+                            </div>
+                        </div>
+                        <!-- 밑에 주석달린 마크업들은 100%달성했을때 나와야하는 마크업입니다. -->
+                        <!-- <div class="detail_box">
+                            <span>
+                                오늘도 건강한 하루를 보내셨네요!
+                                <em>목표 달성을 축하드립니다!</em>
+                            </span>
+                            <div class="img">
+                                <img src="../common/images/sub/icon_detail_03.png" alt="" />
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="con bg1">
+                        <div class="activity_index">
+                            <h3>일주일간 걸음수</h3>
+                            <div class="graph">
+                                <ul>
+                                    <li>
+                                        <em>
+                                            <span style="height: 30%"></span>
+                                        </em>
+                                        <span>20</span>
+                                    </li>
+                                    <li>
+                                        <em>
+                                            <span style="height: 50%"></span>
+                                        </em>
+                                        <span>21</span>
+                                    </li>
+                                    <li>
+                                        <em>
+                                            <span style="height: 20%"></span>
+                                        </em>
+                                        <span>22</span>
+                                    </li>
+                                    <li>
+                                        <em>
+                                            <span style="height: 70%"></span>
+                                        </em>
+                                        <span>23</span>
+                                    </li>
+                                    <li>
+                                        <em>
+                                            <span style="height: 100%"></span>
+                                        </em>
+                                        <span>24</span>
+                                    </li>
+                                    <li>
+                                        <em>
+                                            <span style="height: 10%"></span>
+                                        </em>
+                                        <span>25</span>
+                                    </li>
+                                    <li class="today">
+                                        <em>
+                                            <span style="height: 50%"></span>
+                                        </em>
+                                        <span>26</span>
+                                    </li>
+                                </ul>
+                                <div class="g_index">
+                                    <span>10000</span>
+                                    <span>5000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal_wrap type2">
+                <div class="modal" data-pop="pop1">
+                    <h2>날짜선택</h2>
+                    <div>
+                        <div class="cal_wrap">
+                            <div class="top">
+                                <button type="button" class="prev"><span class="hide">전 월로 이동</span></button>
+                                <h5>2021년 10월</h5>
+                                <button type="button" class="next"><span class="hide">다음 월로 이동</span></button>
+                            </div>
+                            <table>
+                                <caption>
+                                    일,월,화,수,목,금,토
+                                </caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">일</th>
+                                        <th scope="col">월</th>
+                                        <th scope="col">화</th>
+                                        <th scope="col">수</th>
+                                        <th scope="col">목</th>
+                                        <th scope="col">금</th>
+                                        <th scope="col">토</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#">1</a></td>
+                                        <td>
+                                            <a href="#">2</a>
+                                        </td>
+                                        <td><a href="#">3</a></td>
+                                        <td class=""><a href="#">4</a></td>
+                                        <td>
+                                            <a href="#">5</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">6</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">7</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">8</a></td>
+                                        <td><a href="#">9</a></td>
+                                        <td><a href="#">10</a></td>
+                                        <td><a href="#">11</a></td>
+                                        <td>
+                                            <a href="#">12</a>
+                                        </td>
+                                        <td><a href="#">13</a></td>
+                                        <td><a href="#">14</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">15</a></td>
+                                        <td><a href="#">16</a></td>
+                                        <td><a href="#" class="go">17</a></td>
+                                        <td><a href="#" class="active">18</a></td>
+                                        <td><a href="#" class="go">19</a></td>
+                                        <td><a href="#">20</a></td>
+                                        <td><a href="#" class="today">21</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">22</a></td>
+                                        <td><a href="#">23</a></td>
+                                        <td><a href="#">24</a></td>
+                                        <td>
+                                            <a href="#">25</a>
+                                        </td>
+                                        <td><a href="#">26</a></td>
+                                        <td><a href="#">27</a></td>
+                                        <td><a href="#">28</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">29</a></td>
+                                        <td><a href="#">30</a></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="bottom">
+                                <span class="go">운동기록일</span>
+                                <span class="today">오늘</span>
+                            </div>
+                        </div>
+                        <div class="btn_box btm">
+                            <a href="#" class="submit">확인</a>
+                        </div>
+                    </div>
+
+                    <button type="button" class="close"><span class="hide">닫기</span></button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

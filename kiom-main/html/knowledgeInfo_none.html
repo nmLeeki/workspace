@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+        <title>한의학</title>
+        <link rel="stylesheet" href="../common/css/default.css" />
+        <link rel="stylesheet" href="../common/css/slick.css" />
+        <link rel="stylesheet" href="../common/css/swiper.min.css" />
+        <script src="../common/js/jquery-1.12.4.min.js"></script>
+        <script src="../common/js/slick.js"></script>
+        <script src="../common/js/common.js"></script>
+        <script src="../common/js/swiper.min.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- 헤더 영역 -->
+            <!-- header -->
+            <div id="header">
+                <span class="left">
+                    <a href="../html/index.html" class="icon_back">
+                        <span class="hide">뒤로가기</span>
+                    </a>
+                    <a href="../html/index.html" class="icon_home">
+                        <span class="hide">홈으로</span>
+                    </a>
+                </span>
+                <h3>맞춤형 지식정보</h3>
+                <span class="right">
+                    <a href="#" class="icon_menu"><span class="hide">전체메뉴 열기</span></a>
+                </span>
+            </div>
+            <div class="menu">
+                <div>
+                    <h3>
+                        <span><b>홍길동</b>님</span>
+                        오늘도 건강한 하루되세요!
+                    </h3>
+                    <div>
+                        <button type="button" class="setting">설정</button>
+                        <button type="button" class="logout">로그아웃</button>
+                    </div>
+                </div>
+                <ul class="list">
+                    <li>
+                        <a href="../html/dep1_myActivity.html">나의 활동</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_myHealth.html">나의 건강</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_healthInfo.html">건강 정보</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_myPage.html">마이페이지</a>
+                    </li>
+                </ul>
+                <ol class="attr">
+                    <li>
+                        <a href="#" class="home"><span class="hide">홈으로</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="back"><span class="hide">전체메뉴 닫기</span></a>
+                    </li>
+                </ol>
+            </div>
+            <!-- //header -->
+            <!-- 컨테이너 -->
+            <div id="contents">
+                <div class="form_wrap">
+                    <div class="con bg_info">
+                        <div class="info_txt">
+                            <h3>
+                                홍길동님, 나에게 맞는 운동 음식이<br />
+                                따로 있다는 사실 알고 계신가요?
+                            </h3>
+                            <a href="#" class="txt">체질검사로 나의 체질 알아보기 ></a>
+                        </div>
+                    </div>
+                    <div class="con">
+                        <ul class="con_list">
+                            <li>
+                                <div class="sch_box">
+                                    <div class="inp">
+                                        <input type="text" name="#" title="검색어 입력" placeholder="검색어를 입력해주세요." />
+                                        <button type="button"><span class="hide">검색</span></button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h3>관심있는 키워드</h3>
+                                <div class="none_keyword">
+                                    등록된 관심 키워드가 없습니다. <br />
+                                    검색을 원하는 키워드를 입력하세요.
+                                </div>
+                            </li>
+                            <li>
+                                <h3>검색결과</h3>
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide active">
+                                            <a href="#">요가(동작)</a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">요가(체질/테마)</a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">운동(동작)</a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">운동(체질/테마)</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list2">
+                                    <div class="list_top">
+                                        <h3>요가(동작) <span>총<b>0</b>건</span></h3>
+                                    </div>
+                                    <div class="none_box">검색결과가 없습니다.</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            //검색결과 슬라이드 이벤트
+            var swiper = new Swiper('.swiper-container', {
+                scrollbarHide: true,
+                slidesPerView: 'auto',
+                draggable: true,
+                centeredSlides: false,
+                spaceBetween: 0,
+                grabCursor: true,
+            });
+
+            $('.swiper-slide').click(function () {
+                $(this).addClass('active').siblings().removeClass('active');
+            });
+        </script>
+    </body>
+</html>

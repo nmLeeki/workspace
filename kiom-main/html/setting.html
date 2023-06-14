@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+        <title>한의학</title>
+        <link rel="stylesheet" href="../common/css/default.css" />
+        <link rel="stylesheet" href="../common/css/slick.css" />
+        <script src="../common/js/jquery-1.12.4.min.js"></script>
+        <script src="../common/js/slick.js"></script>
+        <script src="../common/js/common.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- 헤더 영역 -->
+            <!-- header -->
+            <div id="header">
+                <span class="left">
+                    <a href="../html/index.html" class="icon_back">
+                        <span class="hide">뒤로가기</span>
+                    </a>
+                    <a href="../html/index.html" class="icon_home">
+                        <span class="hide">홈으로</span>
+                    </a>
+                </span>
+                <h3>설정</h3>
+                <span class="right">
+                    <a href="#" class="icon_menu"><span class="hide">전체메뉴 열기</span></a>
+                </span>
+            </div>
+            <div class="menu">
+                <div>
+                    <h3>
+                        <span><b>홍길동</b>님</span>
+                        오늘도 건강한 하루되세요!
+                    </h3>
+                    <div>
+                        <button type="button" class="setting">설정</button>
+                        <button type="button" class="logout">로그아웃</button>
+                    </div>
+                </div>
+                <ul class="list">
+                    <li>
+                        <a href="../html/dep1_myActivity.html">나의 활동</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_myHealth.html">나의 건강</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_healthInfo.html">건강 정보</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_myPage.html">마이페이지</a>
+                    </li>
+                </ul>
+                <ol class="attr">
+                    <li>
+                        <a href="#" class="home"><span class="hide">홈으로</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="back"><span class="hide">전체메뉴 닫기</span></a>
+                    </li>
+                </ol>
+            </div>
+            <!-- //header -->
+            <!-- 컨테이너 -->
+            <div id="contents">
+                <div class="form_wrap">
+                    <form action="#" name="#">
+                        <div class="con type2">
+                            <div class="form_box">
+                                <div>
+                                    <h3 class="tit tit_btn">
+                                        라이프로그 알람주기 설정
+                                        <span class="form_chk">
+                                            <input type="checkbox" id="toggle_chk" name="chk_01" class="hide" />
+                                            <label for="toggle_chk">
+                                                <span class="circle"></span>
+                                                <span class="on">ON</span>
+                                                <span class="off">OFF</span>
+                                            </label>
+                                        </span>
+                                    </h3>
+                                    <div class="select">
+                                        <select name="#" title="일자 선택">
+                                            <option value="00">1일</option>
+                                            <option value="00">2일</option>
+                                            <option value="00">3일</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3 class="tit">관심키워드 설정</h3>
+                                    <button type="button" class="btn_add mt_0" data-btn="pop2">추가하기</button>
+                                    <ul class="keyword_list mt_5">
+                                        <li>
+                                            <div>
+                                                <span>#태양인운동</span>
+                                                <button type="button">
+                                                    <span class="hide">삭제</span>
+                                                </button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span>#관련키워드</span>
+                                                <button type="button">
+                                                    <span class="hide">삭제</span>
+                                                </button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span>#허벅지</span>
+                                                <button type="button">
+                                                    <span class="hide">삭제</span>
+                                                </button>
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div>
+                                                <span>#관련증상키워드</span>
+                                                <button type="button">
+                                                    <span class="hide">삭제</span>
+                                                </button>
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div>
+                                                <span>#비만</span>
+                                                <button type="button">
+                                                    <span class="hide">삭제</span>
+                                                </button>
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div>
+                                                <span>#태양인운동</span>
+                                                <button type="button">
+                                                    <span class="hide">삭제</span>
+                                                </button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn_box footer type2">
+                            <a href="#" class="submit">저장</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal_wrap type2">
+            <div class="modal" data-pop="pop2">
+                <h2>관심키워드 추가</h2>
+                <div class="type2">
+                    <ul class="keyword_list">
+                        <li>
+                            <a href="#">
+                                <span>#태양인운동</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>#관련키워드</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>#허벅지</span>
+                            </a>
+                        </li>
+                        <li class="blue">
+                            <a href="#">
+                                <span>#관련증상키워드</span>
+                            </a>
+                        </li>
+                        <li class="blue">
+                            <a href="#">
+                                <span>#비만</span>
+                            </a>
+                        </li>
+                        <li class="blue">
+                            <a href="#">
+                                <span>#태양인운동</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="btn_box footer type2">
+                        <a href="#" class="submit">추가하기</a>
+                    </div>
+                </div>
+                <button type="button" class="close"><span class="hide">닫기</span></button>
+            </div>
+        </div>
+    </body>
+</html>

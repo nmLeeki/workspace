@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+        <title>한의학</title>
+        <link rel="stylesheet" href="../common/css/default.css" />
+        <link rel="stylesheet" href="../common/css/slick.css" />
+        <script src="../common/js/jquery-1.12.4.min.js"></script>
+        <script src="../common/js/slick.js"></script>
+        <script src="../common/js/common.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- 헤더 영역 -->
+            <!-- header -->
+            <div id="header">
+                <span class="left">
+                    <a href="../html/index.html" class="icon_back">
+                        <span class="hide">뒤로가기</span>
+                    </a>
+                    <a href="../html/index.html" class="icon_home">
+                        <span class="hide">홈으로</span>
+                    </a>
+                </span>
+                <h3>운동량</h3>
+                <span class="right">
+                    <a href="#" class="icon_menu"><span class="hide">전체메뉴 열기</span></a>
+                </span>
+            </div>
+            <div class="menu">
+                <div>
+                    <h3>
+                        <span><b>홍길동</b>님</span>
+                        오늘도 건강한 하루되세요!
+                    </h3>
+                    <div>
+                        <button type="button" class="setting">설정</button>
+                        <button type="button" class="logout">로그아웃</button>
+                    </div>
+                </div>
+                <ul class="list">
+                    <li>
+                        <a href="../html/dep1_myActivity.html">나의 활동</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_myHealth.html">나의 건강</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_healthInfo.html">건강 정보</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_myPage.html">마이페이지</a>
+                    </li>
+                </ul>
+                <ol class="attr">
+                    <li>
+                        <a href="#" class="home"><span class="hide">홈으로</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="back"><span class="hide">전체메뉴 닫기</span></a>
+                    </li>
+                </ol>
+            </div>
+            <!-- //header -->
+            <!-- 컨테이너 -->
+            <div id="contents">
+                <div class="form_wrap">
+                    <div class="date_box">
+                        <button type="button" class="prev"><span class="hide">이전날짜이동</span></button>
+                        <button type="button" class="today" data-btn="pop1">2021년 10월 26일</button>
+                        <button type="button" class="next"><span class="hide">다음날짜이동</span></button>
+                    </div>
+                    <div class="con bg2 my">
+                        <h3>
+                            홍길동님, 활동적인 하루 보내셨나요?
+                            <span>운동량을 입력해주세요.</span>
+                        </h3>
+                    </div>
+                    <div class="con">
+                        <ul class="acti_list">
+                            <li>
+                                <button type="button" data-btn="pop2">
+                                    <img src="../common/images/sub/icon_activity_01.png" alt="" />
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" data-btn="pop2">
+                                    <img src="../common/images/sub/icon_activity_02.png" alt="" />
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" data-btn="pop2">
+                                    <img src="../common/images/sub/icon_activity_03.png" alt="" />
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" data-btn="pop2">
+                                    <img src="../common/images/sub/icon_activity_04.png" alt="" />
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" data-btn="pop3">
+                                    <img src="../common/images/sub/icon_activity_05.png" alt="" />
+                                </button>
+                            </li>
+                        </ul>
+                        <h3 class="today_tit">
+                            오늘 운동시간
+                            <span><b>2</b>시간 <b>30</b>분</span>
+                        </h3>
+                        <div class="detail_box">
+                            <span>
+                                기록이 아직 없습니다.
+                                <em>오늘의 운동량을 기록해주세요!</em>
+                            </span>
+                            <div class="img">
+                                <img src="../common/images/sub/icon_detail_01.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal_wrap type2">
+                <div class="modal" data-pop="pop1">
+                    <h2>날짜선택</h2>
+                    <div>
+                        <div class="cal_wrap">
+                            <div class="top">
+                                <button type="button" class="prev"><span class="hide">전 월로 이동</span></button>
+                                <h5>2021년 10월</h5>
+                                <button type="button" class="next"><span class="hide">다음 월로 이동</span></button>
+                            </div>
+                            <table>
+                                <caption>
+                                    일,월,화,수,목,금,토
+                                </caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">일</th>
+                                        <th scope="col">월</th>
+                                        <th scope="col">화</th>
+                                        <th scope="col">수</th>
+                                        <th scope="col">목</th>
+                                        <th scope="col">금</th>
+                                        <th scope="col">토</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#">1</a></td>
+                                        <td>
+                                            <a href="#">2</a>
+                                        </td>
+                                        <td><a href="#">3</a></td>
+                                        <td class=""><a href="#">4</a></td>
+                                        <td>
+                                            <a href="#">5</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">6</a>
+                                        </td>
+                                        <td>
+                                            <a href="#">7</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">8</a></td>
+                                        <td><a href="#">9</a></td>
+                                        <td><a href="#">10</a></td>
+                                        <td><a href="#">11</a></td>
+                                        <td>
+                                            <a href="#">12</a>
+                                        </td>
+                                        <td><a href="#">13</a></td>
+                                        <td><a href="#">14</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">15</a></td>
+                                        <td><a href="#">16</a></td>
+                                        <td><a href="#" class="go">17</a></td>
+                                        <td><a href="#" class="active">18</a></td>
+                                        <td><a href="#" class="go">19</a></td>
+                                        <td><a href="#">20</a></td>
+                                        <td><a href="#" class="today">21</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">22</a></td>
+                                        <td><a href="#">23</a></td>
+                                        <td><a href="#">24</a></td>
+                                        <td>
+                                            <a href="#">25</a>
+                                        </td>
+                                        <td><a href="#">26</a></td>
+                                        <td><a href="#">27</a></td>
+                                        <td><a href="#">28</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">29</a></td>
+                                        <td><a href="#">30</a></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="bottom">
+                                <span class="go">운동기록일</span>
+                                <span class="today">오늘</span>
+                            </div>
+                        </div>
+                        <div class="btn_box btm">
+                            <a href="#" class="submit">확인</a>
+                        </div>
+                    </div>
+
+                    <button type="button" class="close"><span class="hide">닫기</span></button>
+                </div>
+            </div>
+            <div class="modal_wrap type2">
+                <div class="modal" data-pop="pop2">
+                    <h2>운동시간 입력</h2>
+                    <div>
+                        <div class="time_wrap">
+                            <div class="img_box">
+                                <div class="img">
+                                    <img src="../common/images/sub/icon_activity_01.png" alt="" />
+                                </div>
+                                달리기
+                            </div>
+                            <div class="time_box">
+                                <button type="button" class="minus" id="downmin"><span class="hide">10분 빼기</span></button>
+                                <div class="time_inp">
+                                    <div class="inp">
+                                        <input
+                                            type="number"
+                                            name="#"
+                                            title="시입력"
+                                            value="00"
+                                            id="hour"
+                                            oninput="if(value>23)value=23;"
+                                        />
+                                    </div>
+                                    <span>:</span>
+                                    <div class="inp">
+                                        <input
+                                            type="number"
+                                            name="#"
+                                            title="분입력"
+                                            value="00"
+                                            id="min"
+                                            oninput="if(value>59)value=59;if(value.length>2)value=value.slice(0,2);"
+                                        />
+                                    </div>
+                                </div>
+                                <button type="button" class="plus" id="upmin"><span class="hide">10분 더하기</span></button>
+                            </div>
+                            <ul class="time_list">
+                                <li>
+                                    <button type="button" data-num="15">15분</button>
+                                </li>
+                                <li>
+                                    <button type="button" id="t_btn2" data-num="30">30분</button>
+                                </li>
+                                <li>
+                                    <button type="button" id="t_btn3" data-num2="1">1시간</button>
+                                </li>
+                                <li>
+                                    <button type="button" id="t_btn4" data-num2="2">2시간</button>
+                                </li>
+                                <li>
+                                    <button type="button" id="t_btn5" data-num2="3">3시간</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btn_box btm">
+                            <a href="#" class="submit">저장</a>
+                        </div>
+                    </div>
+                    <button type="button" class="close"><span class="hide">닫기</span></button>
+                </div>
+            </div>
+            <div class="modal_wrap type2">
+                <div class="modal" data-pop="pop3">
+                    <h2>자주하는 운동</h2>
+                    <div>
+                        <div class="favorite">
+                            <span>자주하는 운동을 등록하세요.(최대 4개)</span>
+                            <ul>
+                                <li>
+                                    <label for="f_01">
+                                        <span>
+                                            <img src="../common/images/sub/icon_activity_01.png" alt="" />
+                                        </span>
+                                        <em>벤치프레스</em>
+                                    </label>
+                                    <input type="checkbox" name="#" id="f_01" />
+                                </li>
+                                <li>
+                                    <label for="f_02">
+                                        <span>
+                                            <img src="../common/images/sub/icon_activity_01.png" alt="" />
+                                        </span>
+                                        <em>데드리프트</em>
+                                    </label>
+                                    <input type="checkbox" name="#" id="f_02" />
+                                </li>
+                                <li>
+                                    <label for="f_03">
+                                        <span>
+                                            <img src="../common/images/sub/icon_activity_01.png" alt="" />
+                                        </span>
+                                        <em>스쿼트</em>
+                                    </label>
+                                    <input type="checkbox" name="#" id="f_03" />
+                                </li>
+                                <li>
+                                    <label for="f_04">
+                                        <span>
+                                            <img src="../common/images/sub/icon_activity_01.png" alt="" />
+                                        </span>
+                                        <em>풀업</em>
+                                    </label>
+                                    <input type="checkbox" name="#" id="f_04" />
+                                </li>
+                                <li>
+                                    <label for="f_05">
+                                        <span>
+                                            <img src="../common/images/sub/icon_activity_01.png" alt="" />
+                                        </span>
+                                        <em>사이드레터럴레이즈</em>
+                                    </label>
+                                    <input type="checkbox" name="#" id="f_05" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span class="fade_alert">
+                        <em>자주하는 운동은 4개까지 등록이 가능합니다. 텍스트가 길어지는 경우입니다.</em>
+                    </span>
+                    <button type="button" class="close"><span class="hide">닫기</span></button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

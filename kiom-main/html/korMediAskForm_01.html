@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+        <title>한의학</title>
+        <link rel="stylesheet" href="../common/css/default.css" />
+        <link rel="stylesheet" href="../common/css/slick.css" />
+        <script src="../common/js/jquery-1.12.4.min.js"></script>
+        <script src="../common/js/slick.js"></script>
+        <script src="../common/js/common.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- 헤더 영역 -->
+            <!-- header -->
+            <div id="header">
+                <span class="left">
+                    <a href="../html/index.html" class="icon_back">
+                        <span class="hide">뒤로가기</span>
+                    </a>
+                    <a href="../html/index.html" class="icon_home">
+                        <span class="hide">홈으로</span>
+                    </a>
+                </span>
+                <h3>2021 한방일반문진</h3>
+                <span class="right">
+                    <a href="#" class="icon_menu"><span class="hide">전체메뉴 열기</span></a>
+                </span>
+            </div>
+            <div class="menu">
+                <div>
+                    <h3>
+                        <span><b>홍길동</b>님</span>
+                        오늘도 건강한 하루되세요!
+                    </h3>
+                    <div>
+                        <button type="button" class="setting">설정</button>
+                        <button type="button" class="logout">로그아웃</button>
+                    </div>
+                </div>
+                <ul class="list">
+                    <li>
+                        <a href="../html/dep1_myActivity.html">나의 활동</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_myHealth.html">나의 건강</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_healthInfo.html">건강 정보</a>
+                    </li>
+                    <li>
+                        <a href="../html/dep1_myPage.html">마이페이지</a>
+                    </li>
+                </ul>
+                <ol class="attr">
+                    <li>
+                        <a href="#" class="home"><span class="hide">홈으로</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="back"><span class="hide">전체메뉴 닫기</span></a>
+                    </li>
+                </ol>
+            </div>
+            <!-- //header -->
+            <!-- 컨테이너 -->
+            <div id="contents">
+                <div class="form_wrap">
+                    <div class="con bg6">
+                        <div class="examination">
+                            <button type="button" data-btn="pop1">구갈, 구건, 음수량 문진</button>
+                            <span>
+                                <b>1</b>
+                                <span>/</span>
+                                <em>17</em>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="con">
+                        <form action="#" name="#" class="form_box">
+                            <fieldset>
+                                <legend>
+                                    번호있는 문항을 fieldset으로 구분 합니다.(legend 에는 입력사항에 대한 타이틀이 들어갑니다. 예)
+                                </legend>
+                                <p class="tit2">※최근 1개월의 건강상태를 대입하여 설문조사에 응해주시길 바랍니다.</p>
+                                <div class="tit_box">
+                                    <h2 class="tit_md">1. 목이 마른 느낌을 얼마나 자주 느끼십니까?</h2>
+                                </div>
+                                <ul class="type_list txt">
+                                    <li>
+                                        <input type="radio" name="c" value="1" id="radio1" />
+                                        <label for="radio1"><b>전혀 없었다</b></label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="c" value="2" id="radio2" />
+                                        <label for="radio2"><b>드물게 있었다</b></label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="c" value="3" id="radio3" />
+                                        <label for="radio3"><b>가끔 있었다</b></label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="c" value="3" id="radio4" />
+                                        <label for="radio4"><b>자주 있었다</b></label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="c" value="3" id="radio5" />
+                                        <label for="radio5"><b>항상 있었다</b></label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <fieldset>
+                                <legend>
+                                    번호있는 문항을 fieldset으로 구분 합니다.(legend 에는 입력사항에 대한 타이틀이 들어갑니다. 예)
+                                </legend>
+                                <div class="tit_box">
+                                    <h2 class="tit_md">2. 물을 마셔도 해소되지 않는 목마름이 있습니까?</h2>
+                                </div>
+                                <ul class="type_list txt">
+                                    <li>
+                                        <input type="radio" name="a" value="1" id="radio6" />
+                                        <label for="radio6"><b>전혀 없었다</b></label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="a" value="2" id="radio7" />
+                                        <label for="radio7"><b>드물게 있었다</b></label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="a" value="3" id="radio8" />
+                                        <label for="radio8"><b>가끔 있었다</b></label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="a" value="3" id="radio9" />
+                                        <label for="radio9"><b>자주 있었다</b></label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="a" value="3" id="radio10" />
+                                        <label for="radio10"><b>항상 있었다</b></label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <fieldset>
+                                <legend>
+                                    번호있는 문항을 fieldset으로 구분 합니다.(legend 에는 입력사항에 대한 타이틀이 들어갑니다. 예)
+                                </legend>
+                                <div class="tit_box">
+                                    <h2 class="tit_md">3. 입 안이 건조한 느낌을 얼마나 자주 느끼십니까?</h2>
+                                </div>
+                                <ul class="type_list txt">
+                                    <li>
+                                        <input type="radio" name="b" value="1" id="radio11" />
+                                        <label for="radio11"><b>전혀 없었다</b></label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="b" value="2" id="radio12" />
+                                        <label for="radio12"><b>드물게 있었다</b></label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="b" value="3" id="radio13" />
+                                        <label for="radio13"><b>가끔 있었다</b></label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="b" value="3" id="radio14" />
+                                        <label for="radio14"><b>자주 있었다</b></label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="b" value="3" id="radio15" />
+                                        <label for="radio15"><b>항상 있었다</b></label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <div class="btn_box item2">
+                                <a href="#">이전</a>
+                                <a href="#" class="submit">다음</a>
+                            </div>
+                            <div class="btn_box">
+                                <a href="#" class="submit">다음</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal_wrap type2">
+            <div class="modal" data-pop="pop1">
+                <h2>한방일반문진 선택</h2>
+                <div>
+                    <ul class="exam_list">
+                        <li>
+                            <a href="#">
+                                <span>구갈, 구건, 음수량 문진</span>
+                                <em class="finish">완료</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>식습관 문진</span>
+                                <em class="finish">완료</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>소화 문진</span>
+                                <em class="finish">완료</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>대변 문진</span>
+                                <em class="finish">완료</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>소변 문진</span>
+                                <em class="finish">완료</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>수면 문진</span>
+                                <em class="finish">완료</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>피처버그 수면의 질 척도</span>
+                                <em class="finish">완료</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>땀 문진</span>
+                                <em class="finish">완료</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>한열 문진</span>
+                                <em class="finish">완료</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>핵심감청척도 단축형 설문지</span>
+                                <em class="finish">완료</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>스트레스 자각 척도</span>
+                                <em class="finish">완료</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>흡연 습관 문진</span>
+                                <em class="finish">완료</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>음주 습관 문진</span>
+                                <em class="finish">완료</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>국제 신체활동 단축형 설문</span>
+                                <em class="finish">완료</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>여성력 문진</span>
+                                <em class="finish">완료</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>체질 진단 툴 성격 설문지</span>
+                                <em class="finish">완료</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>체질 진단 툴 소증 설문지</span>
+                                <em class="finish">완료</em>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="btn_box">
+                        <a href="#" class="submit">최종확인</a>
+                    </div>
+                </div>
+                <button type="button" class="close"><span class="hide">닫기</span></button>
+            </div>
+        </div>
+        <div class="modal_wrap" style="display: block">
+            <div data-pop="pop3" style="display: block">
+                <h2>1.구강,구건,음수량 문진</h2>
+                <div class="check_ok">
+                    <p>
+                        다음 설문은 최근 1개월의<br />
+                        <b>건강상태</b>에 대한 설문입니다.
+                    </p>
+                    <p>각 문항들을 읽고 해당하는 답변을 선택하거나 주관식 문항을 입력해 주십시오.</p>
+                    <div>
+                        <a href="#">시작하기</a>
+                    </div>
+                </div>
+                <button type="button" class="close"><span class="hide">레이어팝업 닫기</span></button>
+            </div>
+        </div>
+    </body>
+</html>

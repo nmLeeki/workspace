@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <title>한의건강관리앱 작업현황판</title>
+        <style>
+            html,
+            body,
+            div,
+            span,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p,
+            a,
+            em,
+            img,
+            strong,
+            b,
+            dl,
+            dt,
+            dd,
+            ul,
+            ol,
+            li,
+            label,
+            legend,
+            table,
+            caption,
+            tbody,
+            tfoot,
+            thead,
+            tr,
+            th,
+            td,
+            footer,
+            header,
+            menu,
+            nav,
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            body {
+                padding: 2em;
+                line-height: 1.4;
+                font-family: applegothic, '나눔고딕', nanumgothic, '맑은 고딕', malgungothic, dotum, '돋움';
+                font-size: 13px;
+                color: #333;
+            }
+            ul,
+            ol {
+                list-style-type: none;
+            }
+            table {
+                border-spacing: 0;
+                border-collapse: collapse;
+                table-layout: fixed;
+            }
+            h1 {
+                font-size: 1.45em;
+            }
+            h2 {
+                margin-bottom: 5px;
+                font-size: 1.3em;
+            }
+            h3 {
+                font-size: 1.2em;
+            }
+            th {
+                vertical-align: middle;
+                word-break: break-all;
+            }
+            td {
+                vertical-align: middle;
+                word-break: break-all;
+            }
+            a {
+                color: #666;
+            }
+            .hidden {
+                position: absolute;
+                top: -99999em;
+                left: -99999em;
+            }
+            .info {
+                margin: 0 0 3em;
+                width: 100%;
+                border-top: 1px dashed #ddd;
+            }
+            .info th {
+                padding: 0.5em 1em;
+                border-bottom: 1px dashed #ddd;
+                text-align: left;
+                border-right: 0;
+                background-color: #f6f6f6;
+            }
+            .info td {
+                padding: 0.5em 1em;
+                border-bottom: 1px dashed #ddd;
+                text-align: left;
+                border-left: 0;
+            }
+            .work {
+                width: 100%;
+                margin: 0 0 3em;
+                width: 100%;
+                border-top: 2px solid #aaa;
+            }
+            .work th {
+                font-family: 'calbri';
+                padding: 0.5em;
+                border: 1px solid #ddd;
+                border-left-width: 0;
+                background: #f9f9f9;
+            }
+            .work td {
+                padding: 0.5em;
+                border-bottom: 1px solid #ddd;
+                border-right: 1px solid #ddd;
+                background: #fff;
+                vertical-align: middle;
+            }
+            .work th:last-child,
+            .work td:last-child {
+                border-right-width: 0;
+            }
+            .tit td {
+                border-top: 2px solid #ccc;
+                text-align: center;
+            }
+            .work tbody {
+                counter-reset: num;
+            }
+            .work tbody td:nth-last-of-type(2):before {
+                counter-increment: num;
+                content: counter(num);
+            }
+            .work td {
+                text-align: center;
+                color: #666;
+            }
+            .yellow td {
+                background: #fff8d0;
+            }
+            .green td {
+                background: #bff0cb;
+            }
+            .red {
+                color: #dc5959;
+            }
+            .status {
+                text-align: right;
+                margin-bottom: 10px;
+            }
+            .status h2 {
+                float: left;
+            }
+            .status span {
+                display: inline-block;
+                margin-left: 10px;
+            }
+            .tit1 {
+                margin-bottom: 10px;
+                font-size: 18px;
+            }
+            .work td.support {
+                background: #ffff00;
+            }
+            .dot_list.dot_list2 {
+                margin-bottom: 20px;
+            }
+
+            .dot_list > li,
+            .dot_list > dd {
+                text-align: left;
+                color: #000;
+                margin-bottom: 8px;
+                padding-left: 9px;
+                line-height: 1.4;
+                word-break: keep-all;
+                position: relative;
+            }
+
+            .dot_list > li:last-child,
+            .dot_list > dd:last-child {
+                margin-bottom: 0;
+            }
+
+            .dot_list > li:before,
+            .dot_list > dd:before {
+                content: '';
+                display: block;
+                width: 3px;
+                height: 3px;
+                background: #323a45;
+                border-radius: 50%;
+                position: absolute;
+                top: 8px;
+                left: 0;
+            }
+
+            .dot_list > li .bold,
+            .dot_list > dd .bold {
+                font-weight: 500;
+            }
+
+            .dot_list > li .dash_list,
+            .dot_list > li .ga_list,
+            .dot_list > dd .dash_list,
+            .dot_list > dd .ga_list {
+                margin-top: 5px;
+            }
+
+            .dot_list > li .dash_list > li,
+            .dot_list > li .ga_list > li,
+            .dot_list > dd .dash_list > li,
+            .dot_list > dd .ga_list > li {
+                margin-bottom: 4px;
+            }
+
+            .dot_list + .dot_list {
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 style="font-family: 'calbri'">Project info.</h2>
+        <table class="info">
+            <caption>
+                <span class="hidden">프로젝트 기본 정보</span>
+            </caption>
+            <colgroup>
+                <col style="width: 180px" />
+                <col />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th scope="row">1. 프로젝트명</th>
+                    <td>한한의건강관리앱 앱 구축</td>
+                </tr>
+                <tr>
+                    <th scope="row">2. 인코딩 방식</th>
+                    <td>utf-8</td>
+                </tr>
+                <tr>
+                    <th scope="row">3. dtd 사용</th>
+                    <td>Html5</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="status">
+            <h2 style="font-family: 'calbri'">Publish List</h2>
+            <span>○ 퍼블 대기중</span> <span>◐ 퍼블 작업중</span> <span>● 퍼블 완료</span>
+        </div>
+        <table class="work">
+            <colgroup>
+                <col style="width: 10%" />
+                <col style="width: 10%" />
+                <col style="width: 15%" />
+                <col style="width: 7%" />
+                <col style="width: 10%" />
+                <col style="width: 18%" />
+                <col style="width: 50px" />
+                <col style="width: 100px" />
+                <col />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">1Dep</th>
+                    <th scope="col">2Dep</th>
+                    <th scope="col">3Dep</th>
+                    <th scope="col">4Dep</th>
+                    <th scope="col">PageClass</th>
+                    <th scope="col">FileName</th>
+                    <th scope="col">ing</th>
+                    <th scope="col">num</th>
+                    <th scope="col">Memo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HOME</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="index.html" target="_blank">index.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td>메인 기본페이지</td>
+                </tr>
+                <tr class="tit">
+                    <td></td>
+                    <td>dep2</td>
+                    <td>건강정보</td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="../html/dep1_healthInfo.html" target="_blank">dep1_healthInfo.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td>건강 콘텐츠 3dep 메뉴 건강 -> 건강뉴스로 변경</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>나의활동</td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="../html/dep1_myActivity.html" target="_blank">dep1_myActivity.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>나의건강</td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="../html/dep1_myHealth.html" target="_blank">dep1_myHealth.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td>3dep추가</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>마이페이지</td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="../html/dep1_myPage.html" target="_blank">dep1_myPage.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="tit yellow">
+                    <td></td>
+                    <td>나의건강</td>
+                    <td>건강검진</td>
+                    <td>한방일반문진</td>
+                    <td>인트로</td>
+                    <td><a href="../html/korMediAskForm_Intro.html" target="_blank">korMediAskForm_Intro.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="yellow">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>검진항목</td>
+                    <td><a href="../html/korMediAskForm_01.html" target="_blank">korMediAskForm_01.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="yellow">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>문진완료</td>
+                    <td><a href="../html/korMediAskForm_finish.html" target="_blank">korMediAskForm_finish.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="yellow">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>문진결과</td>
+                    <td><a href="../html/korMediAskForm_finish2.html" target="_blank">korMediAskForm_finish2.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>병원진료</td>
+                    <td>없음</td>
+                    <td></td>
+                    <td><a href="../html/hospital_treatment_none.html" target="_blank">hospital_treatment_none.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>병원진료</td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="../html/hospital_treatment.html" target="_blank">hospital_treatment.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>진료예약</td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="../html/treatment_reservation.html" target="_blank">treatment_reservation.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="tit">
+                    <td></td>
+                    <td>나의활동</td>
+                    <td>운동</td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="../html/myActivity_exercise_01.html" target="_blank">myActivity_exercise_01.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>운동기록없을때</td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="../html/myActivity_exercise_02.html" target="_blank">myActivity_exercise_02.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>수면</td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="../html/myActivity_sleep_01.html" target="_blank">myActivity_sleep_01.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>걷기</td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="../html/myActivity_walking_01.html" target="_blank">myActivity_walking_01.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>수분</td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="../html/myActivity_water_01.html" target="_blank">myActivity_water_01.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="yellow">
+                    <td></td>
+                    <td></td>
+                    <td>라이프로그</td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="../html/myActivity_lifelog_01.html" target="_blank">myActivity_lifelog_01.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="green">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>문진항목</td>
+                    <td></td>
+                    <td><a href="../html/common2.html" target="_blank">common2.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td>
+                        <ul class="dot_list">
+                            <li>계란이미지, 색깔별 클래스네임 다시 정의해놓았으니 확인부탁드려요</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="tit green">
+                    <td></td>
+                    <td>건강정보</td>
+                    <td>맞춤형 지식정보</td>
+                    <td>결과없음</td>
+                    <td></td>
+                    <td><a href="../html/knowledgeInfo_none.html" target="_blank">knowledgeInfo_none.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td>
+                        <ul class="dot_list">
+                            <li>총 건수가 h3로 되어있었는데 list_top class가진 div로 마크업 바뀌었습니다. 확인 부탁드려요</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="green">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>키워드만 있는경우</td>
+                    <td></td>
+                    <td><a href="../html/knowledgeInfo_keyword.html" target="_blank">knowledgeInfo_keyword.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td>
+                        <ul class="dot_list">
+                            <li>총 건수가 h3로 되어있었는데 list_top class가진 div로 마크업 바뀌었습니다. 확인 부탁드려요</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="green">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>검색결과</td>
+                    <td></td>
+                    <td><a href="../html/knowledgeInfo.html" target="_blank">knowledgeInfo.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td>
+                        <ul class="dot_list">
+                            <li>총 건수가 h3로 되어있었는데 list_top class가진 div로 마크업 바뀌었습니다. 확인 부탁드려요</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="green">
+                    <td></td>
+                    <td></td>
+                    <td>건강 컨텐츠</td>
+                    <td>공통리스트(동작,코스)</td>
+                    <td></td>
+                    <td><a href="../html/health_contents_tab_01.html" target="_blank">health_contents_tab_01.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td>
+                        <ul class="dot_list">
+                            <li>카테고리선택 체질별,테마별 레이어팝업 1개 있습니다.</li>
+                            <li>총 건수가 h3로 되어있었는데 list_top class가진 div로 마크업 바뀌었습니다. 확인 부탁드려요</li>
+                            <li>검색창 ui 변경</li>
+                            <li>탭 ui 변경</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="green">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>공통리스트(음식,약재)</td>
+                    <td></td>
+                    <td><a href="../html/health_contents2_tab_01.html" target="_blank">health_contents2_tab_01.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td>
+                        <ul class="dot_list">
+                            <li>카테고리선택 체질별,제철,분류,성질 레이어팝업 1개 있습니다.</li>
+                            <li>총 건수가 h3로 되어있었는데 list_top class가진 div로 마크업 바뀌었습니다. 확인 부탁드려요</li>
+                            <li>검색창 ui 변경</li>
+                            <li>탭 ui 변경</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="green">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>상세</td>
+                    <td></td>
+                    <td><a href="../html/health_contents_detail.html" target="_blank">health_contents_detail.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td>
+                        <ul class="dot_list">
+                            <li>버튼 목록 옆에 관심리스트 체크할 수 있게 하트아이콘 추가되었습니다.</li>
+                            <li>btn_box wish라는 이중클래스 추가되었습니다.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="green">
+                    <td></td>
+                    <td></td>
+                    <td>FAQ</td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="../html/healthInfo_FAQ.html" target="_blank">healthInfo_FAQ.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td>
+                        <ul class="dot_list">
+                            <li>검색창 ui변경</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="tit">
+                    <td></td>
+                    <td>로그인</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="../html/login.html" target="_blank">login.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="tit">
+                    <td></td>
+                    <td>회원가입</td>
+                    <td>개인정보처리방침</td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="../html/join_step_01.html" target="_blank">join_step_01.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>휴대폰인증</td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="../html/join_step_02.html" target="_blank">join_step_02.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>휴대폰인증완료</td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="../html/join_step_03.html" target="_blank">join_step_03.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>정보입력</td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="../html/join_step_04.html" target="_blank">join_step_04.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>아이디찾기</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="../html/id_find.html" target="_blank">id_find.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>아이디찾기완료</td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="../html/id_find2.html" target="_blank">id_find2.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>비밀번호찾기</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="../html/pw_find.html" target="_blank">pw_find.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>비밀번호찾기완료</td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="../html/pw_find2.html" target="_blank">pw_find2.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="yellow">
+                    <td></td>
+                    <td>설정</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="../html/setting.html" target="_blank">setting.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="tit">
+                    <td></td>
+                    <td>기타페이지</td>
+                    <td>인트로</td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="../html/intro.html" target="_blank">intro.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>에러페이지</td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="../html/error.html" target="_blank">error.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>로딩중</td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="../html/loding.html" target="_blank">loding.html</a></td>
+                    <td>●</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

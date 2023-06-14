@@ -1,0 +1,322 @@
+  .center {text-align:center;}
+  
+  
+  //컨텐츠 영역
+  .con {padding:26px 20px 60px;background-color:#fff;border-radius:30px 30px 0 0;
+    &:last-of-type{padding:26px 20px 20px;}
+    + .con {margin-top:-30px;}
+    &.type2{padding: 26px 20px 90px;}
+    &.bg1 {background-color:#e7f8fa;}
+    &.bg0 {background:linear-gradient(117deg,#17bdcc,#27cdbb);}
+    &.bg2{background: url(../images/sub/acti_bg_01.png) no-repeat top 81px right 20px,linear-gradient(117deg,#17bdcc,#27cdbb);}
+    &.bg3{background: url(../images/sub/acti_bg_02.png) no-repeat top 81px right 20px,linear-gradient(117deg,#b36fde,#17bdcc);} 
+    &.bg4{background: url(../images/sub/acti_bg_03.png) no-repeat top 81px right 20px,linear-gradient(117deg,#17bdcc,#fac122);}
+    &.bg5{background: url(../images/sub/acti_bg_04.png) no-repeat top 81px right 20px,linear-gradient(117deg,#17bdcc,#5092ff);}
+    &.bg_info{background: url(../images/sub/info_bg_01.png) no-repeat bottom -46px left 20px,url(../images/sub/info_bg_02.png) no-repeat bottom -7px right; background-color: #324985;}
+    &.bg6{background: #17bdcc;}
+  }
+  
+  //타이틀
+  .tit_md {color:#222;font-size:16px;margin-bottom:12px; font-weight: 500; 
+    b {color:$pc1;}
+    &.mb0{margin-bottom: 0;}
+  }
+  .fc_red {color:#ff0000;}
+  .rqd {
+    &:after {content:'*';color:#ff0000;}
+  }
+
+  .tit_box {@include clear;font-size:13px;     
+    > :nth-child(1){float:left;}
+    > :nth-child(2){float:right;}
+    .tit_md + span{margin-top:5px;}
+    + .ref{position:relative;top:-3px;margin-top:0;padding-bottom:9px;}
+  }
+
+  .tip {display:inline-block;width:16px;height:16px;background:url(../images/common/icon_tip.png) no-repeat center/cover;}
+
+  .scr_box {@include scroll;max-height:130px;overflow-x:hidden;overflow-y:auto;
+    background-color:#f8f8f8;border:$border1;border-radius:5px;padding:13px 16px;color:#666;font-size:13px;
+    + .type_list {margin-top:13px;}
+  }
+
+//모달팝업
+.modal_wrap {display:none;background-color:rgba(0,0,0,0.5);position:fixed;left:0;top:0;bottom:0;width:100%;height:100%;z-index:10;color:$fc1;
+    > div {display:none; width:calc(100% - 40px);max-width:1000px;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background-color:#fff;border-radius:12.5px;padding:0; overflow: hidden;
+        h2 {font-size:16px;height:49px;padding-top:16px;text-align:center;padding-bottom:14px;font-weight:500;margin-bottom:0;}
+        > div {overflow-x:hidden;overflow-y:auto;font-size:14px;padding:15px 15px 25px;max-height:400px;text-align:center;
+          &.type2{padding-bottom: 90px;}
+        }
+        .close {position:absolute;right:20px;top:20px;width:15px;height:15px;background:url(../images/common/btn_pop_close.png) no-repeat center/15px auto;}
+        
+    }
+    &.type2{
+      .modal{width:100%; height: calc(100vh - 50px); top: 50px; transform: translateX(-50%); border-radius: 30px 30px 0 0;
+        >div{max-height: 100%; height: calc(100% - 49px);}
+      }
+    }
+    .state{@include clear; 
+      li{float: left; width: 20%; text-align: center; border-left: 1px solid #e5e5e5; font-size: 13px;
+        img{display: block; margin:0 auto 15px; width: 24px;}
+        &:first-child{border-left: 0;}
+      }
+    }
+    .check_ok{text-align: center; font-size: 15px; padding-bottom: 80px;
+      p{font-size: 14px; margin-top: 18px; word-break: keep-all;
+        &:first-of-type{margin-top: 0;}
+        b{color: #17bdcc; font-weight: 500;}
+      }
+      img{width: 42px; display: block; margin: 0 auto 15px;}
+      >div{position: absolute; left: 0; bottom: 0;   width: 100%; line-height: 50px; color: #fff;
+        a{ font-size: 16px; background:#17bdcc; height: 50px;}
+        &.link2{
+          a{width: 50%; float: left;
+            &:first-child{background:#999;}
+          }
+        }
+      }
+    }
+}
+
+
+//************shin jongmi
+.dep2{
+  >li{padding-bottom: 11px;
+    &:last-child{padding-bottom: 0;}
+    h2{padding-right: 110px; position: relative; line-height: 20px; margin-bottom: 9px; font-size: 16px; height: 20px;
+      >span{display: inline-block; line-height: 20px; font-size: 13px; color: #999; vertical-align: top; padding-left: 25px; background: url(../images/sub/state_01.png) no-repeat 2px top / auto 18px;
+        &.state_02{background-image: url(../images/sub/state_02.png);}
+        &.state_03{background-image: url(../images/sub/state_03.png);}
+        &.state_04{background-image: url(../images/sub/state_04.png);}
+        &.state_05{background-image: url(../images/sub/state_05.png);}
+      }
+      a{position: absolute; right: 2px; top: 0; width: 100px; font-size: 13px; color: #00a9b8; line-height: 20px; text-align: right;}
+    }
+    ol{
+      li{margin-bottom: 12px; background: #fff; border-radius: 10px; box-shadow: 0 3px 7px rgba(0,0,0,0.1);  width: calc(50% - 6px); float: left;
+        a{padding: 10px; background: url(../images/sub/arrow.png) no-repeat right 10px center / auto 9px; font-size: 14px; font-weight:300; ;}
+        &:nth-child(even){margin-left:12px}
+      }
+    }
+  }
+}
+.ref {font-size:14px;color:#999;margin-top:12px;}
+
+
+/*220404 문진결과 페이지*/
+/*컬러스타일*/
+/*대변색깔1*/
+.bg_y1{background-color:#f0c430;}
+.bg_y2{background-color:#dfa428;}
+.bg_y3{background-color:#a47026;}
+.bg_y4{background-color:#87562e;}
+.bg_y5{background-color:#705e36;}
+.bg_y6{background-color:#675e4f;}
+.bg_y7{background-color:#4d2a05;}
+/*대변색깔2 , 소변색2*/
+.bg_w{background-color:#f8f8f8;}
+.bg_red{background-color:#ae2126;}
+.bg_pink{background-color:#9f505e;}
+.bg_b{background-color:#251503;}
+.bg_g{background-color:#585d46;}
+.bg_g2{background-color:#d1c4b3;}
+/*선호하는 물 온도*/ 
+.bg_blue{background-color:#234eb8;}
+.bg_blue2{background-color:#74abfb;}
+.bg_blue3{background-color:#b3d2fd;}
+.bg_wy{background-color:#f8f2ed;}
+.bg_wp{background-color:#f4c7c8;}
+.bg_wp2{background-color:#ec8d8e;}
+.bg_red2{background-color:#e63b3f;}
+.bg_w2{background-color:#e6e6e6;}
+/*소변색1*/ 
+.bg_wy2{background-color:#fcfef2;}
+.bg_wy3{background-color:#fcfacb;}
+.bg_wy4{background-color:#f8f096;}
+.bg_wy5{background-color:#faf581;}
+.bg_wy6{background-color:#f3e05b;}
+.bg_wy7{background-color:#c7a95e;}
+.bg_wy8{background-color:#a28e5a;}
+/*월경 색깔 1*/ 
+.bg_pink2{background-color:#de9988;}
+.bg_pink3{background-color:#d06661;}
+.bg_pink4{background-color:#b24136;}
+.bg_brown1{background-color:#5a221f;}
+.bg_brown2{background-color:#3b120d;}
+/*월경 색깔 2*/ 
+.bg_w3{background-color:#fff;}
+.bg_og{background-color:#dd936e;}
+.bg_g3{background-color:#535154;}
+.bg_b2{background-color:#190502;}
+.con.result {background-color:#ecf9fb;
+  > ul {
+    > li {margin-bottom:30px;}
+  }
+  .inp_box {background-color: #fff;box-shadow:5px 5px 15px rgba(0,0,0,0.1);border-radius:10px;padding:5px 15px;
+    > li {display:flex;align-items:center;border-bottom:1px solid #dedede;margin-bottom:0;
+      
+      > div > b:first-of-type {margin-top:12px;}
+     
+      &:last-of-type{margin-bottom:0;border-bottom:0;}
+      h3 {width:100px;padding-right:10px;font-size:14px;color:#777777;}
+      > div {width:100%;font-size:13px;text-align:center;
+         b {display:block;background-color:#e7f8fa;color:#777777;border-radius:5px;padding: 4px 10px; grid-column: 1 / span 3;
+          >span {color:#17bdcc;}   
+        }
+        > ul {color:#111111;line-height:1.4;padding:10px 0;
+          > li {overflow:hidden;}
+          .img {padding:10px;text-align:center;width:50%;float:left;
+            &:nth-of-type(2n+1) {clear:both;}
+            span {display:block;margin:0 auto 3px;width:50px;height:30px;border-radius:5px;}
+            img {display:block;margin:0 auto 10px;max-width:100%;}
+           
+          }
+        }
+      }
+    }
+  }
+}
+
+/*220421 라이프로그 목록 수정, 컨텐츠 타이틀 수정*/
+.keyword_list.type2 > li> * span {color:#17bdcc;}
+.list_top.rtl {
+  .tab_list2 {float:left;}
+  h3 {float:right;}
+}
+.tit-box {margin-top:10px;min-height:80px;
+  position:relative;background-color:#fff;border-radius:10px;box-shadow:3px 3px 8px rgba(0,0,0,0.05);margin-bottom:30px;padding:16px 20px 17px;font-size:14px;
+  padding-right:80px;
+  b {font-size:18px;font-weight:500;display:block;margin-bottom:3px;}
+  img {position:absolute;right:20px;top:50%;transform:translateY(-50%) scale(0.5);transform-origin:right;z-index:0;}
+}
+
+// 탭 (수직)
+// .tab_menu {$tabW:100px;
+//   position:relative;padding:0 !important;border-radius:0;height:100vh;
+//   > li {
+//       > button {height:40px;width:$tabW;}
+//       > div {display:none;position:absolute;left:$tabW;top:0;bottom:0;height:100%;width:calc(100% - #{$tabW});background-color:#fff;}
+//       &.active {
+//           > button {background-color:#17bdcc;color:#fff;}
+//           > div {display:block;padding:0 20px 20px;
+//             >span{float:right;line-height: 20px; font-size: 13px; color: #999; vertical-align: top; padding-left: 25px; background: url(../images/sub/state_01.png) no-repeat 2px top / auto 18px;
+//               &.state_02{background-image: url(../images/sub/state_02.png);}
+//               &.state_03{background-image: url(../images/sub/state_03.png);}
+//               &.state_04{background-image: url(../images/sub/state_04.png);}
+//               &.state_05{background-image: url(../images/sub/state_05.png);}
+//             }
+//           }
+//       }
+//   }
+// }
+/*220513 추가 수정*/
+.dep{width:100%;height:calc(100vh - 98px);border-radius:0;background-color:#fff;margin-top:-60px !important;overflow-y:auto;overflow-x:hidden;
+  > li {color:#111;width:100%;text-align:left;border-bottom:1px solid #efefef;
+    &:first-of-type{border-top:1px solid #efefef;}
+     > a {position:relative;padding-right:50px;padding-left:15px;height:74px;display:block;width:100%;line-height:74px;font-size:20px;
+      > img {width:28px;vertical-align:-4px;margin-right:9px;}
+      >span{float:right;line-height: 74px; font-size: 16px; color: #999; padding-right: 40px; background: url(../images/sub/state_01.png) no-repeat right 1px center / auto 24px;font-weight:400;
+        &.state_02{background-image: url(../images/sub/state_02.png);}
+        &.state_03{background-image: url(../images/sub/state_03.png);}
+        &.state_04{background-image: url(../images/sub/state_04.png);}
+        &.state_05{background-image: url(../images/sub/state_05.png);}
+      }
+       &.btn {
+        &:after {content:'';width:18px;height:18px;background:url(../images/sub/icon_lifelog_off.png) no-repeat center/100% auto;position:absolute;right:15px;top:50%;transform:translateY(-50%);}
+        &.active {
+          &:after {content:'';background-image:url(../images/sub/icon_lifelog_on.png);}
+        }
+       }
+      &.active{color:#1fbecd;font-weight: 500;}
+     }
+    > ul {display:none;background-color:#f8f8f8;
+    > li {
+      border-top:1px solid #efefef;
+      > a {padding-left:15px;color:#555;font-size:18px;height:50px;line-height:50px;
+       background:url(../images/sub/icon_lifelog_arrow.png) no-repeat right 17px center/7px auto;
+       &:before {content:'';width:3px;height:3px;border-radius:3px;background-color:#555;display:inline-block;vertical-align:4px;margin-right:5px;margin-left:2px;}
+      }
+    }
+    }
+  }
+ 
+}
+
+
+
+.file_list {border-top:1px solid #dedede;margin-top:15px;
+  ul {
+    > li {border:1px solid #dedede;border-top:0;position:relative;
+      a {padding:10px;height:59px;display:table;width:100%;
+        .thumb {display:table-cell;vertical-align:middle;width:40px;height:40px;background:#f4f4f4 url(../images/common/icon_file.png) no-repeat center/18px auto;
+          img {width:100%;height:100%;}
+        }
+        div {display:table-cell;vertical-align:middle;padding-left:10px;font-size:13px;color:#111;;
+          span {display:block;color:#777;margin-top:2px;}
+        }
+      }
+      button {position:absolute;right:14px;top:50%;margin-top:-6px;;width:12px;height:12px;background:url(../images/common/btn_del.png) no-repeat center/12px auto;overflow:hidden;text-indent:12px;white-space:nowrap;}
+    }
+  }
+   .upload {height:40px;width:100%;text-align:center;color:#fff;font-size:13px;background-color:#999999;margin-top:15px;line-height:40px;border-radius:5px;
+    &:before {content:'';width:19px;height:100%;display:inline-block;vertical-align:middle;background:url(../images/common/icon_img.png) no-repeat center/19px auto;margin-right:8px;}
+  }
+}
+/*220513 추가 수정*/
+
+
+/*220610 라이프로그 메뉴 수정*/
+.life_menu {height:calc(100vh - 124px);margin-top:-34px !important;overflow-y:auto;overflow-x:hidden;padding:17px 5px;
+  > li {position:relative;float:left;margin:7.5px;width:calc(50% - 15px);height:160px;z-index:0;
+    &:nth-child(2n+1){clear:both;}
+    > a {width:100%;height:100%;display:block;background-color:#fff;position:relative;z-index:1;border-radius:15px;box-shadow:3px 3px 8px 0 rgba(0,0,0,0.1);overflow:hidden;
+      font-size:20px;font-weight:500;padding:16px 15px;
+      img:not(.state) {position:absolute;bottom:20px;right:15px;transform:scale(0.5);transform-origin:right bottom;}
+      img.state {position:absolute;bottom:20px;left:15px;transform:scale(0.5);transform-origin:left bottom;}
+      > span {margin-top:6px;display:block;padding-left:16px;font-size:14px;height:90px;
+        background:url(../images/sub/icon_clock.png) no-repeat 0 3.2px/12px auto;color:#999;
+      }
+      &:before {content:'';width:95px;height:95px;right:0;bottom:0;position:absolute;background:url(../images/sub/bg_lifelog_on.png) no-repeat center/95px;opacity:0;transition:opacity 0.2s;}
+      &:after {content:'';width:15px;height:15px;display:block;background:url(../images/sub/icon_lifelog_off.png) no-repeat center/15px auto;position:absolute;right:14px;top:22px;}
+    }
+    > ul {position:absolute;width:100%;height:100%;background-color:#1fbecd;top:0;bottom:0;color:#fff;border-radius:15px;z-index:-1;box-sizing:content-box;display:none;flex-direction:column;justify-content: center;box-shadow:3px 3px 8px 0 rgba(0,0,0,0.1);
+     > li {
+      font-size:14px;font-weight: 500;
+        a {padding:7px 0;
+          &:before {content:'·';margin-right:3px;}
+          &:after {content:'';margin-left:5px;vertical-align:1px;display:inline-block;width:5px;height:9px;background:url(../images/sub/arrow_lifelog.png) no-repeat center/cover;}
+        }
+     }
+    }
+    &:nth-child(odd) {
+      > ul {left:0;
+        > li {padding-right:15px;}
+      }
+    }
+    &:nth-child(even) {
+      > ul {right:0;
+        > li {padding-left:15px;}
+      }
+    }
+    &.active {z-index:1;
+      > a {box-shadow:none;color:#1fbecd;
+        &:before {opacity:1;}
+        &:after {background-image:url(../images/sub/icon_lifelog_on.png);}
+      }
+      &:nth-child(odd) {
+        > ul {display:flex;padding-left:calc(100% + 15px);animation:leftMenu 0.3s;}
+      }
+      &:nth-child(even) {
+        > ul {display:flex;padding-right:calc(100% + 15px);animation:rightMenu 0.3s;}
+      }    
+    }
+  }
+}
+@keyframes leftMenu {
+  from {padding-left:0;}
+  to {padding-left:calc(100% + 16px);}
+}
+@keyframes rightMenu {
+  from {padding-right:0;}
+  to {padding-right:calc(100% + 16px);}
+}

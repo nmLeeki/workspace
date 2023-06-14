@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+  <title>한의학</title>
+  <link rel="stylesheet" href="../common/css/default.css" />
+  <link rel="stylesheet" href="../common/css/slick.css" />
+  <script src="../common/js/jquery-1.12.4.min.js"></script>
+  <script src="../common/js/slick.js"></script>
+  <script src="../common/js/common.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- 헤더 영역 -->
+    <!-- header -->
+    <div id="header">
+      <span class="left">
+        <a href="../html/index.html" class="icon_back">
+          <span class="hide">뒤로가기</span>
+        </a>
+        <a href="../html/index.html" class="icon_home">
+          <span class="hide">홈으로</span>
+        </a>
+      </span>
+      <h3>운동량</h3>
+      <span class="right">
+        <a href="#" class="icon_menu"><span class="hide">전체메뉴 열기</span></a>
+      </span>
+    </div>
+    <div class="menu">
+      <div>
+        <h3>
+          <span><b>홍길동</b>님</span>
+          오늘도 건강한 하루되세요!
+        </h3>
+        <div>
+          <button type="button" class="setting">설정</button>
+          <button type="button" class="logout">로그아웃</button>
+        </div>
+      </div>
+      <ul class="list">
+        <li>
+          <a href="../html/dep1_myActivity.html">나의 활동</a>
+        </li>
+        <li>
+          <a href="../html/dep1_myHealth.html">나의 건강</a>
+        </li>
+        <li>
+          <a href="../html/dep1_healthInfo.html">건강 정보</a>
+        </li>
+        <li>
+          <a href="../html/dep1_myPage.html">마이페이지</a>
+        </li>
+      </ul>
+      <ol class="attr">
+        <li>
+          <a href="#" class="home"><span class="hide">홈으로</span></a>
+        </li>
+        <li>
+          <a href="#" class="back"><span class="hide">전체메뉴 닫기</span></a>
+        </li>
+      </ol>
+    </div>
+    <!-- //header -->
+    <!-- 컨테이너 -->
+    <div id="contents">
+      <div class="con bg0">
+        <div class="date_box">
+          <button type="button" class="prev"><span class="hide">이전날짜이동</span></button>
+          <button type="button" class="today" data-btn="pop1">2021년 10월 26일</button>
+          <button type="button" class="next"><span class="hide">다음날짜이동</span></button>
+        </div>
+      </div>
+      <!-- 2022.04.04 문진 페이지에서 여기서부터 변경 
+        1. con에 result 클래스 추가(필수))
+        2. 기본 중앙정렬, 우측정렬시 ul에 right 클래스 추가
+        3. 이미지,컬러 의 경우 기본 width: 50%, 한개 있을 경우 width:100% 스크립트 처리함. 하단참조
+        4. 컬러값의 경우 default.css에 클래스 정의함.
+      -->
+      <div class="con result">
+        <ul>
+          <li>
+            <div class="tit_box">
+              <h2 class="tit_md">title H2</h2>
+            </div>
+            <ul class="inp_box">
+              <li>
+                <h3>title 13px</h3>
+                <div>
+                  <ul>
+                    <li>answer area 13px answer area</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <h3>title area 13px title area 13px</h3>
+                <div>
+                  <b>100% sub title 13px</b>
+                  <ul>
+                    <li>answer area 13px answer area</li>
+                  </ul>
+                  <b>50% sub title</b>
+                  <ul>
+                    <li>answer area answer area answer answer area answer area answer13px </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="tit_box">
+              <h2 class="tit_md">식사량</h2>
+            </div>
+            <ul class="inp_box">
+              <li>
+                <h3>식사 시간 및 식사량</h3>
+                <div>
+                  <b>1일 식사횟수</b>
+                  <ul>
+                    <li>3회</li>
+                  </ul>
+                  <b>식사시간</b>
+                  <ul>
+                    <li>아침 2시 20분</li>
+                    <li>점심 2시 20분</li>
+                    <li>저녁 2시 20분</li>
+                    <li>기타 2시 20분</li>
+                  </ul>
+                  <b>하루 평균 1회 식사량</b>
+                  <ul>
+                    <li>2/3 이하</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="tit_box">
+              <h2 class="tit_md">소화</h2>
+            </div>
+            <ul class="inp_box">
+              <li>
+                <h3>속쓰림</h3>
+                <div>
+                  <ul class="right">
+                    <li>불편하지 않고 드물게 있었다</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <h3>더부룩함</h3>
+                <div>
+                  <ul class="right">
+                    <li>상당히 불편하고 가끔 있었다.</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="tit_box">
+              <h2 class="tit_md">대변</h2>
+            </div>
+            <ul class="inp_box">
+              <li>
+                <h3>대변 횟수</h3>
+                <div>
+                  <ul class="right">
+                    <li>1일 3회</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <h3>대변 양</h3>
+                <div>
+                  <ul>
+                    <li>
+                      <div class="img"><img src="../common/images/sub/icon_egg.png" alt="">
+                        계란 2개
+                      </div>                      
+                    </li>
+                  </ul>
+                </div>
+              </li>   
+              <li>
+                <h3>대변 모양</h3>
+                <div>
+                  <ul>
+                    <li>
+                      <b>최근 1주일동안 <span>가장 자주 보았던</span> 
+                        대변 형태</b>
+                      <div class="img">
+                        <img src="../common/images/sub/img_blood_1.png" alt="">
+                        표면이 갈라진 소시지 모양
+                      </div>
+                    
+                    </li>
+                    <li>
+                      <b>최근 1주일동안 <span>한번이라도</span> 본 적 있는 대변 형태</b>
+                      <div class="img">
+                        <img src="../common/images/sub/img_blood_1.png" alt="">
+                        표면이 갈라진 소시지 모양
+                      </div>
+                      <div class="img">
+                        <img src="../common/images/sub/img_blood_1.png" alt="">
+                        표면이 갈라진 소시지 모양
+                      </div>
+                      <div class="img">
+                        <img src="../common/images/sub/img_blood_1.png" alt="">
+                        표면이 갈라진 소시지 모양
+                      </div>
+                      <div class="img">
+                        <img src="../common/images/sub/img_blood_1.png" alt="">
+                        표면이 갈라진 소시지 모양
+                      </div>
+                    
+                    </li>
+                  </ul>
+                </div>
+              </li>         
+              <li>
+                <h3>대변 색깔</h3>
+                <div>
+                  <ul>
+                    <li>
+                      <b>최근 1주일동안 <span>가장 자주 보았던</span> 
+                        대변색</b>
+                      <div class="img"><span class="bg_red"></span></div>
+                    </li>
+                    <li>
+                      <b>최근 1주일동안 <span>한번이라도</span> 본 적 있는 대변색</b>
+                      <div class="img"><span class="bg_red"></span>붉은색</div>
+                      <div class="img"><span class="bg_y4"></span>초록색</div>
+                    </li>
+                  </ul>
+                </div>
+              </li>     
+            </ul>
+          </li>
+          <li>
+            <div class="tit_box">
+              <h2 class="tit_md">설진</h2>
+            </div>
+            <ul class="inp_box">
+              <li>
+                <h3>설태 색깔</h3>
+                <div>
+                  <ul>
+                    <li>
+                      <div class="img">
+                        <img src="../common/images/sub/radio_sample.png" alt="">
+                        분홍색, 진한 붉은색
+                      </div>
+                    </li>
+                </div>
+              </li> 
+              <li>
+                <h3>설태 두께</h3>
+                <div>
+                  <ul>
+                    <li>
+                      <div class="img">
+                        <img src="../common/images/sub/radio_sample.png" alt="">
+                        창백한 흰색
+                      </div>
+                      <div class="img">
+                        <img src="../common/images/sub/radio_sample.png" alt="">
+                        분홍색, 진한 붉은색
+                      </div>
+                    </li>
+                </div>
+              </li>                   
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+      <!-- .img 정렬 스크립트 -->
+      <script>
+        $('.con.result .inp_box .img').each(function(){
+          if($(this).siblings('.img').length == 0){
+            $(this).css('width','100%');
+          }
+        });
+      </script>
+      <!-- //.img 정렬 스크립트 -->
+    <!-- 2022.04.04 응답 페이지에서 여기서부터 변경  -->
+    <button type="button" class="top_btn">
+      <span class="hide">화면상단으로 이동</span>
+    </button>
+  </div>
+</body>
+
+</html>
